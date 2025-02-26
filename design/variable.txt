@@ -1,0 +1,14 @@
+# Light theme:
+  1- Background (Light-Zinc Varient): #E4E4E7
+  2- Primary Color (Light-Blue Varient): #2EC4FF
+  3- Text Color | Color of shadows and dark sectios (Dark-Slate Varient): #101828
+  4- Accent 1 (Lime-Green Varient): #0BFF7B
+  5- Accent 2 (Gold Varient): #FFB000
+  6- Additional Color (Dark-Sky Varient): #1447E6
+# Dark theme:
+  1- Background (Dark-Slate Varient): #101828
+  2- Primary Color (Light-Blue Varient): #2EC4FF
+  3- Text Color | Color of shadows and Light sectios (Light-Zinc Varient): #E4E4E7
+  4- Accent 1 (Lime-Green Varient): #0BFF7B
+  5- Accent 2 (Gold Varient): #FFB000
+  6- Additional Color (Dark-Sky Varient): #1447E6
