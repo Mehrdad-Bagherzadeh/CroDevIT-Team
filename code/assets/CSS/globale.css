@@ -1,0 +1,34 @@
+:root{
+    /* light theme */
+    --background-color:#E4E4E7;
+    --primary-color:#2EC4FF;
+    --text-color:#101828;
+    --accent-color:#0BFF7B;
+    --accent-2-color:#0BFF7B;
+    --additional-color:#1447E6;
+    /* dark theme */
+    --dark-background:#101828;
+    --dark-text-color:#E4E4E7;
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* # Light theme:
+  1- Background (Light-Zinc Varient): #
+  2- Primary Color (Light-Blue Varient): #2EC4FF
+  3- Text Color | Color of shadows and dark sectios (Dark-Slate Varient): #101828
+  4- Accent 1 (Lime-Green Varient): #0BFF7B
+  5- Accent 2 (Gold Varient): #FFB000
+  6- Additional Color (Dark-Sky Varient): #1447E6
+# Dark theme:
+  1- Background (Dark-Slate Varient): #101828
+  2- Primary Color (Light-Blue Varient): #2EC4FF
+  3- Text Color | Color of shadows and Light sectios (Light-Zinc Varient): #E4E4E7
+  4- Accent 1 (Lime-Green Varient): #0BFF7B
+  5- Accent 2 (Gold Varient): #FFB000
+  6- Additional Color (Dark-Sky Varient): #1447E6 */
