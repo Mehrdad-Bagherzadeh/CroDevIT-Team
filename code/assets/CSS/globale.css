@@ -38,6 +38,7 @@ a{
 }
 html{
   background-color: var(--dark-background);
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
