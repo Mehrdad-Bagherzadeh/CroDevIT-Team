@@ -1,3 +1,4 @@
+/* advertise section the top  */
 .ad {
     display: flex;
     justify-content: space-between;
@@ -33,9 +34,31 @@ flex-shrink: 0;
 }
 
 .ad .close-icon{
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    cursor: pointer;
+    height: 24px;
 }
+.ad {
+  position: relative;
+  background: var(--dark-background);
+  padding: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  height: 42px;
+}
+
+.ad.hide {
+  transform: translateY(-100%);
+}
+/* advertise section finished */
+
+
+
+
+
+
+
+
 /* navbar */
 nav{
     display: flex;
@@ -47,18 +70,7 @@ nav{
     background-color: var(--background-color);
 
 }
-.ad {
-    position: relative;
-    background: var(--dark-background);
-    padding: 10px;
-    transition: all 0.3s ease;
-    transform: translateY(0);
-    height: 42px;
-  }
-  
-  .ad.hide {
-    transform: translateY(-100%);
-  }
+
   
   nav {
     position: fixed;
@@ -77,6 +89,7 @@ nav{
     border-radius: 10px;
 
 }
+
   nav.sticky {
     top: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -150,6 +163,12 @@ outline: none;
     transform: translateY(-50%);
 }
 /* navbar finished */
+
+
+
+
+
+
 /* header  */
 header{
     padding-right:42px ;
@@ -164,14 +183,12 @@ header .header-content{
     font-family: 'danabold';
     font-size:var(--font-size-head) ;
     align-self: center;
+    padding-bottom: 68px;
 }
 header .header-content h1{
     font-size: var(--font-size-head);
 }
-header .header-image{
-    padding: 0;
 
-}
 .header-btn{
     display: flex;
     gap: 32px;
@@ -179,7 +196,7 @@ header .header-image{
 
 }
 header .btn-outline{
-    padding: 12px 16px;
+    width: 250px;
     font-size:var(--font-size-btn) ;
     background-color: var(--dark-background);
     color: var(--dark-text-color);
@@ -191,6 +208,7 @@ header .btn-outline{
       }
       header .btn-contained{
         cursor: pointer;
+        width: 250px;
         padding: 12px 16px;
         font-size:var(--font-size-btn) ;
         background-color: var(--primary-color);
@@ -201,9 +219,13 @@ header .btn-outline{
         border: none;
     }
 header .header-image img{
-    max-width: 700px;
+    max-width: 100%;
     
 }
+/* header finished */
+
+
+
 
 
 
@@ -320,6 +342,8 @@ header .header-image img{
     fill: var(--dark-text-color);
     height: 40px;
   }
+/* mobile screen finished */
+
   /* Search Overlay Styles */
 .search-overlay {
     position: fixed;
@@ -411,16 +435,24 @@ header .header-image img{
     max-height: 60vh;
     overflow-y: auto;
 }
+
+
+/* search over lay finished */
+
+
+
+
+
+/* media queries */
+
+
+
   @media only screen and (max-width: 1050px) {
     .search-container{
         width: 150px;
     }
      .search-container input{
         display: none;
-     }
-     .search-container .search-icon{
-        
-
      }
   }
 @media only screen and (max-width: 1250px) {
@@ -435,13 +467,21 @@ header .header-image img{
     flex-direction: column;
     align-items: center;
     gap: 32px !important;
-
+    padding: 0 !important;
    }
    .header-content h1{
     font-size: var(--font-size-medium-titr) !important;
    }
    .header-btn{
     justify-content: center;
+   }
+   .header-btn button{
+    font-size: var(--font-size-btn-mobile);
+    width: 120px;
+    
+   }
+   .header-image{
+    margin-top: 48px;
    }
    .header-image img{
 width: 100%;
@@ -482,10 +522,12 @@ width: 100%;
     font-size: var(--font-size-mobile);
 }
 .ad .close-icon{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    
   
 }
+
   .ad p{
     font-size: var(--font-size-mobile);
   }
