@@ -16,7 +16,15 @@ document.querySelectorAll('.mobile-links a').forEach(link => {
     mobileMenu.classList.remove('active');
     document.body.style.overflow = '';
   });
+  
 });
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.mobile-menu') && !event.target.closest('.hamburger')) {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
 let lastScrollTop = 0;
 const ad = document.querySelector('.ad');
 const nav = document.querySelector('nav');
@@ -39,3 +47,40 @@ window.addEventListener('scroll', () => {
 
 // Optional: Add smooth scroll behavior to the whole page
 document.documentElement.style.scrollBehavior = 'smooth';
+// for search overlay 
+const searchInputs = document.querySelectorAll('.search-container input, .mobile-search input,.search-icon');
+const searchOverlay = document.querySelector('.search-overlay');
+const closeSearchBtn = document.querySelector('.close-search');
+
+// Open search overlay when clicking on any search input
+searchInputs.forEach(input => {
+    input.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Focus on the overlay search input
+        searchOverlay.querySelector('input').focus();
+    });
+});
+
+// Close search overlay
+closeSearchBtn.addEventListener('click', () => {
+    searchOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+// Close on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+        searchOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+// Close if clicked outside of search content
+searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) {
+        searchOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
