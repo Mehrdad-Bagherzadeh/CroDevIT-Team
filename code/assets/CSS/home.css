@@ -180,14 +180,20 @@ header{
 }
 header .header-content{
     color: var(--dark-text-color);
-    font-family: 'danabold';
-    font-size:var(--font-size-head) ;
+ 
     align-self: center;
     padding-bottom: 68px;
-    text-align: center;
+}
+header .header-content p{
+  font-size: var(--font-size-text-large);
+  line-height: 2;
+  margin-top: 32px;
+  font-family: 'danalight';
 }
 header .header-content h1{
     font-size: var(--font-size-head);
+    font-family: 'danabold';
+    font-size:var(--font-size-head) ;
 }
 
 .header-btn{
@@ -440,10 +446,48 @@ header .header-image img{
 
 /* search over lay finished */
 
+/* main */
+main{
+  padding: var(--section-padding);
+  margin-top: 64px;
+}
+/* main finished */
 
+/* box-icons */
+ .box-icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 24px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    
+    
+  }
+.box-icons-item{
+  position: relative;
+  display: flex;
+width: 455px;
+height: 200px;
+padding: 40px 20px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+flex-shrink: 0;
+border-radius: 12px;
+border: 1px solid var(--Grey-15, var(--lighter-dark-background));
+background: var(--Grey-10, var(--background-color));
+}
+.box-icons-item h3{
+  font-family: 'danademibold';
+  color: var(--dark-text-color);
+}
 
-
-
+.box-icons-item span{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 /* media queries */
 
 
@@ -469,6 +513,7 @@ header .header-image img{
     align-items: center;
     gap: 32px !important;
     padding: 0 !important;
+    text-align: center;
    }
    .header-content h1{
     font-size: var(--font-size-medium-titr) !important;
@@ -486,6 +531,9 @@ header .header-image img{
    }
    .header-image img{
 width: 100%;
+   }
+   .box-icons-item {
+    width: 320px;
    }
 }
   
