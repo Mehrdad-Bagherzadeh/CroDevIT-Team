@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 #particles-js {
   display: flex;
   justify-content: center;
@@ -6,7 +11,7 @@
   height: 100%;
 }
 .container {
-  position: absolute;
+  position: fixed;
   background: #1e1e1e;
   padding: 42px;
   border-radius: 10px;
@@ -19,7 +24,9 @@
 }
 h2 {
   color: var(--dark-text-color);
-  margin: 36px;
+  margin-bottom: 52px;
+  margin-top: 36px;
+
   font-family: "danabold";
 }
 p {
@@ -39,7 +46,7 @@ input {
 }
 input:focus {
   outline: none;
-  box-shadow: 0 0 5px #bb86fc;
+  box-shadow: 0 0 5px var(--primary-color);
 }
 .btn {
   width: 100%;
