@@ -1,14 +1,27 @@
+
 :root{
     /* light theme */
-    --background-color:#E4E4E7;
+    --background-color:#1a1a1a;
     --primary-color:#2EC4FF;
     --text-color:#101828;
+    --lighter-dark-background:#262626;
     --accent-color:#0BFF7B;
+    --emotion-color:#FFB000;
     --accent-2-color:#0BFF7B;
     --additional-color:#1447E6;
     /* dark theme */
-    --dark-background:#101828;
+    --dark-background:#141414;
     --dark-text-color:#E4E4E7;
+    /* padding */
+    --section-padding:16px 42px;
+    --section-mobile-padding:16px;
+    /* font size */
+    --font-size-nav:20px;
+    --font-size-bold:28px;
+    --font-size-head:48px;
+    --font-size-mobile:16px;
+    --font-size-btn:18px;
+    --font-size-medium-titr:32px;
     
     
 }
@@ -17,7 +30,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
+a{
+  text-decoration: none;
+  color: var(--dark-text-color);
+}
+html{
+  background-color: var(--dark-background);
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+
+}
+
 /* # Light theme:
   1- Background (Light-Zinc Varient): #
   2- Primary Color (Light-Blue Varient): #2EC4FF

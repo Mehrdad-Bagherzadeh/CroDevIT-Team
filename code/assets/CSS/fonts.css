@@ -1,0 +1,20 @@
+@font-face {
+    font-family:danabold;
+    src: url(../fonts/Dana-Bold.woff2);
+    font-display: swap;
+  }
+  @font-face {
+    font-family:danalight;
+    src: url(../fonts/Dana-Light.woff2);
+    font-display: swap;
+  }
+  @font-face {
+    font-family:danademibold;
+    src: url(../fonts/Dana-DemiBold.woff2);
+    font-display: swap;
+  }
+  @font-face {
+    font-family:danamedium ;
+    src: url(../fonts/Dana-Medium.woff2);
+  }
+  
