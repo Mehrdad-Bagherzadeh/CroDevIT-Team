@@ -184,6 +184,7 @@ header .header-content{
     font-size:var(--font-size-head) ;
     align-self: center;
     padding-bottom: 68px;
+    text-align: center;
 }
 header .header-content h1{
     font-size: var(--font-size-head);
