@@ -21,14 +21,17 @@ align-items: flex-start;
 flex-shrink: 0;
 
 }
+
 .ad p{
     color: var(--dark-text-color);
     font-size: var(--font-size-bold);
     font-family: 'danademibold';
 }
-.ad span{
+.ad .animated-pulse{
     color:var(--emotion-color) ;
+    animation: pulse 2s infinite;
 }
+
 .ad .close-icon{
     width: 40px;
     height: 40px;
@@ -42,7 +45,6 @@ nav{
     align-items: center;
     padding: var(--section-padding);
     background-color: var(--background-color);
-
 
 }
 .ad {
@@ -68,9 +70,13 @@ nav{
     transition: all 0.3s ease;
     padding: 15px 20px;
   }
-  nav .active-link{
-    background-color:var(--dark-background) !important ;
-  }
+.link-list .active-link{
+    background-color: var(--dark-background) !important;
+    padding: 12px 28px;
+    border: 1px solid #262626 !important;
+    border-radius: 10px;
+
+}
   nav.sticky {
     top: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -78,7 +84,7 @@ nav{
   
   /* Add padding to header to prevent content jump */
   header {
-    padding-top: 120px; /* Adjust based on your navbar height */
+    margin-top: 82px;
   }
 .logo-container{
     display: flex;
@@ -129,8 +135,9 @@ outline: none;
     color: var(--dark-text-color);
     font-family: 'danalight';
     width: 250px;
-    height: 42px;
+    height: 52px;
     flex-shrink: 0;
+    border-radius: 10px;
     background: #141414;
 }
 .search-container svg{
@@ -149,17 +156,46 @@ header{
     background-color: var(--dark-background);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    gap: 16px;
 }
 header .header-content{
     color: var(--dark-text-color);
     font-family: 'danabold';
     font-size:var(--font-size-head) ;
+    align-self: center;
+}
+header .header-content h1{
+    font-size: var(--font-size-head);
 }
 header .header-image{
     padding: 0;
 
 }
+.header-btn{
+    display: flex;
+    gap: 32px;
+}
+header .btn-outline{
+    padding: 12px 16px;
+    font-size:var(--font-size-btn) ;
+    background-color: var(--dark-background);
+    color: var(--dark-text-color);
+    font-family: 'danabold';
+    gap: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--dark-text-color) ;
+      }
+      header .btn-contained{
+        padding: 12px 16px;
+        font-size:var(--font-size-btn) ;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-family: 'danabold';
+        gap: 8px;
+        border-radius: 10px;
+        border: none;
+    }
 header .header-image img{
     max-width: 700px;
     
@@ -211,7 +247,7 @@ header .header-image img{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     gap: 32px;
   }
   
@@ -250,6 +286,7 @@ header .header-image img{
     transform: translateY(30px);
     opacity: 1;
     transition: all 0.3s ease 0.5s;
+    
   }
   
   .mobile-menu.active .mobile-search {
@@ -259,22 +296,27 @@ header .header-image img{
   
   .mobile-search input {
     width: 100%;
-    padding: 12px 40px 12px 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 12px 16px;
     font-family: 'danalight';
+    color: var(--dark-text-color);
+    background-color: var(--dark-background);
     outline: none;
     font-size: 1rem;
   }
   
   .mobile-search .search-icon {
     position: absolute;
-    right: 12px;
-    top: 50%;
+    left: 12px;
+    top: 70%;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    
+    width: 40px;
+    fill: var(--dark-text-color);
+    height: 40px;
   }
+
   
   @media screen and (min-width: 769px) {
     .mobile-menu {
