@@ -22,7 +22,8 @@ body {
 .brand-tag {
   width: 200px;
 }
-h2 {
+#title,
+h3 {
   color: var(--dark-text-color);
   margin-bottom: 52px;
   margin-top: 36px;
@@ -33,7 +34,7 @@ p {
   color: var(--dark-text-color);
   font-family: "danabold";
 }
-input {
+#loginInput {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -44,7 +45,7 @@ input {
   font-size: 16px;
   font-family: "danabold";
 }
-input:focus {
+#loginInput:focus {
   outline: none;
   box-shadow: 0 0 5px var(--primary-color);
 }
@@ -65,4 +66,49 @@ input:focus {
   background: #de9700;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(222, 151, 0, 0.5);
+}
+#pinDescription {
+  margin: 20px;
+}
+#changeInfo {
+  font-family: "danamedium";
+  color: var(--accent-color);
+}
+.pin-input {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.pin-input input {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-size: 22px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #282828;
+  color: #fff;
+  font-family: "danabold";
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.pin-input input:focus {
+  border-color: var(--primary-color);
+  background: #333;
+  box-shadow: 0 0 10px var(--primary-color);
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .pin-input input {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
 }
