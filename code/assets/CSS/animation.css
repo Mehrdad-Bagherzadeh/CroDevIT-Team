@@ -81,7 +81,6 @@
 	top: -2px;
 	background: linear-gradient(45deg, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa);
 	background-size: 400%;
-  border-radius: 10px;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
 	z-index: -1;

@@ -486,6 +486,9 @@ main {
   color: var(--dark-text-color);
   font-size: 36px;
 }
+.courses-item > img{
+  border-radius: 0 !important;
+}
 .courses .courses-head svg {
   width: 60px;
   height: 60px;
@@ -578,9 +581,7 @@ main {
 .courses-item:hover {
   transform: translateY(-20px);
 }
-.courses-list img {
-  border-radius: 10px;
-}
+
 
 .courses-item h4 {
   font-size: var(--font-size-medium-titr);
@@ -713,7 +714,7 @@ main {
   }
   .courses-item img {
     height: 100px;
-
+    border-radius: 0;
     top: 0;
   }
   .courses-item h4 {
