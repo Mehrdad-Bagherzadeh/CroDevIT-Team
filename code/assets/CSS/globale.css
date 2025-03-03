@@ -8,6 +8,7 @@
     --accent-color:#0BFF7B;
     --emotion-color:#FFB000;
     --accent-2-color:#0BFF7B;
+    --gray-color:#F1F5F980;
     --additional-color:#1447E6;
     /* dark theme */
     --dark-background:#141414;
@@ -23,6 +24,7 @@
     --font-size-btn:18px;
     --font-size-btn-mobile:14px;
     --font-size-medium-titr:32px;
+    --font-size-text-extra:24px;
     --font-size-text-large:18px;
     --font-size-text-medium:14px;
     
@@ -38,6 +40,9 @@
 a{
   text-decoration: none;
   color: var(--dark-text-color);
+}
+p{
+  padding: 0;
 }
 html{
   background-color: var(--dark-background);

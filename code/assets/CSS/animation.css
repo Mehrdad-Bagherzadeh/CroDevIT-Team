@@ -22,7 +22,6 @@
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 10px;
 }
 
 .glow-on-hover:before {
@@ -63,13 +62,46 @@
   background: #111;
   left: 0;
   top: 0;
-  border-radius: 10px;
 }
 
 .neon-text {
   font-size: var(--font-size-head);
   text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
   animation: glow 1.5s infinite alternate;
+}
+.block {
+	position: relative;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa);
+	background-size: 400%;
+  border-radius: 10px;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
 }
 
 @keyframes glow {
