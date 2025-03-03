@@ -488,7 +488,9 @@ main {
 }
 .courses-item > img{
   border-radius: 0 !important;
+  height: 175px;
 }
+
 .courses .courses-head svg {
   width: 60px;
   height: 60px;
@@ -498,7 +500,7 @@ main {
   line-height: 2;
   color: var(--dark-text-color);
   font-family: "danalight";
-  font-size: var(--font-size-bold);
+  font-size: var(--font-size-text-large);
 }
 .courses-list {
   display: flex;
@@ -511,7 +513,7 @@ main {
 .courses-item {
   max-width: 400px;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   padding-bottom: 20px;
   flex-direction: column;
   border-radius: 5px;
@@ -526,7 +528,7 @@ main {
   align-content: center;
   gap: 10px;
   justify-content: space-between;
-  padding: 24px;
+  padding:16px 24px;
   align-items: center;
   border-bottom: 1px solid var(--lighter-dark-background);
 }
@@ -534,7 +536,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 16px;
   gap: 10px;
 }
 .courses-action .price {
@@ -584,14 +586,14 @@ main {
 
 
 .courses-item h4 {
-  font-size: var(--font-size-medium-titr);
+  font-size: var(--font-size-text-extra);
   font-family: "danamedium";
   color: var(--dark-text-color);
-  padding: 24px;
+  padding:0 24px;
 }
 .courses-item p {
   padding: 12px 24px;
-  font-size: var(--font-size-text-large);
+  font-size: var(--font-size-text-mobile);
 }
 .courses-teacher {
   font-size: 16px;
@@ -700,7 +702,7 @@ main {
     justify-content: start;
     align-items: start;
     gap: 12px;
-    height: 350px;
+    height: 325px;
   }
   .courses-action {
     flex-direction: column;
@@ -713,12 +715,12 @@ main {
     display: none;
   }
   .courses-item img {
-    height: 100px;
+    height: 30%;
     border-radius: 0;
     top: 0;
   }
   .courses-item h4 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 2;
     text-align: center;
     padding: 0 8px;
@@ -802,4 +804,10 @@ main {
   .search-container {
     display: none;
   }
+}
+
+@media only screen and (max-width:400px) {
+   .courses-item   {
+    width: 100px !important;
+   }
 }
