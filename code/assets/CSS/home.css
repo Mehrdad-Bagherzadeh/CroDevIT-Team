@@ -151,6 +151,34 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
+.support-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--primary-color);
+  border:none;
+  ;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'danamedium';
+  a{
+      color: var(--text-color);
+
+  }
+}
+
+
+.support-btn img{
+  width: 20px;
+  fill: var(--dark-text-color);
+  height: 20px;
+}
 /* navbar finished */
 
 /* header  */
