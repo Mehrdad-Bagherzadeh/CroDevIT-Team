@@ -26,11 +26,22 @@
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -38,12 +49,12 @@
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 20px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -56,7 +67,7 @@
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -67,75 +78,135 @@
 
 .neon-text {
   font-size: var(--font-size-head);
-  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+    0 0 40px #ff005e, 0 0 80px #ff005e;
   animation: glow 1.5s infinite alternate;
 }
 .block {
-	position: relative;
-	background: linear-gradient(0deg, #000, #272727);
-  
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
 }
 
-.block:before, .block:after {
-	content: '';
-	position: absolute;
-	left: -2px;
+.block:before,
+.block:after {
+  content: "";
+  position: absolute;
+  left: -2px;
   border-radius: 10px;
-	top: -2px;
-	background: linear-gradient(45deg, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa, #00bfff, #1e90ff, #4169e1, #6495ed, #87cefa);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-  
-	animation: steam 20s linear infinite;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+
+  animation: steam 20s linear infinite;
+}
+.gradient-border {
+  --border-width: 1px;
+
+  position: relative;
+
+  border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+     #2EC4FF, /* Dark Blue */
+      hsl(224, 85%, 25%), /* Darker Blue */
+      hsl(228, 85%, 30%), /* Primary Color */
+      hsl(232, 85%, 35%), /* Slightly Lighter Blue */
+      hsl(236, 85%, 40%), /* Even Lighter Blue */
+      hsl(240, 85%, 45%), /* Light Blue */
+      hsl(244, 85%, 50%), /* Lighter Blue */
+      hsl(0, 0%, 0%)   
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 10px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .block:after {
-	filter: blur(50px);
+  filter: blur(50px);
 }
 
 @keyframes glow {
   0% {
-      text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+      0 0 40px #ff005e, 0 0 80px #ff005e;
   }
   100% {
-      text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff,
+      0 0 80px #00d4ff, 0 0 160px #00d4ff;
   }
 }
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .ad .animated-pulse {
-    color: var(--emotion-color);
-    animation: pulse 1s infinite;
+  color: var(--emotion-color);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.5;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
   }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
