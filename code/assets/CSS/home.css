@@ -535,12 +535,11 @@ main {
 }
 .courses-action {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 24px;
 
   cursor: pointer;
-  align-self: flex-end;     
   height: 80px;
   justify-self: end;
   padding: 0 16px;
@@ -614,8 +613,6 @@ main {
   border:1px solid var(--lighter-dark-background) ;
   border-radius:10px ;
   margin-top: 36px;
-  overflow-x: auto;
-
 }
 .comments > p{
   font-size: var(--font-size-text-large);
@@ -642,11 +639,16 @@ main {
   height: 400px;
   border: 1px solid var(--lighter-dark-background);
 }
+.comment-scroll{
+  overflow-x: auto;
+}
 .comments-list{
   display: flex;
   gap: 16px;
   justify-content: center;
-  }
+  min-width: 1000px;
+
+}
 .stars{
   display: flex;
   gap: 10px;
@@ -706,6 +708,7 @@ main {
   font-family: 'danalight';
   color: var(--gray-color);
 }
+
 /* media queries */
 
 @media only screen and (max-width: 1050px) {
@@ -725,7 +728,7 @@ main {
   .courses {
     padding: var(--section-mobile-padding);
   }
-  .courses-head h2 {
+  .courses-head h2,.section-head-text {
     font-size: var(--font-size-text-extra);
   }
   .courses-head-des {
@@ -739,8 +742,9 @@ main {
   .courses-item img {
     width: 100%;
   }
-  .courses-item h4 , .section-head-text {
-    font-size: var(--font-size-text-extra);
+
+  .courses-item   {
+    font-size: var(--font-size-btn);
     text-align: center;
     padding: 0;
     margin: 0;
@@ -748,9 +752,14 @@ main {
   .courses-action p {
     font-size: 12px;
   }
-  .courses-teacher {
+  .courses-teacher ,.comment-body h5 {
     font-size: var(--font-size-text-large);
   }
+
+  .comments-item h4{
+    font-size: var(--font-size-text-extra);
+  }
+  
 }
 @media only screen and (max-width: 1250px) {
   header {
@@ -816,6 +825,7 @@ main {
     width: 100% !important;
     border-radius: 0 !important;
     bottom: 0;
+    height: 100px;
     
   }
   .courses-action {
@@ -838,9 +848,16 @@ main {
     padding: 0 8px;
     margin: 0;
   }
+  .comment-body {
+    gap: 10px;
+    padding: 0 12px;
+  }
   .courses-item p {
     font-size: 12px;
     padding: 8px;
+  }
+  .comment-body p{
+    font-size: 16px;
   }
   .courses-teacher {
     font-size: 12px;
