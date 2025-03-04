@@ -521,6 +521,7 @@ main {
   margin-top: 36px;
   transition: all 0.2s;
   cursor: pointer;
+  height: 650px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .courses-item-bottom {
@@ -580,7 +581,7 @@ main {
 
   align-items: center;
   gap: 8px;
-  border: solid 1px var(--lighter-dark-background);
+  border: solid 1px var(--gray-color);
   color: var(--dark-text-color);
   font-family: "danalight";
   font-size: 14px;
@@ -607,6 +608,7 @@ main {
   font-size: 16px;
   font-family: "danamedium";
   color: var(--gray-color);
+  padding:  12px;
 }
 /* comments */
 .comments , .questions{

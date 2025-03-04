@@ -130,15 +130,10 @@
     width: calc(100% + var(--border-width) * 2);
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
-      60deg,
+      120deg,
      #2EC4FF, /* Dark Blue */
-      hsl(224, 85%, 25%), /* Darker Blue */
-      hsl(228, 85%, 30%), /* Primary Color */
-      hsl(232, 85%, 35%), /* Slightly Lighter Blue */
-      hsl(236, 85%, 40%), /* Even Lighter Blue */
-      hsl(240, 85%, 45%), /* Light Blue */
-      hsl(244, 85%, 50%), /* Lighter Blue */
-      hsl(0, 0%, 0%)   
+      
+     hsl(0, 0%, 5%)      /* Black */
     );
     background-size: 300% 300%;
     background-position: 0 50%;
