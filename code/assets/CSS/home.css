@@ -608,13 +608,14 @@ main {
   color: var(--gray-color);
 }
 /* comments */
-.comments{
+.comments , .questions{
   padding: var(--section-padding);
   border:1px solid var(--lighter-dark-background) ;
   border-radius:10px ;
   margin-top: 36px;
-}
-.comments > p{
+} 
+
+.comments > p , .questions > p {
   font-size: var(--font-size-text-large);
   font-family: 'danalight';
   color: var(--dark-text-color);
@@ -708,7 +709,95 @@ main {
   font-family: 'danalight';
   color: var(--gray-color);
 }
+/* questions */
+.questions > p >a{
+  color: var(--primary-color);
+}
+.questions .questions-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.questions-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 36px;
+  border:1px solid var(--lighter-dark-background) ;
+  border-radius:10px ;
+  height: 400px;
+  width: 400px;
+  align-items: center;
 
+}
+.questions-item{
+  margin-top: 24px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  border:1px solid var(--lighter-dark-background) ;
+  border-radius:10px ;
+  width: 90%;
+  padding: 16px;
+  align-items: center;
+}
+.questions-item .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+.questions-item > p{
+  font-size: var(--font-size-text-large);
+  font-family: 'danademibold';
+  color: var(--gray-color);
+}
+.questions-item > .active{
+  color: var(--dark-text-color) !important;
+
+}
+.answer{
+  display: flex;
+  flex-direction: column; 
+  width: 300px;
+  border:1px solid var(--lighter-dark-background) ;
+  justify-content: center;
+  height: 300px;
+  background-color: var(--lighter-dark-background);
+  border-radius: 10px 0 0 10px;
+  margin-top: 36px;
+}
+.answer h4{
+  padding: 12px;
+  font-size: var(--font-size-text-large);
+  color: var(--dark-text-color);
+  font-family: 'danamedium';
+}
+.answer p{
+  padding: 12px;
+  font-size: var(--font-size-text-mobile);
+  color: var(--dark-text-color);
+  font-family: 'danalight';
+}
+/* social  */
+.social .section-head-text{
+  font-family: 'danabold';
+  margin-top: 36px;
+}
+.social p{
+  padding: 12px;
+  font-size: var(--font-size-text-extra);
+  color: var(--dark-text-color);
+  line-height: 1.5;
+  font-family: 'danalight';
+  max-width: 70%;
+}
+.social b{
+  color: var(--emotion-color);
+  font-family: 'danademibold';
+}
 /* media queries */
 
 @media only screen and (max-width: 1050px) {
