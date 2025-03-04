@@ -58,19 +58,12 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--section-padding);
-    background-color: var(--background-color);
-  }
-  
-  nav {
-    position: fixed;
-    top: 42px; /* Initial position below ad */
+    background-color: var(--background-color);   top: 42px; /* Initial position below ad */
     left: 0;
     right: 0;
-    background: var(--lighter-dark-background) !important;
     z-index: 1000;
-    transition: all 0.3s ease;
-    padding: 15px 20px;
   }
+  
   .link-list .active-link {
     background-color: var(--dark-background) !important;
     padding: 12px 24px;
