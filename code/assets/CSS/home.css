@@ -185,15 +185,33 @@ header .header-content h1 {
   gap: 32px;
   margin-top: 32px;
 }
+.btn-contained {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'danalight';
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-contained:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(93, 91, 91, 0.2);
+  color: var(--text-color);
+}
 header .btn-outline {
   width: 250px;
   font-size: var(--font-size-btn);
   background-color: var(--dark-background);
-  color: var(--dark-text-color);
+  color: var(--primary-color);
   font-family: "danabold";
   cursor: pointer;
   gap: 8px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 header .btn-contained, .social .btn-contained , .footer .btn-contained {
   cursor: pointer;
