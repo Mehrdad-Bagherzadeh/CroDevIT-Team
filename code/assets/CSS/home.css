@@ -486,7 +486,7 @@ main {
   color: var(--dark-text-color);
   font-size: 36px;
 }
-.courses-item > img{
+.courses-item > img {
   border-radius: 0 !important;
 }
 .courses .courses-head svg {
@@ -535,6 +535,8 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+
+  cursor: pointer;
   gap: 10px;
 }
 .courses-action .price {
@@ -548,6 +550,7 @@ main {
   font-family: "danalight";
 }
 .courses-action button {
+  cursor: pointer;
   width: 125px;
   height: 50px;
   border-radius: 8px;
@@ -581,7 +584,6 @@ main {
 .courses-item:hover {
   transform: translateY(-20px);
 }
-
 
 .courses-item h4 {
   font-size: var(--font-size-medium-titr);
