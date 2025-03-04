@@ -193,7 +193,7 @@ header .btn-outline {
   font-family: "danabold";
   cursor: pointer;
   gap: 8px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 header .btn-contained {
   cursor: pointer;
@@ -204,7 +204,7 @@ header .btn-contained {
   color: var(--text-color);
   font-family: "danabold";
   gap: 8px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
 }
 header .header-image img {
@@ -431,6 +431,7 @@ header .header-image img {
 main {
   padding: var(--section-padding);
   margin-top: 64px;
+  
 }
 /* main finished */
 
@@ -488,7 +489,9 @@ main {
 }
 .courses-item > img {
   border-radius: 0 !important;
+  height: 225px;
 }
+
 .courses .courses-head svg {
   width: 60px;
   height: 60px;
@@ -498,7 +501,7 @@ main {
   line-height: 2;
   color: var(--dark-text-color);
   font-family: "danalight";
-  font-size: var(--font-size-bold);
+  font-size: var(--font-size-text-large);
 }
 .courses-list {
   display: flex;
@@ -509,9 +512,9 @@ main {
   justify-content: center;
 }
 .courses-item {
-  max-width: 400px;
+  max-width: 350px;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   padding-bottom: 20px;
   flex-direction: column;
   border-radius: 5px;
@@ -526,7 +529,7 @@ main {
   align-content: center;
   gap: 10px;
   justify-content: space-between;
-  padding: 24px;
+  padding:4px 24px;
   align-items: center;
   border-bottom: 1px solid var(--lighter-dark-background);
 }
@@ -537,6 +540,10 @@ main {
   padding: 0 24px;
 
   cursor: pointer;
+  align-self: flex-end;     
+  height: 80px;
+  justify-self: end;
+  padding: 0 16px;
   gap: 10px;
 }
 .courses-action .price {
@@ -583,24 +590,122 @@ main {
 }
 .courses-item:hover {
   transform: translateY(-20px);
+  transition: all .3s;
 }
 
 .courses-item h4 {
-  font-size: var(--font-size-medium-titr);
+  font-size: var(--font-size-text-extra);
   font-family: "danamedium";
   color: var(--dark-text-color);
-  padding: 24px;
+  padding:0 24px;
 }
 .courses-item p {
   padding: 12px 24px;
-  font-size: var(--font-size-text-large);
+  font-size: var(--font-size-text-mobile);
 }
 .courses-teacher {
   font-size: 16px;
   font-family: "danamedium";
   color: var(--gray-color);
 }
+/* comments */
+.comments{
+  padding: var(--section-padding);
+  border:1px solid var(--lighter-dark-background) ;
+  border-radius:10px ;
+  margin-top: 36px;
+  overflow-x: auto;
 
+}
+.comments > p{
+  font-size: var(--font-size-text-large);
+  font-family: 'danalight';
+  color: var(--dark-text-color);
+}
+.section-head-text{
+  font-size: 36px;
+  font-family: 'danademibold';
+  color: var(--dark-text-color);
+}
+.section-head{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.comments-item{
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  max-width: 350px;
+  height: 400px;
+  border: 1px solid var(--lighter-dark-background);
+}
+.comments-list{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  }
+.stars{
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  margin:16px 24px ;
+}
+.star{
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: var(--lighter-dark-background);
+}
+.comment-body{
+  display: flex;
+  justify-content: start;
+  padding: 12px 24px;
+  flex-direction: column;
+}
+.comment-body h5{
+  font-size: var(--font-size-text-extra);
+  font-family: 'danamedium';
+  color: var(--dark-text-color);
+}
+.comment-body P{
+  margin-top: 12px;
+  font-size: var(--font-size-text-large);
+  font-family: 'danalight';
+  color: var(--dark-text-color);
+  line-height: 1.5;
+}
+.comment-author{
+  padding: 12px 24px;
+  display: flex;
+  
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.comment-author > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+}
+.comment-author p{
+  font-size: var(--font-size-mobile);
+  font-family: 'danademibold';
+  color: var(--dark-text-color);
+}
+.comment-author span{
+  font-size: var(--font-size-mobile);
+  font-family: 'danalight';
+  color: var(--gray-color);
+}
 /* media queries */
 
 @media only screen and (max-width: 1050px) {
@@ -634,7 +739,7 @@ main {
   .courses-item img {
     width: 100%;
   }
-  .courses-item h4 {
+  .courses-item h4 , .section-head-text {
     font-size: var(--font-size-text-extra);
     text-align: center;
     padding: 0;
@@ -686,6 +791,9 @@ main {
   }
 }
 @media only screen and (max-width: 750px) {
+  main{
+    padding: var(--section-mobile-padding);
+  }
   .courses-head h2 {
     font-size: 18px;
   }
@@ -698,24 +806,28 @@ main {
     gap: 12px;
   }
   .courses-item {
-    width: 150px;
+    width: 100%;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     gap: 12px;
-    height: 350px;
+    padding: 0;
+  }
+  .courses-action button{
+    width: 100% !important;
+    border-radius: 0 !important;
+    bottom: 0;
+    
   }
   .courses-action {
     flex-direction: column;
     width: 100%;
-
+    padding: 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
   }
-  .courses-item > p {
-    display: none;
-  }
+
   .courses-item img {
-    height: 100px;
+    height: 200px;
     border-radius: 0;
     top: 0;
   }
@@ -803,5 +915,44 @@ main {
 
   .search-container {
     display: none;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .courses-item {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    height: 500px;
+  }
+  .courses-item p{
+    display: block;
+  }
+  
+  .courses-action{
+    gap: 0;
+  }
+  .courses-action button{
+    width: 100%;
+    border-radius: 0;
+    margin-top: 10px;
+  }
+  .courses-action .price{
+    justify-self: center;
+    align-self: center;
+  }
+  
+  
+  .courses-item h4{
+    text-align: center;
+  }
+  .courses-item img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  .courses-action {
+    padding: 0;
+    gap: 0;
   }
 }
