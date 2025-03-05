@@ -37,7 +37,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'danalight';
-  
+  transition: all .3s ;
 }
 a{
   text-decoration: none;
