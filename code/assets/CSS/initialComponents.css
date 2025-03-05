@@ -146,6 +146,7 @@
   background-color: var(--primary-color);
   border:none;
   ;
+  z-index: 1000;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -480,13 +481,21 @@ footer{
 
   /* media queries */
   @media screen and (min-width: 750px) {
+   
   .mobile-menu {
     display: none;
   }
 }
 @media screen and (max-width: 900px) {
+  .ad p{
+    font-size: 12px !important;
+  }
   .hamburger {
     display: block;
+  }
+  .support-btn{
+    right: 20px;
+    width: 100px;
   }
 
   /* Hamburger Animation */

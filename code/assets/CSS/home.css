@@ -167,12 +167,12 @@ main {
   max-width: 350px;
   display: flex;
   gap: 12px;
-  padding-bottom: 20px;
   flex-direction: column;
   border-radius: 5px;
   margin-top: 36px;
   transition: all 0.2s;
   cursor: pointer;
+  padding-bottom: 10px;
   height: 650px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -184,6 +184,7 @@ main {
   gap: 10px;
   justify-content: space-between;
   padding:0 24px;
+
   align-items: center;
   border-bottom: 1px solid var(--lighter-dark-background);
 }
@@ -382,7 +383,7 @@ main {
   margin-top: 36px;
   border:1px solid var(--lighter-dark-background) ;
   border-radius:10px ;
-  height: 400px;
+  min-height: 400px;
   width: 400px;
   align-items: center;
 
@@ -588,7 +589,7 @@ main {
     width: 100%;
     margin-top: 24px;
     justify-content: start;
-    
+    border-bottom: none;
     align-items: center;
     gap: 12px;
     min-height: 400px;
@@ -596,12 +597,14 @@ main {
   }
   .courses-action button{
     width: 100% !important;
-    border-radius: 0 !important;
+
     height: 60px !important;
     align-self: flex-end;
+    border-radius: 10px;
 
     
   }
+ 
   .courses-action {
     flex-direction: column;
     width: 100%;
@@ -623,10 +626,23 @@ main {
     padding: 0 8px;
     margin: 0;
   }
+  .comments{
+    padding: 12px 16px;
+    justify-content: start;
+    align-items: center;
+  }
+  .comments-list{
+    padding: 0;
+    justify-content: start;
+  }
   .comment-body {
     gap: 10px;
     padding: 0 12px;
   }
+  .comments-item{
+    max-width: 300px;
+  }
+  
   .courses-item p {
     font-size: 12px;
     padding: 8px;
@@ -659,11 +675,21 @@ main {
 
 
 @media only screen and (max-width:450px) {
+  .courses{
+    min-height: 1200px;
+  }
   .courses-item {
     width: 100%;
     align-items: center;
     padding: 0;
+    border: none;
     height: 500px;
+    margin-top: 42px;
+  }
+  .skills-item img{
+    
+    width: 10px !important;
+    height: 10px !important;
   }
   .courses-item p{
     display: block;
@@ -674,7 +700,7 @@ main {
   }
   .courses-action button{
     width: 100%;
-    border-radius: 0;
+    border-radius: 10px;
     margin-top: 10px;
   }
   .courses-action .price{
@@ -694,5 +720,8 @@ main {
   .courses-action {
     padding: 0;
     gap: 0;
+  }
+  .questions-item p{
+    font-size: 14px;
   }
 }
