@@ -40,20 +40,27 @@
     <script src="../JS/login/particles.js"></script>
     <script src="../JS/login/particles-app.js"></script>
     <script>
+      let login_input=document.getElementById("loginInput");
       document
         .getElementById("loginBtn")
         .addEventListener("click", function () {
+          if(login_input.value){
           document.getElementById("title").style.display = "none";
           document.getElementById("description").style.display = "none";
           document.getElementById("loginInput").style.display = "none";
           document.getElementById("loginBtn").style.display = "none";
-
+         
           document.getElementById("pinDescription").style.display = "block";
           document.getElementById("changeInfo").style.display = "inline-block";
           document.getElementById("pinContainer").style.display = "flex";
           document.getElementById("verifyBtn").style.display = "block";
 
           document.querySelector(".pin").focus();
+           }
+           else{
+            alert('لطفا اطلاعات مربوط را پر کنید')
+           }
+         
         });
 
       document
