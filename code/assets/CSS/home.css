@@ -464,8 +464,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  justify-content: start;
-  height: 510px;
+  justify-content: space-around;  
+  min-height: 510px;
   background-size: 50% ;
   
 }
