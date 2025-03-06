@@ -16,15 +16,15 @@ document.querySelectorAll('.mobile-links a').forEach(link => {
     mobileMenu.classList.remove('active');
     document.body.style.overflow = '';
   });
-  
 });
+
 document.addEventListener('click', (event) => {
-    if (!event.target.closest('.mobile-menu') && !event.target.closest('.hamburger')) {
-      hamburger.classList.remove('active');
-      mobileMenu.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  });
+  if (!event.target.closest('.mobile-menu') && !event.target.closest('.hamburger')) {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
 let lastScrollTop = 0;
 const ad = document.querySelector('.ad');
 const nav = document.querySelector('nav');
