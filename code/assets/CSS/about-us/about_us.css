@@ -76,13 +76,14 @@ header {
   .benefits{
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 32px;
+
     padding: var(--section-padding);
   }
   .benefits > .text-content{
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    width:  50%;
     align-items: start;
     gap: 24px;
   }
@@ -112,7 +113,6 @@ header {
     font-family: 'danamedium';
     font-size: var(--font-size-large);
     color: var(--gray-color);
-
   }
   .icon-boxes{
     display: flex;
@@ -158,4 +158,52 @@ header {
     font-family: 'danademibold';
     font-size: var(--font-size-large);
     color: var(--dark-text-color);
+}
+.achivments{
+    padding: var(--section-padding);
+}
+.achivments .section-head{
+    display:flex ;
+    align-items: center;
+    gap: 12px;
+}
+.section-head h3{
+    font-family: 'danademibold';
+    font-size: var(--font-size-bold);
+    color: var(--dark-text-color);
+}
+.achivments > p{
+    font-family: 'danamedium';
+    font-size: var(--font-size-large);
+    color: var(--gray-color);
+}
+.achivments-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    gap: 36px;
+}
+.achivments-item{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+flex: 1 0 0;
+border:1px solid var(--lighter-dark-background);
+max-width: 350px;
+border-radius: 10px;
+}
+.achivments-item h5{
+    font-family: 'danademibold';
+
+    color: var(--dark-text-color);
+    font-size: var(--font-size-text-large);
+}
+.achivments-item p{
+    
+    color: var(--dark-text-color);
+    font-size: var(--font-size-medium);
 }
