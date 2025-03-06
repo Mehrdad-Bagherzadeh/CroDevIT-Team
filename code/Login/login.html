@@ -39,67 +39,6 @@
 
     <script src="../JS/login/particles.js"></script>
     <script src="../JS/login/particles-app.js"></script>
-    <script>
-      let login_input=document.getElementById("loginInput");
-      document
-        .getElementById("loginBtn")
-        .addEventListener("click", function () {
-          if(login_input.value){
-          document.getElementById("title").style.display = "none";
-          document.getElementById("description").style.display = "none";
-          document.getElementById("loginInput").style.display = "none";
-          document.getElementById("loginBtn").style.display = "none";
-         
-          document.getElementById("pinDescription").style.display = "block";
-          document.getElementById("changeInfo").style.display = "inline-block";
-          document.getElementById("pinContainer").style.display = "flex";
-          document.getElementById("verifyBtn").style.display = "block";
-
-          document.querySelector(".pin").focus();
-           }
-           else{
-            alert('لطفا اطلاعات مربوط را پر کنید')
-           }
-         
-        });
-
-      document
-        .getElementById("changeInfo")
-        .addEventListener("click", function () {
-          document.getElementById("title").style.display = "block";
-          document.getElementById("description").style.display = "block";
-          document.getElementById("loginInput").style.display = "block";
-          document.getElementById("loginBtn").style.display = "block";
-
-          document.getElementById("pinDescription").style.display = "none";
-          document.getElementById("changeInfo").style.display = "none";
-          document.getElementById("pinContainer").style.display = "none";
-          document.getElementById("verifyBtn").style.display = "none";
-        });
-
-      document.querySelectorAll(".pin").forEach((input, index, inputs) => {
-        input.addEventListener("input", (e) => {
-          if (
-            e.inputType === "insertText" &&
-            e.data &&
-            index < inputs.length - 1
-          ) {
-            inputs[index + 1].focus();
-          }
-        });
-
-        input.addEventListener("keydown", (e) => {
-          if (e.key === "Backspace" && index > 0 && input.value === "") {
-            inputs[index - 1].focus();
-          }
-        });
-
-        input.addEventListener("keypress", (e) => {
-          if (!/[0-9]/.test(e.key)) {
-            e.preventDefault();
-          }
-        });
-      });
-    </script>
+    <script src="../JS/login/login.js"></script>
   </body>
 </html>
