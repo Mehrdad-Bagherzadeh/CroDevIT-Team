@@ -5,9 +5,9 @@ header {
   padding-right: 42px;
   background-color: var(--dark-background);
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: start;
+  position: relative;
   margin-top: 42px;
   gap: 16px;
   border-bottom: 1px solid var(--lighter-dark-background);
