@@ -162,7 +162,7 @@ header {
 .achivments{
     padding: var(--section-padding);
 }
-.achivments .section-head{
+ .section-head{
     display:flex ;
     align-items: center;
     gap: 12px;
@@ -206,4 +206,82 @@ border-radius: 10px;
     
     color: var(--dark-text-color);
     font-size: var(--font-size-medium);
+}
+.roadmap{
+    padding: var(--section-padding);
+    margin-bottom: 36px;
+}
+.roadmap > p{
+    font-family: 'danamedium';
+    font-size: var(--font-size-large);
+    color: var(--gray-color);
+}
+.roadmap-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.roadmap-items > .item{
+width: 500px;
+padding: 24px;
+
+}
+.top-item {
+    border-left: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: end;
+    padding: 12px;
+    width: 100%;
+}
+.top-item p{
+    font-family: 'danamedium';
+    font-size: var(--font-size-large);
+    color: var(--dark-text-color);
+}
+.roadmap-items .item .content {
+    position: relative;
+    display: flex;
+    padding: 12px;
+    background: linear-gradient(221deg, #2EC4FF -49.01%, rgba(46, 196, 255, 0.00) 13.65%);
+
+    border: 1px solid var(--lighter-dark-background);
+    height: 200px;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: start;
+    overflow: hidden;
+}
+.roadmap-items .item .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #2EC4FF 0%, rgba(46, 196, 255, 0.00) 100%);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.roadmap-items .item .content:hover::before {
+    opacity: 1;
+}
+
+/* Ensure the content is above the pseudo-element */
+.roadmap-items .item .content > * {
+    position: relative;
+    z-index: 1;
+}
+.content h6{
+    font-family: 'danamedium';
+
+    color: var(--dark-text-color);
+    font-size: var(--font-size-text-large);
+}
+.content p{
+    font-family: 'danalight';
+    color: var(--gray-color);
 }
