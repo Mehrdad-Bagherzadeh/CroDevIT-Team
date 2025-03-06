@@ -22,6 +22,10 @@ header {
     border-radius: 50%;
     background-color: var(--lighter-dark-background);
   }
+  .bottom_arrow img{
+    width: 30px;
+    height: 30px;
+  }
   .header-content{
     display: flex;
     flex-direction: column;
@@ -69,3 +73,89 @@ header {
   .header-image img{
     width: 100%;
   }
+  .benefits{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: var(--section-padding);
+  }
+  .benefits > .text-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    align-items: start;
+    gap: 24px;
+  }
+  .benefits .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .benefits .icons img:first-child{
+    width: 45px;
+    height: 45px;
+  }
+  .benefits  .icons img:nth-child(2){
+    width: 30px !important;
+    height: 30px;
+  }
+  .benefits  .icons img:last-child{
+    width: 15px !important;
+    height: 15px;
+  }
+  .benefits .text-content h3{
+    font-family: 'danademibold';
+    font-size: var(--font-size-bold);
+    color: var(--dark-text-color);
+  }
+  .benefits .text-content p{
+    font-family: 'danamedium';
+    font-size: var(--font-size-large);
+    color: var(--gray-color);
+
+  }
+  .icon-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid var(--lighter-dark-background);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .box-row{
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+
+  }
+  .head-box img{
+    width: 60px;
+    height: 60px;
+  }
+  .icon-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    color: var(--gray-color);
+    padding: 12px;
+  }
+  .icon-box:nth-child(odd){
+    border-left: 1px solid var(--lighter-dark-background);
+  }
+  .head-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .box-row:first-child{
+    border-bottom: 1px solid var(--lighter-dark-background);
+  }
+  .head-box h5{
+    font-family: 'danademibold';
+    font-size: var(--font-size-large);
+    color: var(--dark-text-color);
+}
