@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود | بیالرن</title>
+    <link rel="stylesheet" href="../assets/CSS/globale.css" />
+    <link rel="stylesheet" href="../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="../assets/CSS/login.css" />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="container">
+        <img class="brand-tag" src="../assets/Images/login/logo-dark.png" />
+        <h2 id="title">ورود | ثبت‌نام</h2>
+        <p id="description">لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
+        <input type="text" id="loginInput" />
+        <button id="loginBtn" class="btn">ورود</button>
+
+        <p id="pinDescription" style="display: none">
+          کد تایید برای شما ارسال شد
+        </p>
+        <span id="changeInfo" style="display: none; cursor: pointer">
+          اصلاح اطلاعات
+        </span>
+        <!-- PIN input (Initially hidden) -->
+        <div id="pinContainer" class="pin-input" style="display: none">
+          <input type="tel" maxlength="1" class="pin" />
+          <input type="tel" maxlength="1" class="pin" />
+          <input type="tel" maxlength="1" class="pin" />
+          <input type="tel" maxlength="1" class="pin" />
+          <input type="tel" maxlength="1" class="pin" />
+        </div>
+        <button id="verifyBtn" class="btn" style="display: none">
+          تایید و ورود
+        </button>
+      </div>
+    </div>
+
+    <script src="../JS/login/particles.js"></script>
+    <script src="../JS/login/particles-app.js"></script>
+    <script>
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          document.getElementById("title").style.display = "none";
+          document.getElementById("description").style.display = "none";
+          document.getElementById("loginInput").style.display = "none";
+          document.getElementById("loginBtn").style.display = "none";
+
+          document.getElementById("pinDescription").style.display = "block";
+          document.getElementById("changeInfo").style.display = "inline-block";
+          document.getElementById("pinContainer").style.display = "flex";
+          document.getElementById("verifyBtn").style.display = "block";
+
+          document.querySelector(".pin").focus();
+        });
+
+      document
+        .getElementById("changeInfo")
+        .addEventListener("click", function () {
+          document.getElementById("title").style.display = "block";
+          document.getElementById("description").style.display = "block";
+          document.getElementById("loginInput").style.display = "block";
+          document.getElementById("loginBtn").style.display = "block";
+
+          document.getElementById("pinDescription").style.display = "none";
+          document.getElementById("changeInfo").style.display = "none";
+          document.getElementById("pinContainer").style.display = "none";
+          document.getElementById("verifyBtn").style.display = "none";
+        });
+
+      document.querySelectorAll(".pin").forEach((input, index, inputs) => {
+        input.addEventListener("input", (e) => {
+          if (
+            e.inputType === "insertText" &&
+            e.data &&
+            index < inputs.length - 1
+          ) {
+            inputs[index + 1].focus();
+          }
+        });
+
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Backspace" && index > 0 && input.value === "") {
+            inputs[index - 1].focus();
+          }
+        });
+
+        input.addEventListener("keypress", (e) => {
+          if (!/[0-9]/.test(e.key)) {
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
