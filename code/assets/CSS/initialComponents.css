@@ -495,11 +495,10 @@ footer {
   display: none;
   position: fixed;
   margin: 20px;
-  width: 300px;
+  width: 380px;
   max-width: 90vw;
-  height: 100vh;
+  height: calc(100vh - 40px);
   background-color: #fff;
-  border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10001;
   border-radius: 10px;
@@ -517,8 +516,22 @@ footer {
   color: white;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
   align-items: center;
+}
+
+.support-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-right: auto;
 }
 
 .chat-content {

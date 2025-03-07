@@ -8,7 +8,7 @@
     onclick="toggleChatBox()"
   >
     <img
-      src="assets\Images\home\icons\service.svg"
+      src="assets/Images/support/service.svg"
       alt="Service Icon"
       width="50"
     />
@@ -17,21 +17,24 @@
   <!-- Chat Box -->
   <div id="chatBox" class="chat-box" aria-hidden="true">
     <div class="chat-header">
-      <span>Support Chat</span>
-      <button class="close-btn" onclick="toggleChatBox()">×</button>
+      <img
+        src="assets/Images/support/arshia.jpg"
+        alt="profile photo"
+        class="support-photo"
+      />
+      <span>پشتیبانی بیالرن</span>
+      <button class="close-btn" onclick="toggleChatBox()">
+        <img src="assets/Images/support/close.svg" alt="" width="32" />
+      </button>
     </div>
     <div class="chat-content">
       <div class="messages">
         <!-- Messages will be dynamically added here -->
       </div>
-      <div class="chat-input">
-        <input
-          type="text"
-          id="chatMessage"
-          placeholder="Type your message..."
-        />
-        <button onclick="sendMessage()">Send</button>
-      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatMessage" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
     </div>
   </div>
 </div>
