@@ -17,4 +17,8 @@
     font-family:danamedium ;
     src: url(../fonts/Dana-Medium.woff2);
   }
+  @font-face {
+    font-family: dana;
+    src: url(../fonts/Dana-Regular.woff2);
+  }
   
