@@ -469,13 +469,17 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
-  padding: 15px;
-  border-radius: 50%;
+  background-color: var(--accent-color);
+  width: 60px; /* Set a fixed width */
+  height: 60px; /* Set a fixed height */
+  border-radius: 50%; /* Ensure it's a circle */
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  display: flex; /* Center the image */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
 }
 
 .chat-button:hover {
@@ -483,23 +487,21 @@ footer {
 }
 
 .chat-button img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
 }
 
 /* Chat Box - Initially hidden */
 .chat-box {
   display: none;
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  margin: 20px;
   width: 300px;
   max-width: 90vw;
-  height: 400px;
+  height: 100vh;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 10001;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -507,8 +509,7 @@ footer {
 
 .chat-box.open {
   display: block;
-  transform: translateY(0);
-  opacity: 1;
+  animation: chatBoxOpen 0.3s ease forwards;
 }
 
 .chat-header {
@@ -547,6 +548,18 @@ footer {
   .chat-box {
     width: 250px;
     height: 350px;
+  }
+}
+
+/* Define keyframes for the chat box opening animation */
+@keyframes chatBoxOpen {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
