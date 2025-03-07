@@ -1,0 +1,24 @@
+<!-- Chat Support Component -->
+<div id="chatSupportComponent">
+  <!-- Chat Button -->
+  <div
+    id="chatButton"
+    class="chat-button"
+    aria-label="Chat with us"
+    onclick="toggleChatBox()"
+  >
+    <img src="https://example.com/chat-icon.png" alt="Chat Icon" />
+  </div>
+
+  <!-- Chat Box -->
+  <div id="chatBox" class="chat-box" aria-hidden="true">
+    <div class="chat-header">
+      <span>Chat with us</span>
+      <button class="close-btn" onclick="toggleChatBox()">×</button>
+    </div>
+    <div class="chat-content">
+      <p>How can we help you today?</p>
+      <!-- Add chat form or support content here -->
+    </div>
+  </div>
+</div>
