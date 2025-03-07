@@ -23,12 +23,14 @@ loadHTMLComponent(footer, "./components/footer.html");
 // Function to toggle the visibility of the chat box
 
 function toggleChatBox() {
+  const chatButton = document.getElementById("chatButton");
   const chatBox = document.getElementById("chatBox");
   chatBox.classList.toggle("open");
   chatBox.setAttribute(
     "aria-hidden",
     chatBox.classList.contains("open") ? "false" : "true"
   );
+  chatButton.classList.toggle("deactivated");
 }
 
 function sendMessage() {

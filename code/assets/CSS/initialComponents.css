@@ -486,6 +486,10 @@ footer {
   transform: scale(1.1);
 }
 
+.chat-button.deactivated {
+  display: none;
+}
+
 .chat-button img {
   width: 25px;
 }
@@ -499,6 +503,7 @@ footer {
   width: 380px;
   max-width: 90vw;
   height: 70%;
+  min-height: 500px;
   background-color: var(--background-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10001;
@@ -625,11 +630,6 @@ footer {
 @media (max-width: 600px) {
   .chat-button {
     padding: 10px;
-  }
-
-  .chat-box {
-    width: 250px;
-    height: 350px;
   }
 }
 
