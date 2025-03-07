@@ -13,12 +13,21 @@
   <!-- Chat Box -->
   <div id="chatBox" class="chat-box" aria-hidden="true">
     <div class="chat-header">
-      <span>Chat with us</span>
+      <span>Support Chat</span>
       <button class="close-btn" onclick="toggleChatBox()">×</button>
     </div>
     <div class="chat-content">
-      <p>How can we help you today?</p>
-      <!-- Add chat form or support content here -->
+      <div class="messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="chatMessage"
+          placeholder="Type your message..."
+        />
+        <button onclick="sendMessage()">Send</button>
+      </div>
     </div>
   </div>
 </div>

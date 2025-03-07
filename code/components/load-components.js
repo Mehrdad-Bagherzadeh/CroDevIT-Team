@@ -21,17 +21,26 @@ loadHTMLComponent(navbar, "./components/nav.html");
 loadHTMLComponent(footer, "./components/footer.html");
 
 // Function to toggle the visibility of the chat box
+
 function toggleChatBox() {
   const chatBox = document.getElementById("chatBox");
-  const isOpen = chatBox.classList.contains("open");
+  chatBox.classList.toggle("open");
+  chatBox.setAttribute(
+    "aria-hidden",
+    chatBox.classList.contains("open") ? "false" : "true"
+  );
+}
 
-  if (isOpen) {
-    // Close the chat box
-    chatBox.classList.remove("open");
-    chatBox.setAttribute("aria-hidden", "true");
-  } else {
-    // Open the chat box
-    chatBox.classList.add("open");
-    chatBox.setAttribute("aria-hidden", "false");
+function sendMessage() {
+  const messageInput = document.getElementById("chatMessage");
+  const message = messageInput.value.trim();
+  if (message) {
+    const messagesContainer = document.querySelector(".messages");
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("message", "sent");
+    messageElement.textContent = message;
+    messagesContainer.appendChild(messageElement);
+    messageInput.value = "";
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }
 }
