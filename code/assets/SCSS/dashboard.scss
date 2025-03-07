@@ -56,6 +56,7 @@ body {
     }
     h3 {
       font-family: dana;
+      font-size: 16px;
     }
     &:hover {
       color: #e4e4e7;
@@ -63,7 +64,7 @@ body {
   }
   &__quit {
     position: relative;
-    top: 10px;
+    top: 20px;
     font-family: danalight;
     background-color: rgba(#d9534f, 0.8);
     border: none;

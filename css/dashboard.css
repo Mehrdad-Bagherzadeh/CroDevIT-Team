@@ -61,13 +61,14 @@ body {
 }
 .sidebar__button h3 {
   font-family: dana;
+  font-size: 16px;
 }
 .sidebar__button:hover {
   color: #e4e4e7;
 }
 .sidebar__quit {
   position: relative;
-  top: 10px;
+  top: 20px;
   font-family: danalight;
   background-color: rgba(217, 83, 79, 0.8);
   border: none;
