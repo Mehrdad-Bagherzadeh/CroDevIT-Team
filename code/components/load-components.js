@@ -36,10 +36,12 @@ function sendMessage() {
   const message = messageInput.value.trim();
   if (message) {
     const messagesContainer = document.querySelector(".messages");
-    const messageElement = document.createElement("div");
-    messageElement.classList.add("message", "sent");
-    messageElement.textContent = message;
-    messagesContainer.appendChild(messageElement);
+
+    const messageBox = document.createElement("p");
+    messageBox.textContent = message;
+    messageBox.classList.add("user-message");
+    messagesContainer.appendChild(messageBox);
+
     messageInput.value = "";
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }

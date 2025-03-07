@@ -30,11 +30,21 @@
     <div class="chat-content">
       <div class="messages">
         <!-- Messages will be dynamically added here -->
+        <p class="support-message">New message content goes here...</p>
       </div>
     </div>
     <div class="chat-input">
+      <button class="mic-btn">
+        <img src="assets/Images/support/mic.svg" alt="" />
+      </button>
+      <button class="paper-clip-btn">
+        <img src="assets/Images/support/paper-clip.svg" alt="" />
+      </button>
       <input type="text" id="chatMessage" placeholder="Type your message..." />
-      <button onclick="sendMessage()">Send</button>
+
+      <button class="send-btn" onclick="sendMessage()">
+        <img src="assets/Images/support/send-paper-plane.svg" alt="" />
+      </button>
     </div>
   </div>
 </div>

@@ -470,16 +470,16 @@ footer {
   bottom: 20px;
   right: 20px;
   background-color: var(--accent-color);
-  width: 60px; /* Set a fixed width */
-  height: 60px; /* Set a fixed height */
-  border-radius: 50%; /* Ensure it's a circle */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
-  display: flex; /* Center the image */
-  justify-content: center; /* Center the image */
-  align-items: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-button:hover {
@@ -494,11 +494,12 @@ footer {
 .chat-box {
   display: none;
   position: fixed;
+  bottom: 0;
   margin: 20px;
   width: 380px;
   max-width: 90vw;
-  height: calc(100vh - 40px);
-  background-color: #fff;
+  height: 70%;
+  background-color: var(--background-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10001;
   border-radius: 10px;
@@ -512,7 +513,7 @@ footer {
 }
 
 .chat-header {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
   color: white;
   padding: 10px;
   display: flex;
@@ -532,6 +533,14 @@ footer {
   height: 32px;
   cursor: pointer;
   margin-right: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.close-btn:hover {
+  color: #ff4747;
 }
 
 .chat-content {
@@ -540,16 +549,76 @@ footer {
   flex-grow: 1;
 }
 
-.close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
+/* Add overflow-x to enable horizontal scrolling for long messages */
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: 100%; /* Ensure the container has a defined width */
 }
 
-.close-btn:hover {
-  color: #ff4747;
+.messages p {
+  display: inline-block; /* Ensure messages are inline for horizontal scrolling */
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%; /* Ensure messages do not exceed 80% of the container width */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  animation: messageAppear 0.3s ease;
+}
+
+.messages .user-message {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white; /* Optional: to ensure text is readable */
+}
+
+.messages .support-message {
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(
+    --background-color
+  ); /* Ensure background color matches the chat box */
+}
+
+.chat-input input {
+  color: white;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 0 10px;
+  outline: none;
+  background-color: #414141;
+}
+
+.chat-input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.chat-input button img {
+  width: 24px;
+  height: 24px;
+}
+
+.chat-input button:hover img {
+  filter: brightness(0.8);
 }
 
 /* Mobile Responsiveness */
@@ -568,6 +637,18 @@ footer {
 @keyframes chatBoxOpen {
   0% {
     transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Define keyframes for the message appearance animation */
+@keyframes messageAppear {
+  0% {
+    transform: translateX(20px);
     opacity: 0;
   }
   100% {
