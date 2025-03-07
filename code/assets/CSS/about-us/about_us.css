@@ -287,6 +287,91 @@ padding: 24px;
     font-family: 'danalight';
     color: var(--gray-color);
 }
+.team{
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+.team-items{
+  display: flex;
+  flex-direction: column;gap: 12px;
+}
+.team-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  width: 100px;
+  background-color: var(--emotion-color);
+  height: 1px;
+}
+.team-item .info{
+  border: 1px solid var(--emotion-color);
+  padding: 12px 18px;
+  border-radius: 1000px;
+  position: relative;
+  width: 300px;
+  height:90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.info img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -10%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.team-item .content{
+  width: 300px;
+  border: 1px solid var(--emotion-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+}
+.team-item .content p{
+  color: var(--dark-text-color);
+}
+.team-items-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.content .icons{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-self: end;
+}
+
+.icons img{
+  width: 30px;
+  height: 30px;
+}
+.info h5{
+  
+  color: var(--dark-text-color);
+  font-size: 18px;
+  font-family: 'danabold';
+}
+.info p{
+
+  align-self: center;
+  color: var(--dark-text-color);
+  font-size: 16px;
+}
+.info span{
+  color: var(--dark-text-color);
+  align-self: end;
+}
 .collabration{
     padding: var(--section-padding);
 }
@@ -456,6 +541,29 @@ border: 1px solid var(--lighter-dark-background);
   .btn-contained{
     align-self: center;
   }
+  .team-item{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .team-item .info span{
+    
+  }
+  .team-item .info img{
+    width: 60px;
+    height: 60px;
+
+  }
+  .team-item .info img:nth-child(n-1){
+    right:90%  ;
+    position: absolute;
+    top: 20px;
+    
+  }
+  .team-item .line{
+    
+    display: none;
+  }
+
 }
 
 
