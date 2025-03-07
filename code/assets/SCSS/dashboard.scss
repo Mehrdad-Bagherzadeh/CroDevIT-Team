@@ -86,3 +86,28 @@ body {
     }
   }
 }
+.signin-alert {
+  position: absolute;
+  background-color: #262626;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  overflow: hidden;
+  h2 {
+    color: #e4e4e7;
+    font-family: danabold;
+    font-size: 18px;
+  }
+  &__bar {
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #2EC4FF;
+    position: absolute;
+  }
+}
