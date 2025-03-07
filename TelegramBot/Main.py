@@ -18,6 +18,14 @@ blur_blogbut5 = InlineKeyboardButton("یادگیری سریع پایتون بر�
 blur_blogbut6 = InlineKeyboardButton("تفاوت های CSS3 با Kotlin", url="https://www.yektanet.com/blog/65773/most-popular-products-on-divar/")
 blur_blog.add(blur_blogbut1, blur_blogbut2, blur_blogbut3, blur_blogbut4, blur_blogbut5, blur_blogbut6)
 
+blur_av_courses = InlineKeyboardMarkup(row_width=1)
+blur_av_course1 = InlineKeyboardButton("دوره کامل یادگیری ماشین", callback_data="avML")
+blur_av_course2 = InlineKeyboardButton("دوره کامل یادگیری پایتون", callback_data="avPY")
+blur_av_course3 = InlineKeyboardButton("دوره کامل یادگیری جاوااسکریپت", callback_data="avJAVA")
+blur_av_courses.add(blur_av_course1,blur_av_course2,blur_av_course3)
+
+
+
 
 #######################################
 @bot.message_handler(commands=["start"])
@@ -29,7 +37,8 @@ def welcome(mess):
 
 @bot.message_handler(func=lambda mess:mess.text == "دوره های موجود")
 def av_courses1(mess):
-    pass
+    bot.send_message(mess.chat.id, "دوره مورد نظرتو انتخاب کن" ,reply_markup=blur_av_courses)
+
 
 
 @bot.message_handler(func=lambda mess:mess.text == "وبلاگ بیالرن")
@@ -59,12 +68,20 @@ def contact6(mess):
 
 
 
+@bot.callback_query_handler(func=lambda mess:mess.data=="avML")
+def send_photo_ML(mess):
+    bot.delete_message(mess.message.chat.id, message_id=mess.message.message_id)
+    bot.send_photo(mess.message.chat.id, open("PM Meths.png", "rb"), caption="دوره کامل یادگیری ماشین\nدوستان من درحال حاضر باید درحال مدیریت کانبان و تسک ها باشم تا ببینم چیزی از قلم نیفتاده اما الان ساعت دو و نیم شب درحال کدزنی هستم.")
 
+@bot.callback_query_handler(func=lambda mess:mess.data=="avPY")
+def send_photo_ML(mess):
+    bot.delete_message(mess.message.chat.id, message_id=mess.message.message_id)
+    bot.send_photo(mess.message.chat.id, open("PM Meths.png", "rb"), caption="دوره کامل یادگیری ماشین\nدوستان من درحال حاضر باید درحال مدیریت کانبان و تسک ها باشم تا ببینم چیزی از قلم نیفتاده اما الان ساعت دو و نیم شب درحال کدزنی هستم.")
 
-
-
-
-
+@bot.callback_query_handler(func=lambda mess:mess.data=="avJAVA")
+def send_photo_ML(mess):
+    bot.delete_message(mess.message.chat.id, message_id=mess.message.message_id)
+    bot.send_photo(mess.message.chat.id, open("PM Meths.png", "rb"), caption="دوره کامل یادگیری ماشین\nدوستان من درحال حاضر باید درحال مدیریت کانبان و تسک ها باشم تا ببینم چیزی از قلم نیفتاده اما الان ساعت دو و نیم شب درحال کدزنی هستم.")
 
 
 bot.polling()
