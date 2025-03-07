@@ -105,9 +105,14 @@
         </svg>
         <h3>اطلاعات کاربری</h3>
       </div>
-      <button class="sidebar__quit">خروج از حساب</button>
+      <a href="../index.html"><button class="sidebar__quit">خروج از حساب</button></a>
     </div>
   </aside>
 </body>
-
+<script>
+  const alertpage = document.querySelector('.signin-alert');
+  setTimeout(() => {
+    alertpage.classList.add('hidden');
+  }, 5000);
+</script>
 </html>
