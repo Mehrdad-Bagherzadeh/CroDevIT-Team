@@ -24,6 +24,12 @@ blur_av_course2 = InlineKeyboardButton("دوره کامل یادگیری پای�
 blur_av_course3 = InlineKeyboardButton("دوره کامل یادگیری جاوااسکریپت", callback_data="avJAVA")
 blur_av_courses.add(blur_av_course1,blur_av_course2,blur_av_course3)
 
+blur_faq = InlineKeyboardMarkup(row_width=1)
+blur_faq1 = InlineKeyboardButton("چجوری میتونم در بیالـــرن حساب بسازم؟", callback_data="faq1")
+blur_faq2 = InlineKeyboardButton("چجوری میتونم حسابمو پاک کنم؟", callback_data="faq2")
+blur_faq3 = InlineKeyboardButton("چجوری میتونم گواهینامه دانشگاهی بگیرم؟", callback_data="faq3")
+blur_faq.add(blur_faq1,blur_faq2,blur_faq3)
+
 
 
 
@@ -53,7 +59,7 @@ def values3(mess):
 
 @bot.message_handler(func=lambda mess:mess.text == "پرسش های متداول")
 def faq4(mess):
-    pass
+    bot.send_message(mess.chat.id, "لطفا سوال مورد نظرتو انتخاب کن" , reply_markup=blur_faq)
 
 
 @bot.message_handler(func=lambda mess:mess.text == "درباره ما")
@@ -82,6 +88,21 @@ def send_photo_ML(mess):
 def send_photo_ML(mess):
     bot.delete_message(mess.message.chat.id, message_id=mess.message.message_id)
     bot.send_photo(mess.message.chat.id, open("PM Meths.png", "rb"), caption="دوره کامل یادگیری ماشین\nدوستان من درحال حاضر باید درحال مدیریت کانبان و تسک ها باشم تا ببینم چیزی از قلم نیفتاده اما الان ساعت دو و نیم شب درحال کدزنی هستم.")
+
+#############################
+@bot.callback_query_handler(func=lambda mess:mess.data=="faq1")
+def send_photo_ML(mess):
+    bot.edit_message_text(chat_id=mess.message.chat.id, message_id=mess.message.message_id, text="چجوری در بیالـــرن حساب بسازم؟\nواقعا جواب اینو نمیدونی؟ تو یک احمقی که حتی نمیذونه باید توی سایت ثبت نام کنه، چطور میخوای ماشین لرنینگ یادبگیری؟")
+
+
+@bot.callback_query_handler(func=lambda mess:mess.data=="faq2")
+def send_photo_ML(mess):
+    bot.edit_message_text(chat_id=mess.message.chat.id, message_id=mess.message.message_id, text="چجوری در بیالـــرن حساب بسازم؟\nواقعا جواب اینو نمیدونی؟ تو یک احمقی که حتی نمیذونه باید توی سایت ثبت نام کنه، چطور میخوای ماشین لرنینگ یادبگیری؟")
+
+@bot.callback_query_handler(func=lambda mess:mess.data=="faq3")
+def send_photo_ML(mess):
+    bot.edit_message_text(chat_id=mess.message.chat.id, message_id=mess.message.message_id, text="چجوری در بیالـــرن حساب بسازم؟\nواقعا جواب اینو نمیدونی؟ تو یک احمقی که حتی نمیذونه باید توی سایت ثبت نام کنه، چطور میخوای ماشین لرنینگ یادبگیری؟")
+
 
 
 bot.polling()
