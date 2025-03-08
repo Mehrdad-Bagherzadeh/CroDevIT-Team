@@ -1,3 +1,5 @@
-.header .alert {
-  text-align: center;
+@font-face {
+  font-family: DanaHairLine;
+  src: url("../../assets/fonts/DanaFaNum-Hairline.woff2");
+  font-display: swap;
 }
