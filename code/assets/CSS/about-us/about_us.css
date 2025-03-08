@@ -35,8 +35,8 @@ header {
     gap: 16px;
     padding:32px 42px;
     width: 50%;
-    justify-content:space-around  ;
-    align-items: center;
+    justify-content:start  ;
+    align-items: start;
   }
   .header-content h1{
     font-family: 'danabold';
