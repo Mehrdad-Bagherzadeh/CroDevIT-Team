@@ -33,7 +33,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding:32px 42px;
     width: 50%;
     justify-content:start  ;
     align-items: start;
