@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بلاگ</title>
+    <link rel="stylesheet" href="./assets/CSS/initialComponents.css" />
+    <link rel="stylesheet" href="./assets/CSS/globale.css" />
+    <link rel="stylesheet" href="./assets//CSS/animation.css" />
+    <link rel="stylesheet" href="./assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="./assets/CSS/blog/blog.css" />
+  </head>
+  <body>
+    <div class="ad">
+      <p>
+        تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
+        دیگر باقیست!
+      </p>
+      <div></div>
+    </div>
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
+      </div>
+      <div class="links-container">
+        <ul class="link-list">
+          <li><a href="#" class="active-link">خانه </a></li>
+          <li><a href="#" class="">دوره ها </a></li>
+          <li><a href="./about-us.html" class=""> درباره ما </a></li>
+          <li><a href="#" class=""> بلاگ</a></li>
+        </ul>
+      </div>
+      <div class="left-side-nav">
+        <div class="search-container">
+          <input type="text" placeholder="جست و جو" name="" id="" />
+          <svg class="search-icon">
+            <use
+              xlink:href="./assets/Images/home/icons/sprite.svg#search"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- search over lay -->
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <div class="search-header">
+            <h2>جستجو</h2>
+            <button class="close-search">
+              <img src="./assets/Images/home/icons/close.png" alt="close" />
+            </button>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+            <svg class="search-icon">
+              <use
+                xlink:href="./assets/Images/home/icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </div>
+          <div class="search-results">
+            <!-- Results will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- mobile version -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-links">
+            <li class=""><a href="./index.html" class="">خانه </a></li>
+            <li><a href="#" class="">دوره ها </a></li>
+            <li><a href="./about-us.html" class="">درباره ما </a></li>
+            <li><a href="#" class="">بلاگ</a></li>
+            <div class="mobile-search">
+              <input type="text" placeholder="جست و جو" />
+              <svg class="search-icon">
+                <use
+                  xlink:href="./assets/Images/home/icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <a href="./supportpage.html">
+      <button class="support-btn">
+        <img src="./assets/Images/home/icons/support.svg" alt="پشتیبانی" />
+        پشتیبانی
+      </button></a
+    >
+
+    <div class="hero">
+      <div class="content">
+        <h1>تو بلاگ‌های مختلف ما بچرخ!</h1>
+        <p>سعید زحمت متنشو بکش :)</p>
+      </div>
+    </div>
+    <div class="blog-search">
+        <div class="search-field">
+            <input type="text" placeholder="تو مقاله های ما، بگرد ...">
+            <button>
+                جست و جو
+                <img src="./assets/Images/search-icon.svg" alt="">
+            </button>
+        </div>
+        <div  class="search-filter">
+            <div><input type="text" disabled>
+                <div class="subject">
+                    <p>تاریخ انتشار</p>
+                    |
+                    <img src="./assets/Images/blog/date.png" alt="">
+                </div>
+                <img class="icon" src="./assets/Images/arrow-down.svg"/>
+            </div>
+            <div><input type="text" disabled>
+                <div class="subject">
+                    <p>موضوع</p>
+                    |
+                    <img src="./assets/Images/blog/bolt.svg" alt="">
+                </div>
+                <img class="icon" src="./assets/Images/arrow-down.svg"/>
+            </div>
+
+            <div><input type="text" disabled>
+                <div class="subject">
+                    <p>نویسنده</p>
+                    |
+                    <img src="./assets/Images/blog/pencil.svg" alt="مداد">
+                </div>
+                <img class="icon" src="./assets/Images/arrow-down.svg"/>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
