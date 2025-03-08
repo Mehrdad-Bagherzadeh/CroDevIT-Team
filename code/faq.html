@@ -12,16 +12,150 @@
   </head>
   <body>
     <div id="chatSupportComponent"></div>
-    <div class="ad"></div>
-    <nav></nav>
-
-    <div class="quastion-search-container">asdsad saddasd</div>
-    <div class="faq-container">
-      <div class="categories"></div>
-      <div class="faq-quastions"></div>
+    <div class="ad">
+      <p>
+        تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
+        دیگر باقیست!
+      </p>
+      <div></div>
     </div>
-    <footer></footer>
-    <script src="components/load-components.js"></script>
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
+      </div>
+      <div class="links-container">
+        <ul class="link-list">
+          <li><a href="#" class="active-link">خانه </a></li>
+          <li><a href="#" class="">دوره ها </a></li>
+          <li><a href="#" class=""> درباره ما </a></li>
+          <li><a href="#" class=""> بلاگ</a></li>
+        </ul>
+      </div>
+      <div class="left-side-nav">
+        <div class="search-container">
+          <input type="text" placeholder="جست و جو" name="" id="" />
+          <svg class="search-icon">
+            <use
+              xlink:href="./assets/Images/home/icons/sprite.svg#search"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- search over lay -->
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <div class="search-header">
+            <h2>جستجو</h2>
+            <button class="close-search">
+              <img src="./assets/Images/home/icons/close.png" alt="close" />
+            </button>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+            <svg class="search-icon">
+              <use
+                xlink:href="./assets/Images/home/icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </div>
+          <div class="search-results">
+            <!-- Results will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- mobile version -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-links">
+            <li class=""><a href="#" class="neon-text">خانه </a></li>
+            <li><a href="#" class="neon-text">دوره ها </a></li>
+            <li><a href="#" class="neon-text">درباره ما </a></li>
+            <li><a href="#" class="neon-text">بلاگ</a></li>
+            <div class="mobile-search">
+              <input type="text" placeholder="جست و جو" />
+              <svg class="search-icon">
+                <use
+                  xlink:href="./assets/Images/home/icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="quastion-search-container"></div>
+      <div class="faq-container">
+        <div class="categories"></div>
+        <div class="faq-quastions"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="subscription">
+          <img src="./assets/Images/home/logo-dark 1.png" alt="" />
+          <p>از جدیدترین رویداد ها بهره مند شوید</p>
+          <div class="sub-form">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <button class="btn-contained">ارسال</button>
+          </div>
+          <p class="policy">
+            ارسال ایمیل توسط شما به این معناست که <a href="">قوانین</a> ما را
+            پذیرفته اید
+          </p>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li class="header-list">عنوان</li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+          </ul>
+          <ul>
+            <li class="header-list">عنوان</li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/Images/home/icons/youtube.svg"
+                  alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Images/home/icons/twiter.svg" alt="twiter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Images/home/icons/linkedin.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copy-right">
+      <p>️کپی‌رایت 2025، تمامی حقوق برای <a href="">CroDevIT</a> محفوظ است.</p>
+      <p>All Right Deserved; Developed by CRODEVIT team</p>
+    </div>
     <script src="./JS/script.js"></script>
+    <script src="components/load-support-component.js"></script>
   </body>
 </html>
