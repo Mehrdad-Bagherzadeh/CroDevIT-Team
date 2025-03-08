@@ -64,12 +64,12 @@ def faq4(mess):
 
 @bot.message_handler(func=lambda mess:mess.text == "درباره ما")
 def about_us5(mess):
-    pass
+    bot.send_photo(mess.chat.id, open("PM Meths.png", "rb"), caption="درباره بیالـرن\nما در بیالرن خیلی کارا انجام می دیم و من برای این موضوع خیلی تلاش می کنم و این تلاش باعث میشه که خیلی کار خوبی نباشه و جذابیت کار کم باشه")
 
 
 @bot.message_handler(func=lambda mess:mess.text == "ارتباط با ما")
 def contact6(mess):
-    pass
+    ...
 
 
 
@@ -98,6 +98,7 @@ def send_photo_ML(mess):
 @bot.callback_query_handler(func=lambda mess:mess.data=="faq2")
 def send_photo_ML(mess):
     bot.edit_message_text(chat_id=mess.message.chat.id, message_id=mess.message.message_id, text="چجوری در بیالـــرن حساب بسازم؟\nواقعا جواب اینو نمیدونی؟ تو یک احمقی که حتی نمیذونه باید توی سایت ثبت نام کنه، چطور میخوای ماشین لرنینگ یادبگیری؟")
+
 
 @bot.callback_query_handler(func=lambda mess:mess.data=="faq3")
 def send_photo_ML(mess):
