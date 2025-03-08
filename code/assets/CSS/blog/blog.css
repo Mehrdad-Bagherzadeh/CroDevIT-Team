@@ -223,10 +223,10 @@
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -271,5 +271,30 @@
   .search-filter > div{
     width: 100%;
   }
-
+  .blog-items{
+    padding: 12px;
+  }
+  .blog-items h3{
+    font-size: 24px;
+  }
+  .blog-items p{
+    font-size: 14px;
+  }
+  .blog-item h4{
+    font-size: 18px;
+  }
+  .blog-item{
+    width: 45%;
+    padding: 12px;
+  }
+.blog-item button{
+  padding: 10px;
+}
+}
+@media only screen and (max-width: 600px) {
+  .blog-item{
+    width: 100%;
+    height: 400px;
+    margin-top: 12px;
+  }
 }
