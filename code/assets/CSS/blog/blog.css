@@ -247,4 +247,29 @@
     font-size: 18px;
     margin-top: 18px;
   }
+  .search-field{
+    width: 80%;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+  }
+  .search-field input{
+    font-size: 16px;
+  }
+  .search-field button{
+    font-size: 10px;
+    width: 80px;
+  }
+  .search-filter {
+    background-color: transparent;
+    min-height: 300px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .search-filter > div{
+    width: 100%;
+  }
+
 }
