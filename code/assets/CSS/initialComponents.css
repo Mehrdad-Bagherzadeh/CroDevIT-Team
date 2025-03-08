@@ -463,12 +463,16 @@ footer {
 }
 
 /* media queries */
-@media screen and (min-width: 750px) {
+@media only screen and (max-width: 600px) {
   .mobile-menu {
-    display: none;
+    display: block;
+    width:80% !important;
   }
 }
 @media screen and (max-width: 900px) {
+  .mobile-menu{
+    width: 40%;
+  }
   .ad p {
     font-size: 12px !important;
   }
@@ -522,5 +526,8 @@ footer {
 
   .search-container {
     display: none;
+  }
+  .subscription input{
+    width: 200px;
   }
 }
