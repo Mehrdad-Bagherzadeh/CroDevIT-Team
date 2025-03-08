@@ -28,7 +28,7 @@ document.addEventListener('click', (event) => {
 let lastScrollTop = 0;
 const ad = document.querySelector('.ad');
 const nav = document.querySelector('nav');
-const scrollThreshold = 40;  //it's the height we scroll
+const scrollThreshold = 20;  //it's the height we scroll
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
