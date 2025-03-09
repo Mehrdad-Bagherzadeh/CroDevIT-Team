@@ -6,9 +6,14 @@
   list-style: none;
   color: $color-secondary;
   text-decoration: none;
+  font-family: Dana;
 }
 
 html {
   background-color: $bg-dark;
-  font-family: Dana;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
 }

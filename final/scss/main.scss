@@ -1,11 +1,12 @@
 @import './abstracts/animations';
-@import './abstracts/fonts';
 @import './abstracts/variables';
 
+@import './base/fonts';
 @import './base/global';
 
 @import './components/landing/alert';
 @import './components/landing/navbar';
+@import './components/landing/search-overlay';
 
 @import './layout/landing/header';
 

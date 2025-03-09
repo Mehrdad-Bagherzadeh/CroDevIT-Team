@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: 100%;
+  background-color: $color-grey-dark;
   .nav__items-container {
     display: flex;
     gap: 40px;
@@ -25,13 +27,37 @@
         color: $color-secondary;
       }
       &--active {
-        background-color: $bg-dark;
         border: $border;
         color: $color-secondary;
         &:hover {
           background-color: $color-grey;
         }
       }
+    }
+  }
+  .nav__search {
+    display: flex;
+    align-items: center;
+    & > input {
+      padding: 10px;
+      border: $border;
+      outline: none;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 300;
+      background: $bg-dark;
+      border-radius: $rounded;
+      -webkit-border-radius: $rounded;
+      -moz-border-radius: $rounded;
+      -ms-border-radius: $rounded;
+      -o-border-radius: $rounded;
+    }
+    & > svg {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      fill: $color-secondary;
+      left: 15%;
     }
   }
 }

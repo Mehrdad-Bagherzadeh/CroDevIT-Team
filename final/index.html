@@ -31,9 +31,35 @@
           <a href="#" class="nav__item">بلاگ</a>
         </li>
       </ul>
-      <img src="./assets/images/logo.png" alt="لوگوی بیالرن" class="nav__logo">
+      <div class="nav__search">
+        <input type="text" placeholder="جست و جو" />
+        <svg class="search__icon">
+          <use xlink:href="./assets/svgs/landing.svg#search"></use>
+        </svg>
+      </div>
     </nav>
+    <div class="search-overlay">
+      <div class="search-overlay-content">
+        <div class="search__header">
+          <h2>جست‌ و جو</h2>
+          <button class="close-search">
+            <svg>
+              <use xlink:href="./assets/svgs/landing.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="search-input-container">
+          <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+          <svg class="search-icon">
+            <use xlink:href="./assets/Images/home/icons/sprite.svg#search"></use>
+          </svg>
+        </div>
+        <div class="search-results">
+          <!-- Results will be populated here -->
+        </div>
+      </div>
+    </div>
   </header>
 </body>
-
+<script src="./js/landing.js"></script>
 </html>

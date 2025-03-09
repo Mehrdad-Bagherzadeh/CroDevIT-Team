@@ -19,6 +19,7 @@
     transform: scale(1);
   }
 }
+/* Definition of frequently used colors. */
 /* Definition of Dana font family. */
 @font-face {
   font-family: Dana;
@@ -98,7 +99,6 @@
   font-display: swap;
   font-weight: 950;
 }
-/* Definition of frequently used colors. */
 /* Globally applied styles. */
 * {
   margin: 0;
@@ -107,11 +107,16 @@
   list-style: none;
   color: #E4E4E7;
   text-decoration: none;
+  font-family: Dana;
 }
 
 html {
   background-color: #141414;
-  font-family: Dana;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
 }
 
 /* Styles of sales alert. */
@@ -133,6 +138,8 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: 100%;
+  background-color: #1A1A1A;
 }
 .header__nav .nav__items-container {
   display: flex;
@@ -158,12 +165,85 @@ html {
   color: #E4E4E7;
 }
 .header__nav .nav__items-container .nav__item--active {
-  background-color: #141414;
   border: 2px solid #262626;
   color: #E4E4E7;
 }
 .header__nav .nav__items-container .nav__item--active:hover {
   background-color: #262626;
+}
+.header__nav .nav__search {
+  display: flex;
+  align-items: center;
+}
+.header__nav .nav__search > input {
+  padding: 10px;
+  border: 2px solid #262626;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 300;
+  background: #141414;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.header__nav .nav__search > svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  fill: #E4E4E7;
+  left: 15%;
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.search-overlay.active .search-overlay-content {
+  transform: translateY(0);
+}
+.search-overlay-content {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  background-color: #141414;
+  padding: 24px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transition: transform 0.3s ease;
+}
+.search-overlay-content .search__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.search-overlay-content .search__header h2 {
+  font-weight: 550;
+  font-size: 32px;
 }
 
 /* Relevent styles to header element. */

@@ -31,13 +31,13 @@ nav{
     transition: all 0.3s ease;
     padding: 15px 20px;
   }
-.link-list .active-link{
+/* .link-list .active-link{
     background-color: var(--dark-background) !important;
     padding:  12px 24px ;
     border: 1px solid #262626 !important;
     border-radius: 10px;
 
-}
+} */
   nav.sticky {
     top: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -47,7 +47,7 @@ nav{
   header {
     margin-top: 82px;
   }
-.logo-container{
+/* .logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,8 @@ background: #141414;
 }
 .search-container{
     position: relative;
-}
+} */
+/*
 .left-side-nav input{
     padding: 10px;
     border-radius: 4px;
@@ -100,8 +101,8 @@ outline: none;
     flex-shrink: 0;
     border-radius: 10px;
     background: #141414;
-}
-.search-container svg{
+} */
+/* .search-container svg{
     width: 20px;
     height: 20px;
     position: absolute;
@@ -109,7 +110,7 @@ outline: none;
     right: 80%;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 /* navbar finished */
 /* header  */
 header{
@@ -282,7 +283,7 @@ header .header-image img{
     height: 40px;
   }
   /* Search Overlay Styles */
-.search-overlay {
+/* .search-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -293,15 +294,15 @@ header .header-image img{
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-}
+} */
 
 .search-overlay.active {
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
 }
 
 .search-overlay-content {
-    position: relative;
+    /* position: relative;
     width: 100%;
     max-width: 700px;
     margin: 80px auto;
@@ -309,23 +310,23 @@ header .header-image img{
     border-radius: 12px;
     padding: 24px;
     transform: translateY(-20px);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; */
 }
 
 .search-overlay.active .search-overlay-content {
-    transform: translateY(0);
+    /* transform: translateY(0); */
 }
 
 .search-header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 24px; */
 }
 
 .search-header h2 {
-    color: var(--dark-text-color);
-    font-family: 'danabold';
+    /* color: var(--dark-text-color);
+    font-family: 'danabold'; */
 }
 
 .close-search {
