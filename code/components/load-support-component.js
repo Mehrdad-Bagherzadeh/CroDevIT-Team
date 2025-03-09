@@ -14,7 +14,11 @@ function loadHTMLComponent(targetElement, filePath, callback) {
 const supportChat = document.getElementById("chatSupportComponent");
 
 // Load the nav and footer content into the corresponding elements
-loadHTMLComponent(supportChat, "./components/support.html");
+loadHTMLComponent(
+  supportChat,
+  "./components/support.html",
+  addChatMessageListener
+);
 
 //CHAT SCRIPT
 // Function to toggle the visibility of the chat box
