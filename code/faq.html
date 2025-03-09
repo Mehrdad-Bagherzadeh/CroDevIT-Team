@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/initialComponents.css" />
+    <link rel="stylesheet" href="./assets/CSS/globale.css" />
+    <link rel="stylesheet" href="./assets/CSS/home.css" />
+    <link rel="stylesheet" href="./assets//CSS/animation.css" />
+    <link rel="stylesheet" href="./assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="./assets/CSS/faq.css" />
+  </head>
+  <body>
+    <div id="chatSupportComponent"></div>
+    <div class="ad">
+      <p>
+        تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
+        دیگر باقیست!
+      </p>
+      <div></div>
+    </div>
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
+      </div>
+      <div class="links-container">
+        <ul class="link-list">
+          <li><a href="#" class="active-link">خانه </a></li>
+          <li><a href="#" class="">دوره ها </a></li>
+          <li><a href="#" class=""> درباره ما </a></li>
+          <li><a href="#" class=""> بلاگ</a></li>
+        </ul>
+      </div>
+      <div class="left-side-nav">
+        <div class="search-container">
+          <input type="text" placeholder="جست و جو" name="" id="" />
+          <svg class="search-icon">
+            <use
+              xlink:href="./assets/Images/home/icons/sprite.svg#search"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- search over lay -->
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <div class="search-header">
+            <h2>جستجو</h2>
+            <button class="close-search">
+              <img src="./assets/Images/home/icons/close.png" alt="close" />
+            </button>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+            <svg class="search-icon">
+              <use
+                xlink:href="./assets/Images/home/icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </div>
+          <div class="search-results">
+            <!-- Results will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- mobile version -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-links">
+            <li class=""><a href="#" class="neon-text">خانه </a></li>
+            <li><a href="#" class="neon-text">دوره ها </a></li>
+            <li><a href="#" class="neon-text">درباره ما </a></li>
+            <li><a href="#" class="neon-text">بلاگ</a></li>
+            <div class="mobile-search">
+              <input type="text" placeholder="جست و جو" />
+              <svg class="search-icon">
+                <use
+                  xlink:href="./assets/Images/home/icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="question-search-container">
+        <h2>پرسش های متداول بیالــرنی ها</h2>
+        <p>
+          موضوع مورد نظرتان را به راحتی جستجو کرده و یا از دسته بندی زیر انتخاب
+          کنید
+        </p>
+        <div class="question-search-bar">
+          <input type="text" placeholder="موضوع سوال" />
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <div class="categories-wrapper">
+          <div class="categories">
+            <button class="category-btn active" data-category="membership">
+              <div class="category-container">
+                <img
+                  src="./assets/Images/faq/search.svg"
+                  class="category-icon"
+                />
+                <div class="category-title">عضویت و ثبت سفارش</div>
+              </div>
+            </button>
+
+            <button class="category-btn" data-category="payment">
+              <div class="category-container">
+                <img
+                  src="./assets/Images/faq/search.svg"
+                  class="category-icon"
+                />
+                <div class="category-title">عضویت و ثبت سفارش</div>
+              </div>
+            </button>
+
+            <button class="category-btn" data-category="shipping">
+              <div class="category-container">
+                <img
+                  src="./assets/Images/faq/search.svg"
+                  class="category-icon"
+                />
+                <div class="category-title">عضویت و ثبت سفارش</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="faq-container">
+         
+            <div class="faq-question" aria-expanded="false">
+              Do you offer international shipping?
+              <img
+                src="./assets/Images/faq/down-arrow.svg"
+                class="arrow"
+                alt="arrow icon"
+              />
+            </div>
+            <div class="faq-answer">
+              Yes, we ship to most countries worldwide. Shipping rates vary by
+              location.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <div class="section-head">
+          <h4 class="section-head-text">
+            خیلی حواستو جمع کن! همیشه باید بروز و آپدیت باشی!
+          </h4>
+        </div>
+        <p>
+          تو دنیای امروز که تکنولوژی خیلی سریع پیش می‌ره، آپدیت موندن، اونم تو
+          چند حوزۀ مختلف، خیلی سخت و زمان‌بر شده؛ اما هیچ کاری نشد نداره! با
+          <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت
+          در ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
+        </p>
+        <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="subscription">
+          <img src="./assets/Images/home/logo-dark 1.png" alt="" />
+          <p>از جدیدترین رویداد ها بهره مند شوید</p>
+          <div class="sub-form">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <button class="btn-contained">ارسال</button>
+          </div>
+          <p class="policy">
+            ارسال ایمیل توسط شما به این معناست که <a href="">قوانین</a> ما را
+            پذیرفته اید
+          </p>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li class="header-list">عنوان</li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+          </ul>
+          <ul>
+            <li class="header-list">عنوان</li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/Images/home/icons/youtube.svg"
+                  alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Images/home/icons/twiter.svg" alt="twiter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Images/home/icons/linkedin.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copy-right">
+      <p>️کپی‌رایت 2025، تمامی حقوق برای <a href="">CroDevIT</a> محفوظ است.</p>
+      <p>All Right Deserved; Developed by CRODEVIT team</p>
+    </div>
+    <script src="./JS/script.js"></script>
+    <script src="components/load-support-component.js"></script>
+    <script src="./JS/faq/faq.js"></script>
+  </body>
+</html>
