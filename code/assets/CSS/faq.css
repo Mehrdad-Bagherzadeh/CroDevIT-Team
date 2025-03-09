@@ -1,4 +1,5 @@
 main {
+  padding: var(--section-padding);
   margin-top: 80px; /*to avoid the content going under the nav bar/ad */
   display: flex;
   align-items: center;
@@ -76,4 +77,71 @@ h2 {
   height: 60%; /* Adjust height as needed */
   width: 2px; /* Width of the vertical bar */
   background-color: var(--dark-text-color); /* Color of the vertical bar */
+}
+
+.faq-container {
+  padding-top: 50px;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+  border-bottom: 1px solid var(--lighter-dark-background);
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on WebKit browsers */
+}
+
+.categories {
+  -ms-overflow-style: none; /* Hide the scrollbar on Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide the scrollbar on Firefox */
+}
+
+.category-btn {
+  all: unset; /* Remove all default styles */
+  display: inline-block; /* Ensure the button behaves like an inline-block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  border: 0; /* Remove border */
+  background-color: transparent; /* Set background color to transparent */
+  padding: 20px 10px;
+}
+
+.category-btn.active {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.category-container {
+  display: flex;
+  flex-shrink: 0; /* Prevent flex items from shrinking */
+}
+
+.category-title {
+  color: var(--dark-text-color);
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.category-icon {
+  width: 24px;
+}
+
+@media only screen and (max-width: 750px) {
+  main,
+  footer {
+    padding: var(--section-mobile-padding);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .categories {
+    gap: 5px;
+  }
 }
