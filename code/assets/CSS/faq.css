@@ -79,22 +79,32 @@ h2 {
   background-color: var(--dark-text-color); /* Color of the vertical bar */
 }
 
-.faq-container {
+.faq-section {
   padding-top: 50px;
   width: 100%;
-  overflow-x: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrolling on the faq-section */
+}
+
+.categories-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Prevent scrolling on the wrapper */
 }
 
 .categories {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 130px;
   overflow-x: auto; /* Enable horizontal scrolling */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
   border-bottom: 1px solid var(--lighter-dark-background);
+  width: auto; /* Allow the categories to take their natural width */
+  justify-content: flex-start; /* Align items to the start */
 }
 
 .categories::-webkit-scrollbar {
@@ -131,6 +141,64 @@ h2 {
 
 .category-icon {
   width: 24px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  transition: background-color 0.3s ease;
+}
+.faq-question:hover {
+  background-color: #f1f3f5;
+}
+.faq-answer {
+  font-size: 16px;
+  padding: 0 20px 20px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+.faq-question .arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .faq-container {
+    width: 90%;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
