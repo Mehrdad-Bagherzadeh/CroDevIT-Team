@@ -1,5 +1,3 @@
-
-
 /* header  */
 header {
   padding-right: 42px;
@@ -12,19 +10,19 @@ header {
   gap: 16px;
   border-bottom: 1px solid var(--lighter-dark-background);
 }
-header .bottom_arrow{
+header .bottom_arrow {
   position: absolute;
   bottom: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  right:50%;
+  right: 50%;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: var(--lighter-dark-background);
 }
-.bottom_arrow img{
+.bottom_arrow img {
   width: 30px;
   height: 30px;
 }
@@ -55,13 +53,14 @@ header .header-content h1 {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  font-family: 'danalight';
+  font-family: "danalight";
   color: var(--light-text-color);
   background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .btn-contained:hover {
   background-color: var(--accent-color);
@@ -79,7 +78,9 @@ header .btn-outline {
   gap: 8px;
   border-radius: 10px;
 }
-header .btn-contained, .social .btn-contained , .footer .btn-contained {
+header .btn-contained,
+.social .btn-contained,
+.footer .btn-contained {
   cursor: pointer;
   width: 250px;
   padding: 12px 16px;
@@ -96,13 +97,10 @@ header .header-image img {
 }
 /* header finished */
 
-
-
 /* main */
 main {
   padding: var(--section-padding);
   margin-top: 64px;
-  
 }
 /* main finished */
 
@@ -202,7 +200,7 @@ main {
   align-content: center;
   gap: 10px;
   justify-content: space-between;
-  padding:0 24px;
+  padding: 0 24px;
 
   align-items: center;
   border-bottom: 1px solid var(--lighter-dark-background);
@@ -263,14 +261,14 @@ main {
 }
 .courses-item:hover {
   transform: translateY(-20px);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .courses-item h4 {
   font-size: var(--font-size-text-extra);
   font-family: "danamedium";
   color: var(--dark-text-color);
-  padding:0 24px;
+  padding: 0 24px;
 }
 .courses-item p {
   padding: 12px 24px;
@@ -280,32 +278,34 @@ main {
   font-size: 16px;
   font-family: "danamedium";
   color: var(--gray-color);
-  padding:  12px;
+  padding: 12px;
 }
 /* comments */
-.comments , .questions{
+.comments,
+.questions {
   padding: var(--section-padding);
-  border:1px solid var(--lighter-dark-background) ;
-  border-radius:10px ;
+  border: 1px solid var(--lighter-dark-background);
+  border-radius: 10px;
   margin-top: 36px;
-} 
+}
 
-.comments > p , .questions > p {
+.comments > p,
+.questions > p {
   font-size: var(--font-size-text-large);
-  font-family: 'danalight';
+  font-family: "danalight";
   color: var(--dark-text-color);
 }
-.section-head-text{
+.section-head-text {
   font-size: 36px;
-  font-family: 'danademibold';
+  font-family: "danademibold";
   color: var(--dark-text-color);
 }
-.section-head{
+.section-head {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.comments-item{
+.comments-item {
   margin-top: 36px;
   display: flex;
   flex-direction: column;
@@ -315,191 +315,183 @@ main {
   height: 400px;
   border: 1px solid var(--lighter-dark-background);
 }
-.comment-scroll{
+.comment-scroll {
   overflow-x: auto;
 }
-.comments-list{
+.comments-list {
   display: flex;
   gap: 16px;
   justify-content: center;
   min-width: 1000px;
-
 }
-.stars{
+.stars {
   display: flex;
   gap: 10px;
   justify-content: end;
-  margin:16px 24px ;
+  margin: 16px 24px;
 }
-.star{
+.star {
   border-radius: 50%;
   padding: 8px;
-  width: 40px
-  ;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   background-color: var(--lighter-dark-background);
 }
-.comment-body{
+.comment-body {
   display: flex;
   justify-content: start;
   padding: 12px 24px;
   flex-direction: column;
 }
-.comment-body h5{
+.comment-body h5 {
   font-size: var(--font-size-text-extra);
-  font-family: 'danamedium';
+  font-family: "danamedium";
   color: var(--dark-text-color);
 }
-.comment-body P{
+.comment-body P {
   margin-top: 12px;
   font-size: var(--font-size-text-large);
-  font-family: 'danalight';
+  font-family: "danalight";
   color: var(--dark-text-color);
   line-height: 1.5;
 }
-.comment-author{
+.comment-author {
   padding: 12px 24px;
   display: flex;
-  
+
   justify-content: end;
   align-items: center;
   gap: 10px;
 }
-.comment-author > div{
+.comment-author > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: end;
 }
-.comment-author p{
+.comment-author p {
   font-size: var(--font-size-mobile);
-  font-family: 'danademibold';
+  font-family: "danademibold";
   color: var(--dark-text-color);
 }
-.comment-author span{
+.comment-author span {
   font-size: var(--font-size-mobile);
-  font-family: 'danalight';
+  font-family: "danalight";
   color: var(--gray-color);
 }
 /* questions */
-.questions > p >a{
+.questions > p > a {
   color: var(--primary-color);
 }
-.questions .questions-body{
+.questions .questions-body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
-.questions-list{
+.questions-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 36px;
-  border:1px solid var(--lighter-dark-background) ;
-  border-radius:10px ;
+  border: 1px solid var(--lighter-dark-background);
+  border-radius: 10px;
   min-height: 400px;
   width: 400px;
   align-items: center;
-
 }
-.questions-item{
+.questions-item {
   margin-top: 24px;
   gap: 10px;
   display: flex;
   justify-content: center;
-  border:1px solid var(--lighter-dark-background) ;
-  border-radius:10px ;
+  border: 1px solid var(--lighter-dark-background);
+  border-radius: 10px;
   width: 90%;
   padding: 16px;
   align-items: center;
 }
-.questions-item .dot{
+.questions-item .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: var(--primary-color);
 }
-.questions-item > p{
+.questions-item > p {
   font-size: var(--font-size-text-large);
-  font-family: 'danademibold';
+  font-family: "danademibold";
   color: var(--gray-color);
 }
-.questions-item > .active{
+.questions-item > .active {
   color: var(--dark-text-color) !important;
-
 }
-.answer{
+.answer {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 300px;
-  border:1px solid var(--lighter-dark-background) ;
+  border: 1px solid var(--lighter-dark-background);
   justify-content: center;
   height: 300px;
   background-color: var(--lighter-dark-background);
   border-radius: 10px 0 0 10px;
   margin-top: 36px;
 }
-.answer h4{
+.answer h4 {
   padding: 12px;
   font-size: var(--font-size-text-large);
   color: var(--dark-text-color);
-  font-family: 'danamedium';
+  font-family: "danamedium";
 }
-.answer p{
+.answer p {
   padding: 12px;
   font-size: var(--font-size-text-mobile);
   color: var(--dark-text-color);
-  font-family: 'danalight';
+  font-family: "danalight";
 }
-.social{
+.social {
   margin-top: 36px;
   background-image: url(../Images/home/footer_top_image.svg);
-  background-repeat: no-repeat  ;
-  background-position:  left;
+  background-repeat: no-repeat;
+  background-position: left;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  justify-content: space-around;  
+  justify-content: space-around;
   min-height: 510px;
-  background-size: 50% ;
-  
+  background-size: 50%;
 }
 /* social  */
-.social .section-head-text{
-  font-family: 'danabold';
+.social .section-head-text {
+  font-family: "danabold";
   margin-top: 36px;
 }
-.social p{
+.social p {
   font-size: var(--font-size-text-extra);
   color: var(--dark-text-color);
   padding: 12px;
   line-height: 1.5;
-  font-family: 'danalight';
+  font-family: "danalight";
   margin-block: 12px;
   max-width: 70%;
   margin-top: 24px;
 }
-.social b{
+.social b {
   color: var(--emotion-color);
-  font-family: 'danademibold';
-  
+  font-family: "danademibold";
 }
-.social .btn-contained{
+.social .btn-contained {
   padding: 16px 12px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
-
-  /* media queries */
+/* media queries */
 
 @media only screen and (max-width: 1050px) {
-  .copy-right{
+  .copy-right {
     padding: var(--section-mobile-padding);
   }
   .search-container {
@@ -518,10 +510,10 @@ main {
   .courses {
     padding: var(--section-mobile-padding);
   }
-  .section-head-text{
+  .section-head-text {
     font-size: 20px;
   }
-  .comment-body h5{
+  .comment-body h5 {
     font-size: 18px;
   }
   .courses-head-des {
@@ -536,7 +528,7 @@ main {
     width: 100%;
   }
 
-  .courses-item   {
+  .courses-item {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -544,14 +536,13 @@ main {
   .courses-action p {
     font-size: 12px;
   }
-  .courses-teacher ,.comment-body h5 {
+  .courses-teacher,
+  .comment-body h5 {
   }
 
-  .comments-item h4{
+  .comments-item h4 {
     font-size: var(--font-size-text-extra);
   }
-  
-  
 }
 @media only screen and (max-width: 1250px) {
   header {
@@ -590,13 +581,13 @@ main {
   .box-icons-item {
     width: 320px;
   }
-  .social{
-    background-image:none;
+  .social {
+    background-image: none;
     height: 300px;
     background-size: contain;
     text-align: center;
   }
-  .social p{
+  .social p {
     max-width: 100%;
     font-size: var(--font-size-text-large);
     line-height: 2;
@@ -605,13 +596,13 @@ main {
     font-size: var(--font-size-btn-mobile);
     padding: 12px 8px;
   }
- 
 }
 @media only screen and (max-width: 750px) {
-  main ,footer{
+  main,
+  footer {
     padding: var(--section-mobile-padding);
   }
- 
+
   .courses-head h2 {
     font-size: 18px;
   }
@@ -633,16 +624,14 @@ main {
     min-height: 400px;
     padding: 0;
   }
-  .courses-action button{
+  .courses-action button {
     width: 100% !important;
 
     height: 60px !important;
     align-self: flex-end;
     border-radius: 10px;
-
-    
   }
- 
+
   .courses-action {
     flex-direction: column;
     width: 100%;
@@ -664,12 +653,12 @@ main {
     padding: 0 8px;
     margin: 0;
   }
-  .comments{
+  .comments {
     padding: 12px 16px;
     justify-content: start;
     align-items: center;
   }
-  .comments-list{
+  .comments-list {
     padding: 0;
     justify-content: start;
   }
@@ -677,15 +666,15 @@ main {
     gap: 10px;
     padding: 0 12px;
   }
-  .comments-item{
+  .comments-item {
     max-width: 300px;
   }
-  
+
   .courses-item p {
     font-size: 12px;
     padding: 8px;
   }
-  .comment-body p{
+  .comment-body p {
     font-size: 16px;
   }
   .courses-teacher {
@@ -699,7 +688,7 @@ main {
     width: 100%;
   }
 
-  .courses-item-bottom .skills  img{
+  .courses-item-bottom .skills img {
     width: 30px;
     height: 30px;
   }
@@ -711,9 +700,8 @@ main {
   }
 }
 
-
-@media only screen and (max-width:450px) {
-  .courses{
+@media only screen and (max-width: 450px) {
+  .courses {
     min-height: 1200px;
   }
   .courses-item {
@@ -724,30 +712,28 @@ main {
     height: 500px;
     margin-top: 42px;
   }
-  .skills-item img{
-    
+  .skills-item img {
     width: 10px !important;
     height: 10px !important;
   }
-  .courses-item p{
+  .courses-item p {
     display: block;
   }
-  
-  .courses-action{
+
+  .courses-action {
     gap: 0;
   }
-  .courses-action button{
+  .courses-action button {
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
   }
-  .courses-action .price{
+  .courses-action .price {
     justify-self: center;
     align-self: center;
   }
-  
-  
-  .courses-item h4{
+
+  .courses-item h4 {
     text-align: center;
   }
   .courses-item img {
@@ -759,7 +745,7 @@ main {
     padding: 0;
     gap: 0;
   }
-  .questions-item p{
+  .questions-item p {
     font-size: 14px;
   }
 }

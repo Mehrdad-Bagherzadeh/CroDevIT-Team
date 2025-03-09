@@ -1,0 +1,50 @@
+<!-- Chat Support Component -->
+<div id="chatSupportComponent">
+  <!-- Chat Button -->
+  <div
+    id="chatButton"
+    class="chat-button"
+    aria-label="Chat with us"
+    onclick="toggleChatBox()"
+  >
+    <img
+      src="assets/Images/support/service.svg"
+      alt="Service Icon"
+      width="50"
+    />
+  </div>
+
+  <!-- Chat Box -->
+  <div id="chatBox" class="chat-box" aria-hidden="true">
+    <div class="chat-header">
+      <img
+        src="assets/Images/support/arshia.jpg"
+        alt="profile photo"
+        class="support-photo"
+      />
+      <span>پشتیبانی بیالرن</span>
+      <button class="close-btn" onclick="toggleChatBox()">
+        <img src="assets/Images/support/close.svg" alt="" width="32" />
+      </button>
+    </div>
+
+    <div class="messages">
+      <!-- Messages will be dynamically added here -->
+      <p class="support-message">درود بر شما, سوالتو بپرس😊</p>
+    </div>
+
+    <div class="chat-input">
+      <button class="mic-btn">
+        <img src="assets/Images/support/mic.svg" alt="" />
+      </button>
+      <button class="paper-clip-btn">
+        <img src="assets/Images/support/paper-clip.svg" alt="" />
+      </button>
+      <input type="text" id="chatMessage" placeholder="اینجا بنویسید.... " />
+
+      <button class="send-btn" onclick="sendMessage()">
+        <img src="assets/Images/support/send-paper-plane.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</div>

@@ -4,22 +4,25 @@
   padding: 10px;
   transform: translateY(0);
   /* background: linear-gradient(90deg, rgba(46, 196, 255, 0.20) 0%, rgba(46, 196, 255, 0.00) 50%, rgba(46, 196, 255, 0.20) 100%), #1A1A1A; */
-  background: linear-gradient(90deg, rgba(46, 196, 255, 50%), rgba(46, 196, 255, 0), rgba(46, 196, 255, 50%));
+  background: linear-gradient(
+    90deg,
+    rgba(46, 196, 255, 50%),
+    rgba(46, 196, 255, 0),
+    rgba(46, 196, 255, 50%)
+  );
 
   width: 100%;
   transition: all 0.3s ease;
-  
+
   padding-right: 42px;
   align-items: center;
   height: 40px;
 }
 
-
 .ad p {
   color: var(--dark-text-color);
   font-size: var(--font-size-text-large);
   font-family: "danademibold";
-  
 }
 .ad .animated-pulse {
   color: var(--emotion-color);
@@ -31,7 +34,6 @@
   cursor: pointer;
   height: 24px;
 }
-
 
 .ad.hide {
   transform: translateY(-100%);
@@ -464,6 +466,222 @@ footer {
   width: 40px;
   fill: var(--dark-text-color);
   height: 40px;
+}
+
+/* Chat Button - Positioned at bottom-right */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
+
+.chat-button.deactivated {
+  display: none;
+}
+
+.chat-button img {
+  width: 25px;
+}
+
+/* Chat Box - Initially hidden */
+.chat-box {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  margin: 20px;
+  width: 380px;
+  max-width: 90vw;
+  height: 70%;
+  min-height: 500px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10001;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.chat-box.open {
+  display: block;
+  animation: chatBoxOpen 0.3s ease forwards;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.support-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-right: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.close-btn:hover {
+  color: #ff4747;
+}
+
+.chat-content {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Add overflow-x to enable horizontal scrolling for long messages */
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto; /* Prevent vertical scrolling */
+  height: calc(100% - 120px); /* Adjust height to fit within the chat box */
+  width: 100%; /* Ensure the container has a defined width */
+  padding: 10px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.messages {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.messages p {
+  display: inline-block; /* Ensure messages are inline for horizontal scrolling */
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%; /* Ensure messages do not exceed 80% of the container width */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  animation: messageAppear 0.3s ease;
+}
+
+.messages .user-message {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white; /* Optional: to ensure text is readable */
+}
+
+.messages .support-message {
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(
+    --background-color
+  ); /* Ensure background color matches the chat box */
+}
+
+.chat-input input {
+  color: white;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 0 10px;
+  outline: none;
+  background-color: #414141;
+}
+
+.chat-input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.chat-input button img {
+  width: 24px;
+  height: 24px;
+}
+
+.chat-input button:hover img {
+  filter: brightness(0.8);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .chat-button {
+    padding: 10px;
+  }
+}
+
+/* Define keyframes for the chat box opening animation */
+@keyframes chatBoxOpen {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Define keyframes for the message appearance animation */
+@keyframes messageAppear {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* media queries */

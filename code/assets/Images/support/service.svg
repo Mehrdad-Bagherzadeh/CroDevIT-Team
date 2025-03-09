@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="9.707099685668945 6.163600692749023 28.585798721313477 35.672802429199216" enable-background="new 0 0 48 48">
+<g>
+	<g>
+		
+			<path fill="#FFFFFF" stroke="#000000" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="    M35.7671,37.9759c0,1.722-1.5231,3.1205-3.4217,3.1205h-16.691c-0.9493,0-1.8047-0.352-2.4202-0.9133    c-0.6259-0.5613-1.0014-1.3415-1.0014-2.2072c0-3.6342,2.2324-6.7832,5.5184-8.3815c1.45-0.7135,3.1191-1.1131,4.8821-1.1131    h2.7331c1.763,0,3.4321,0.4091,4.8925,1.1227c0.918,0.4376,1.7421,0.9989,2.4619,1.6554    C34.5987,32.9812,35.7671,35.3596,35.7671,37.9759z"/>
+	</g>
+	
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M24,25.1176L24,25.1176c-3.3882,0-6.1348-2.7466-6.1348-6.1348v-2.1814c0-3.3882,2.7466-6.1348,6.1348-6.1348h0   c3.3882,0,6.1348,2.7466,6.1348,6.1348v2.1814C30.1348,22.3709,27.3881,25.1176,24,25.1176z"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="41.0964" x2="24" y2="33.0239"/>
+	
+		<polyline fill="none" stroke="#000000" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="   28.1925,29.2005 24,33.0239 19.8075,29.2005  "/>
+</g>
+<g>
+	<g>
+	</g>
+	
+		<path fill="#FFFFFF" stroke="#536DFE" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M35.4069,16.1908L35.4069,16.1908c1.1852,0,2.146,0.9608,2.146,2.146v0.3075c0,1.1852-0.9608,2.146-2.146,2.146h0   c-0.7873,0-1.4256-0.6382-1.4256-1.4256v-1.7484C33.9814,16.829,34.6196,16.1908,35.4069,16.1908z"/>
+	
+		<path fill="#FFFFFF" stroke="#536DFE" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M12.5931,16.1908L12.5931,16.1908c0.7873,0,1.4256,0.6383,1.4256,1.4256v1.7484c0,0.7873-0.6382,1.4256-1.4256,1.4256h0   c-1.1852,0-2.146-0.9608-2.146-2.146v-0.3075C10.4471,17.1516,11.4079,16.1908,12.5931,16.1908z"/>
+</g>
+<g>
+	<path fill="none" stroke="#536DFE" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M20.0415,23.6664h-4.2092c-1.0017,0-1.8137-0.812-1.8137-1.8137V16.885c0-5.5126,4.4688-9.9814,9.9814-9.9814h0   c5.5126,0,9.9814,4.4688,9.9814,9.9814v3.9052"/>
+</g>
+</svg>
