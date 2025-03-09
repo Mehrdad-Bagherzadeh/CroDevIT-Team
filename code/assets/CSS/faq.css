@@ -1,0 +1,79 @@
+main {
+  margin-top: 80px; /*to avoid the content going under the nav bar/ad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Add this line to stack children vertically */
+}
+
+.question-search-container {
+  border-bottom: 1px solid var(--lighter-dark-background);
+  width: 100%;
+  display: flex; /* Add this line */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Add this line to stack children vertically */
+  height: 40vh;
+}
+
+h2 {
+  line-height: 2;
+  text-align: center; /* Center text inside the h2 element */
+  color: var(--dark-text-color);
+  font-size: 36px;
+}
+
+.question-search-container p {
+  color: var(--dark-text-color);
+  text-align: center; /* Center text inside the p element */
+}
+
+.question-search-bar {
+  position: relative;
+  width: 100%;
+  display: flex; /* Use flexbox to center the content */
+  align-items: center;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.question-search-bar input {
+  width: 100%;
+  padding: 20px;
+  padding-left: 40px; /* Add padding to the left to make space for the icon */
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "danamedium";
+  background-color: #414141;
+  border: 0;
+  outline: none; /* Remove the border around the input when it's in focus */
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  color: var(--dark-text-color);
+}
+
+.question-search-bar input:hover,
+.question-search-bar input:focus {
+  background-color: #333333; /* Change background color on hover */
+}
+
+/*add the search icon and place it*/
+.question-search-bar::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* Position for the icon */
+  width: 30px; /* Size of the icon */
+  height: 30px;
+  background-image: url("../Images/faq/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*to add the bar next to the icon*/
+.question-search-bar::after {
+  content: "";
+  position: absolute;
+  left: 45px; /* Position it to the right of the icon */
+  height: 60%; /* Adjust height as needed */
+  width: 2px; /* Width of the vertical bar */
+  background-color: var(--dark-text-color); /* Color of the vertical bar */
+}
