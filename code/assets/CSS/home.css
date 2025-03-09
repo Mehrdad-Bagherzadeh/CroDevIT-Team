@@ -1,18 +1,18 @@
 .ad {
     /* display: flex; */
     /* justify-content: space-between; */
-    background-color: var(--background-color);
-    background-image: url(../Images/home/leaves_small.png);
-    background-position: left;
-    background-size: 400px;
-    background-repeat: no-repeat;
-    width: 100%;
+    /* background-color: var(--background-color); */
+    /* background-image: url(../Images/home/leaves_small.png); */
+    /* background-position: left; */
+    /* background-size: 400px; */
+    /* background-repeat: no-repeat; */
+    /* width: 100%; */
 
-    padding-right:  42px;
-    align-items: center;
-    height: 50px;
+    /* padding-right:  42px; */
+    /* align-items: center; */
+    /* height: 50px; */
 }
-.ad .leaves{
+/* .ad .leaves{
 display: flex;
 width: 540px;
 height: 60px;
@@ -20,22 +20,22 @@ justify-content: center;
 align-items: flex-start;
 flex-shrink: 0;
 
-}
+} */
 
-.ad p{
+/* .ad p{
     color: var(--dark-text-color);
     font-size: var(--font-size-bold);
     font-family: 'danademibold';
-}
+} */
 .ad .animated-pulse{
-    color:var(--emotion-color) ;
-    animation: pulse 2s infinite;
+    /* color:var(--emotion-color) ;
+    animation: pulse 2s infinite; */
 }
 
-.ad .close-icon{
+/* .ad .close-icon{
     width: 40px;
     height: 40px;
-}
+} */
 /* navbar */
 nav{
     display: flex;

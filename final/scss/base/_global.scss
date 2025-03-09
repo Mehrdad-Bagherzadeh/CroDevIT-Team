@@ -1,0 +1,11 @@
+/* Globally applied styles. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $bg-dark;
+  color: $color-secondary;
+}

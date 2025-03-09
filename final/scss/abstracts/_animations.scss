@@ -1,0 +1,23 @@
+/* Animated classes. */
+.animation {
+  &-pulse {
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+  }
+}
+
+/* Keyframes and animations. */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

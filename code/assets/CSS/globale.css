@@ -16,20 +16,20 @@
     --section-padding:16px 42px;
     --section-mobile-padding:16px;
     /* font size */
-    --font-size-nav:20px;
-    --font-size-bold:28px;
-    --font-size-head:48px;
+    /* --font-size-nav:20px nav */
+    /* --font-size-bold:28px; xl */
+    /* --font-size-head:48px; 2xl */
     --font-size-mobile:16px;
     --font-size-btn:18px;
-    --font-size-medium-titr:32px;
+    /* --font-size-medium-titr:32px; xl */
     
     
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
     list-style: none;
 }
 a{

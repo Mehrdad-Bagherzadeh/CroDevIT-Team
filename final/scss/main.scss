@@ -1,4 +1,9 @@
+@import './abstracts/animations';
 @import './abstracts/fonts';
 @import './abstracts/variables';
 
+@import './base/global';
+
 @import './components/landing-header';
+
+@import './pages/landing';

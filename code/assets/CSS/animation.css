@@ -14,12 +14,12 @@
         text-shadow: 0 0 0 0 var(--emotion-color);
     }   
 } */
-.ad .animated-pulse {
+/* .ad .animated-pulse {
     color: var(--emotion-color);
     animation: pulse 1s infinite;
-  }
+  } */
   
-  @keyframes pulse {
+  /* @keyframes pulse {
     0% {
       opacity: 1;
       transform: scale(1);
@@ -32,4 +32,4 @@
       opacity: 1;
       transform: scale(1);
     }
-  }
+  } */

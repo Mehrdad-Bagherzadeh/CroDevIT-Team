@@ -1,3 +1,24 @@
+/* Animated classes. */
+.animation-pulse {
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+}
+
+/* Keyframes and animations. */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* Definition of Dana font family. */
 @font-face {
   font-family: DanaHairLine;
@@ -65,10 +86,27 @@
   font-display: swap;
 }
 /* Definition of frequently used colors. */
+/* Globally applied styles. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #141414;
+  color: #E4E4E7;
+}
+
 /* Relevent styles to header element. */
 .header .alert {
   text-align: center;
   font-family: DanaDemiBold;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba(46, 196, 255, 0.5), rgba(46, 196, 255, 0), rgba(46, 196, 255, 0.5));
+}
+.header .alert__text {
+  font-size: 20px;
 }
 .header .alert__text--accent {
   color: #FFB000;
