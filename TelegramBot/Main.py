@@ -6,7 +6,6 @@ user_lists = []
 #######################################
 
 
-
 reply_welcome = ReplyKeyboardMarkup(one_time_keyboard=False, resize_keyboard=True, row_width=2)
 reply_welcome.add("دوره های موجود","وبلاگ بیالرن", "ویژگی های ما", "پرسش های متداول", "درباره ما", "ارتباط با ما")
 blur_blog = InlineKeyboardMarkup(row_width=1)
@@ -17,6 +16,7 @@ blur_blogbut4 = InlineKeyboardButton("اهمیت ترویج فرهنگ سازم�
 blur_blogbut5 = InlineKeyboardButton("یادگیری سریع پایتون برای ورود به بازارکار", url="https://www.yektanet.com/blog/65765/10-best-google-ads-bidding-strategies/")
 blur_blogbut6 = InlineKeyboardButton("تفاوت های CSS3 با Kotlin", url="https://www.yektanet.com/blog/65773/most-popular-products-on-divar/")
 blur_blog.add(blur_blogbut1, blur_blogbut2, blur_blogbut3, blur_blogbut4, blur_blogbut5, blur_blogbut6)
+
 
 blur_av_courses = InlineKeyboardMarkup(row_width=1)
 blur_av_course1 = InlineKeyboardButton("دوره کامل یادگیری ماشین", callback_data="avML")
@@ -64,7 +64,7 @@ def faq4(mess):
 
 @bot.message_handler(func=lambda mess:mess.text == "درباره ما")
 def about_us5(mess):
-    bot.send_photo(mess.chat.id, open("PM Meths.png", "rb"), caption="درباره بیالـرن\nما در بیالرن خیلی کارا انجام می دیم و من برای این موضوع خیلی تلاش می کنم و این تلاش باعث میشه که خیلی کار خوبی نباشه و جذابیت کار کم باشه")
+    bot.send_photo(mess.chat.id, open("Pics/About-us.png", "rb"), caption="درباره بیالـرن\nما در بیالرن خیلی کارا انجام می دیم و من برای این موضوع خیلی تلاش می کنم و این تلاش باعث میشه که خیلی کار خوبی نباشه و جذابیت کار کم باشه")
 
 
 @bot.message_handler(func=lambda mess:mess.text == "ارتباط با ما")
