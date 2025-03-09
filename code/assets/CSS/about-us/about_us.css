@@ -647,7 +647,9 @@ width: 100%;
   .roadmap-items > .item{
     padding: 12px;
   }
-
+.info-cards div{
+  width: 150px;
+}
 }
 
 
