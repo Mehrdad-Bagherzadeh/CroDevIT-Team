@@ -1,0 +1,437 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #33333322;
+	position: relative;
+	background-image: url(../Images/home/leaves-huge.svg);
+}
+:root {
+	--bgColor: #fff;
+	--bgColorLightHigh: #fff8;
+	--bgColorLight: #fff5;
+	--bgColorLightLow: #fff2;
+
+	--textColorLightHigh: #3338;
+	--textColorLight: #3335;
+	--textColorLightLow: #3332;
+
+	--online: green;
+	--fbColor: #2EC4FF;
+	--fbColorLow: #1B6CFF59;
+}
+
+
+
+.mobileSection {
+	width: 330px;
+	height: 500px;
+	background-color: var(--lighter-dark-background);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px var(--textColorLight);
+	border-radius: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.haderSection {
+	width: 100%;
+	height: 10%;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	box-shadow: 0px 1px 2px var(--textColorLightLow);
+}
+
+.imageAndText {
+	position: relative;
+}
+.imagesDiv {
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	border-radius: 50%;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.nameText {
+	width: 150px;
+	font-size: 16px;
+	color: white !important;
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: 'danalight';
+	cursor: pointer;
+}
+
+
+
+.imagesDiv img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.collIcon {
+	position: relative;
+}
+.collIcon ul {
+	padding: 0;
+	margin-bottom: 0;
+	position: absolute;
+	right: 10px;
+	top: 55%;
+	transform: translateY(-50%);
+}
+.collIcon ul li {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	cursor: pointer;
+}
+.collIcon ul li i {
+	padding: 9px 8px;
+	color: var(--fbColor);
+}
+.collIcon ul li:active {
+	background-color: var(--textColorLightLow);
+}
+
+
+
+.mainContent {
+	width: 106%;
+	height: 80%;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	position: relative;
+	flex-grow: 1;
+}
+.meText {
+	right: 0px;
+	bottom: 0;
+	overflow-y: auto;
+
+	width: 100%;
+	padding-bottom: 10px;
+}
+.postMe {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	text-align: right;
+	position: relative;
+}
+.textDiv p {
+	margin: 5px 10px;
+	padding: 8px 12px;
+	min-width: 100px;
+	text-align: center;
+	border-radius: 15px 15px 0px 15px;
+	color: #fff;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+	display: inline-block;
+	background-color: var(--fbColor);
+	text-align: left;
+}
+
+.postYour {
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+}
+.postYour .textDiv p {
+	background-color: var(--textColorLightLow);
+	color: var(--textColor);
+	border-radius: 15px 15px 15px 0px;
+}
+.postYour .textDiv {
+	margin-left: 20px;
+	position: relative;
+}
+.imagesDivMini {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -13px;
+	bottom: 7px;
+	transform: translateY(0%);
+}
+.imagesDivMini a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.postMe .textDiv ul {
+	padding: 0;
+	margin-bottom: 0;
+	position: absolute;
+	left: 35px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+
+.postYour .textDiv ul {
+	padding: 0;
+	margin-bottom: 0;
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+.textDiv ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 5px 9.5px;
+	color: var(--textColor);
+	font-size: 13px;
+	cursor: pointer;
+}
+#inputPostText{
+	color: white;
+}
+.text-client{
+	color: var(--dark-text-color) !important	;
+}
+.textDiv ul li {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.textDiv ul li:active {
+	background-color: var(--textColorLightLow);
+}
+.postMe .textDiv:hover ul {
+	display: block;
+}
+.postYour .textDiv:hover ul {
+	display: block;
+}
+
+
+.footerSection {
+	width: 100%;
+	height: 10%;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 4fr 5fr;
+	box-shadow: 0px -1px 2px var(--textColorLightLow);
+}
+.iconSite {
+	position: relative;
+}
+.iconSite ul {
+	padding: 0;
+	margin-bottom: 0;
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.iconSite ul li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: var(--fbColor);
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.iconSite ul li i {
+	padding: 7px 7px;
+}
+.iconSite ul li:last-child i {
+	padding: 7px 9px;
+}
+.iconSite ul li:active {
+	background-color: var(--fbColorLow);
+}
+.inputText {
+	position: relative;
+}
+
+.inputTextDiv {
+	width: 75%;
+	height: 30px;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.inputTextDiv input {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0px 35px 0px 15px;
+	box-sizing: border-box;
+	font-size: 13px;
+	border: none;
+	outline: none;
+	background-color: var(--textColorLightLow);
+}
+.inputTextDiv i {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	box-sizing: border-box;
+	padding: 7px 7px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: var(--fbColor);
+}
+.inputTextDiv i:active {
+	background-color: var(--fbColorLow);
+}
+
+.likeBtn {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 7px 7px;
+	box-sizing: border-box;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--fbColor);
+}
+.likeBtn:active {
+	background-color: var(--fbColorLow);
+}
+
+.disNone {
+	display: none;
+}
+.disBlock {
+	display: block;
+}
+
+
+.nameText a {
+	text-decoration: none;
+	color: var(--textColor);
+	cursor: pointer;
+}
+.nameText a:hover {
+	text-decoration: underline;
+}
+
+.likeiconPost {
+	background-color: #3330 !important;
+}
+.likeiconPost i {
+	color: var(--fbColor);
+	font-size: 40px;
+}
+
+
+.controls {
+	width: 30px;
+	height: 50px;
+	border-radius: 0px 0px 10px 0px;
+	cursor: pointer;
+	background-color: var(--fbColor);
+}
+.controls i {
+	margin-left: 7px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.poppep {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #3333;
+	z-index: 2;
+	display: none;
+}
+.fullBox {
+	width: 100%;
+	height: 100%;
+	background-color: #fff2;
+	position: relative;
+}
+.closeBtn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.closeBtn i {
+	padding: 13px 16px;
+	font-size: 25px;
+	color: #000;
+}
+.closeBtn:active {
+	background-color: var(--textColorLightLow);
+}
+
+
+.infoAdd {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px #3333;
+	border-radius: 5px;
+	padding: 20px;
+}
+.infoAdd h1 {
+	font-size: 20px;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.infoAdd input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid var(--textColorLight);
+	outline: none;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+.infoAdd input:last-child {
+	cursor: pointer;
+	background-color: var(--fbColor);
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.infoAdd input:last-child:active {
+	background-color: #1553C1;
+}

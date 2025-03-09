@@ -14,22 +14,200 @@
         text-shadow: 0 0 0 0 var(--emotion-color);
     }   
 } */
+.glow-on-hover {
+  width: 250px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: 'danabold';
+  font-size: var(--font-size-btn);
+  color: var(--dark-text-color);
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.glow-on-hover:hover{
+  transform: translateY(-5px);
+}
+
+.neon-text {
+  font-size: var(--font-size-head);
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+    0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+}
+.block {
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before,
+.block:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  border-radius: 10px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa,
+    #00bfff,
+    #1e90ff,
+    #4169e1,
+    #6495ed,
+    #87cefa
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+
+  animation: steam 20s linear infinite;
+}
+.gradient-border {
+  --border-width: 1px;
+
+  position: relative;
+
+  border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      120deg,
+     #2EC4FF, /* Dark Blue */
+      
+     hsl(0, 0%, 5%)      /* Black */
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 10px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+      0 0 40px #ff005e, 0 0 80px #ff005e;
+  }
+  100% {
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff,
+      0 0 80px #00d4ff, 0 0 160px #00d4ff;
+  }
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .ad .animated-pulse {
-    color: var(--emotion-color);
-    animation: pulse 1s infinite;
+  color: var(--emotion-color);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.5;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
   }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
