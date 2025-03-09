@@ -18,6 +18,7 @@ main {
 }
 
 h2 {
+  font-family: "danamedium";
   line-height: 2;
   text-align: center; /* Center text inside the h2 element */
   color: var(--dark-text-color);
@@ -135,6 +136,7 @@ h2 {
 }
 
 .category-title {
+  font-family: "danamedium";
   color: var(--dark-text-color);
   white-space: nowrap; /* Prevent text from wrapping */
 }
@@ -143,52 +145,60 @@ h2 {
   width: 24px;
 }
 
+/* Fade-in transition for FAQ container */
 .faq-container {
-  width: 100%;
-  max-width: 600px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  transition: background-color 0.2s;
-}
-.faq-item:last-child {
-  border-bottom: none;
-}
-.faq-question {
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 20px;
+  padding-top: 24px;
+  width: 50%;
+  background-color: var(--dark-background);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f9fafb;
-  transition: background-color 0.3s ease;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.3s ease-in-out;
 }
-.faq-question:hover {
-  background-color: #f1f3f5;
+
+/* FAQ question styling */
+.faq-question {
+  font-family: "danamedium";
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 12px;
+  color: var(--dark-text-color);
+  border: 2px solid #262626;
+  position: relative;
+  transition: border-radius 0.3s;
 }
-.faq-answer {
-  font-size: 16px;
-  padding: 0 20px 20px;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+
+.faq-question.active {
+  border-radius: 12px 12px 0 0;
 }
-.faq-item.active .faq-answer {
-  max-height: 200px;
-  opacity: 1;
-}
-.faq-question .arrow {
-  font-size: 20px;
+
+.arrow {
+  width: 20px; /* Adjust size */
+  height: 20px;
+  position: absolute;
+  left: 0;
+
   transition: transform 0.3s ease;
 }
-.faq-item.active .arrow {
-  transform: rotate(180deg);
+
+.active .arrow {
+  transform: rotate(-180deg);
+}
+
+/* FAQ answer accordion effect */
+.faq-answer {
+  font-family: "danamedium";
+  color: var(--dark-text-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s;
+  padding: 0 10px;
+  background-color: var(--lighter-dark-background);
+}
+
+.faq-question.active + .faq-answer {
+  padding: 10px;
 }
 
 /* Mobile responsiveness */
