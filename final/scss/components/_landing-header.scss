@@ -1,10 +1,11 @@
+/* Relevent styles to header element. */
 .header {
   .alert {
     text-align: center;
     font-family: DanaDemiBold;
     &__text {
       &--accent {
-        color: $color-accent;
+        color: $color-accent; 
       }
     }
   }

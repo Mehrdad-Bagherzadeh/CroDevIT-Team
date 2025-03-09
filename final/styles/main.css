@@ -1,3 +1,4 @@
+/* Definition of Dana font family. */
 @font-face {
   font-family: DanaHairLine;
   src: url("../assets/fonts/DanaFaNum-Hairline.woff2");
@@ -63,6 +64,8 @@
   src: url("../assets/fonts/DanaFaNum-Fat.woff2");
   font-display: swap;
 }
+/* Definition of frequently used colors. */
+/* Relevent styles to header element. */
 .header .alert {
   text-align: center;
   font-family: DanaDemiBold;

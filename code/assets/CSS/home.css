@@ -1,6 +1,6 @@
 .ad {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     background-color: var(--background-color);
     background-image: url(../Images/home/leaves_small.png);
     background-position: left;
