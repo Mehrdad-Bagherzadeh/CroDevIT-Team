@@ -3,9 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  color: $color-secondary;
+  text-decoration: none;
 }
 
 html {
   background-color: $bg-dark;
-  color: $color-secondary;
+  font-family: Dana;
 }

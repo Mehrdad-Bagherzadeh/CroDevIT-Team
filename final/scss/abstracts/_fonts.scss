@@ -1,78 +1,91 @@
 /* Definition of Dana font family. */
 @font-face {
-  font-family: DanaHairLine;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Hairline.woff2");
   font-display: swap;
+  font-weight: 50;
 }
 
 @font-face {
-  font-family: DanaThin;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Thin.woff2");
   font-display: swap;
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: DanaUltraLight;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-UltraLight.woff2");
   font-display: swap;
+  font-weight: 200;
 }
 
 @font-face {
-  font-family: DanaLight;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Light.woff2");
   font-display: swap;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Regular.woff2");
   font-display: swap;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: DanaMedium;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Medium.woff2");
   font-display: swap;
+  font-weight: 450;
 }
 
 @font-face {
-  font-family: DanaDemiBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-DemiBold.woff2");
   font-display: swap;
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: DanaBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Bold.woff2");
   font-display: swap;
+  font-weight: 550;
 }
 
 @font-face {
-  font-family: DanaExtraBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-ExtraBold.woff2");
   font-display: swap;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: DanaBlack;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Black.woff2");
   font-display: swap;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: DanaExtraBlack;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-ExtraBlack.woff2");
   font-display: swap;
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: DanaHeavy;
-  src: url("../assets/fonts/DanaFaNum-Heavt.woff2");
+  font-family: Dana;
+  src: url("../assets/fonts/DanaFaNum-Heavy.woff2");
   font-display: swap;
+  font-weight: 900;
 }
 
 @font-face {
-  font-family: DanaFat;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Fat.woff2");
   font-display: swap;
+  font-weight: 950;
 }

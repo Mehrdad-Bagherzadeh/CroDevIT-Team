@@ -21,69 +21,82 @@
 }
 /* Definition of Dana font family. */
 @font-face {
-  font-family: DanaHairLine;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Hairline.woff2");
   font-display: swap;
+  font-weight: 50;
 }
 @font-face {
-  font-family: DanaThin;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Thin.woff2");
   font-display: swap;
+  font-weight: 100;
 }
 @font-face {
-  font-family: DanaUltraLight;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-UltraLight.woff2");
   font-display: swap;
+  font-weight: 200;
 }
 @font-face {
-  font-family: DanaLight;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Light.woff2");
   font-display: swap;
+  font-weight: 300;
 }
 @font-face {
   font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Regular.woff2");
   font-display: swap;
+  font-weight: 400;
 }
 @font-face {
-  font-family: DanaMedium;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Medium.woff2");
   font-display: swap;
+  font-weight: 450;
 }
 @font-face {
-  font-family: DanaDemiBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-DemiBold.woff2");
   font-display: swap;
+  font-weight: 500;
 }
 @font-face {
-  font-family: DanaBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Bold.woff2");
   font-display: swap;
+  font-weight: 550;
 }
 @font-face {
-  font-family: DanaExtraBold;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-ExtraBold.woff2");
   font-display: swap;
+  font-weight: 600;
 }
 @font-face {
-  font-family: DanaBlack;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Black.woff2");
   font-display: swap;
+  font-weight: 700;
 }
 @font-face {
-  font-family: DanaExtraBlack;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-ExtraBlack.woff2");
   font-display: swap;
+  font-weight: 800;
 }
 @font-face {
-  font-family: DanaHeavy;
-  src: url("../assets/fonts/DanaFaNum-Heavt.woff2");
+  font-family: Dana;
+  src: url("../assets/fonts/DanaFaNum-Heavy.woff2");
   font-display: swap;
+  font-weight: 900;
 }
 @font-face {
-  font-family: DanaFat;
+  font-family: Dana;
   src: url("../assets/fonts/DanaFaNum-Fat.woff2");
   font-display: swap;
+  font-weight: 950;
 }
 /* Definition of frequently used colors. */
 /* Globally applied styles. */
@@ -91,23 +104,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  color: #E4E4E7;
+  text-decoration: none;
 }
 
 html {
   background-color: #141414;
-  color: #E4E4E7;
+  font-family: Dana;
 }
 
-/* Relevent styles to header element. */
-.header .alert {
+/* Styles of sales alert. */
+.alert {
   text-align: center;
-  font-family: DanaDemiBold;
+  font-weight: 500;
   padding: 10px;
   background-image: linear-gradient(to right, rgba(46, 196, 255, 0.5), rgba(46, 196, 255, 0), rgba(46, 196, 255, 0.5));
 }
-.header .alert__text {
+.alert__text {
   font-size: 20px;
 }
-.header .alert__text--accent {
+.alert__text--accent {
   color: #FFB000;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header__nav .nav__items-container {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+.header__nav .nav__items-container .nav__item {
+  padding: 10px 15px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  cursor: pointer;
+  color: rgba(228, 228, 231, 0.75);
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.header__nav .nav__items-container .nav__item:hover {
+  color: #E4E4E7;
+}
+.header__nav .nav__items-container .nav__item--active {
+  background-color: #141414;
+  border: 2px solid #262626;
+  color: #E4E4E7;
+}
+.header__nav .nav__items-container .nav__item--active:hover {
+  background-color: #262626;
+}
+
+/* Relevent styles to header element. */
+.header {
+  height: 100vh;
 }

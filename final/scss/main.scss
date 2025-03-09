@@ -4,6 +4,9 @@
 
 @import './base/global';
 
-@import './components/landing-header';
+@import './components/landing/alert';
+@import './components/landing/navbar';
+
+@import './layout/landing/header';
 
 @import './pages/landing';

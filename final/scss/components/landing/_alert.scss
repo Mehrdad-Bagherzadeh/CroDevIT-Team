@@ -1,0 +1,13 @@
+/* Styles of sales alert. */
+.alert {
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba($color-primary, 0.5), rgba($color-primary, 0), rgba($color-primary, 0.5));
+  &__text {
+    font-size: $font-size-xl;
+    &--accent {
+      color: $color-accent;
+    }
+  }
+}
