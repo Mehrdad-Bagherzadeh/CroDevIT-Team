@@ -81,13 +81,14 @@ h2 {
 }
 
 .faq-section {
-  padding-top: 50px;
+  padding: 50px 0px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden; /* Prevent scrolling on the faq-section */
+  border-bottom: 1px solid var(--lighter-dark-background);
 }
 
 .categories-wrapper {
