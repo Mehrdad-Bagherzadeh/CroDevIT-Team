@@ -10,6 +10,9 @@
     --accent-2-color:#0BFF7B;
     --gray-color:#F1F5F980;
     --additional-color:#1447E6;
+    --subhead-color: rgba(228, 228, 231, 0.75);
+
+;
     /* dark theme */
     --dark-background:#141414;
     --dark-text-color:#E4E4E7;
@@ -35,9 +38,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: 'danalight';
   transition: all .3s ;
+}
+ul{
+  list-style:none
 }
 a{
   text-decoration: none;

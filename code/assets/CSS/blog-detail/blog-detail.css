@@ -1,0 +1,240 @@
+.blog-container {
+  padding: var(--section-padding);
+  align-items: start;
+  gap: 100px;
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+
+  
+}
+
+.breadcrumbs , .breadcrumbs-left-section{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.breadcrumbs-left-section{
+    display: none;
+}
+.breadcrumbs .logo,.breadcrumbs-left-section .logo {
+  width: 100px;
+}   
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.breadcrumbs a {
+  font-family: "danabold";
+  font-size: 18px;
+}
+.breadcrumbs a:last-child{
+    color: var(--primary-color);
+}
+
+
+
+.right-section{
+    flex: 4;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.left-section {
+    height: 200px;
+    position: sticky;
+    padding: 12px;
+    display: flex;
+    width: 30%;
+    top:100px;
+    flex:1 ;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px; /* Add margin to create space within its container */
+}
+.left-section-item{
+    border-radius: 10px;
+
+    border: 1px solid var(--lighter-dark-background);
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 350px;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--dark-background);
+
+    color: var(--dark-text-color);
+}
+.left-section-item h3{
+    font-family: 'danabold';
+    font-size: 24px;
+
+}
+.left-section-item p{
+    font-size: 24px;
+}
+.left-section-item li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+li img{
+    width: 20px;
+    height: 20px;
+}
+
+
+ .left-section-item  li{
+    font-family: 'danabold';
+    font-size: 16px;
+    margin-top: 12px;
+}
+.blog-content{
+    
+    font-family: 'danabold';
+    font-size: 16px;
+    margin-top: 100px;
+    color: var(--dark-text-color);
+    display: flex;
+    gap: 12px;
+    flex-direction: column  ;
+}
+.blog-content p{
+    font-size:24px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.blog-content img{
+    border: 10px;
+    width: 900px;
+    align-self: center;
+}
+
+.blog-title{
+    font-family: 'danabold';
+    font-size: var(--font-size-head);
+    margin-top: 36px;
+    color: var(--dark-text-color);
+}
+.head-text{
+    font-family: 'danabold';
+    margin-top: 32px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--dark-text-color);
+}
+.head-text img{
+    width: 30px !important;
+    height: 30px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .blog-container {
+        flex-direction: column-reverse;
+        gap: 12px;
+        padding: var(--section-mobile-padding);
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        overflow-y: unset;
+    }
+    .right-section{
+        width: 100%;
+        margin-top: 0 !important;
+    }
+    .blog-content{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px;
+    }
+    .left-section {
+        position: relative;
+        min-height: 400px;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        align-items: center;
+    }
+    .left-section-item{
+        height: 200px;
+        justify-content: center;
+       
+    }
+    .left-section-item:has(p){
+        align-items: center;
+    }
+
+    .left-section p {
+        font-size: 16px;
+    }
+    .left-section h1 {
+        font-size: 24px;
+    }
+    .left-section h4 {
+        font-size: 20px;
+    }
+    .breadcrumbs {
+        display: none;
+    }
+    .breadcrumbs-left-section {
+        display: flex;
+        width: max-content;
+    }
+    .right-section {
+        margin-top: 64px;
+    }
+    .blog-content p {
+        font-size: 18px;
+    }
+    .blog-content h1 {
+        font-size: 28px;
+    }
+    .blog-content h4 {
+        font-size: 24px;
+    }
+    .blog-content img {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .blog-content img {
+        width: 100%;
+    }
+    .blog-content p {
+        font-size: 14px;
+    }
+    .blog-content h1 {
+        font-size: 22px;
+    }
+    .head-text img {
+        width: 20px;
+        height: 20px;
+    }
+    .blog-content h4 {
+        font-size: 18px;
+    }
+    .left-section p {
+        font-size: 14px;
+    }
+    .left-section h1 {
+        font-size: 20px;
+    }
+    .left-section h4 {
+        font-size: 16px;
+    }
+    .left-section-item:has(p){
+        height: 150px;
+        justify-content: center;
+    }
+}
