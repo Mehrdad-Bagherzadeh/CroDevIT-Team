@@ -116,7 +116,7 @@ b{
     width: 96%;
     margin: 0 auto;
     gap: 1.8rem;
-    grid-template-columns: 12rem auto 23rem;
+    grid-template-columns: 14rem auto 23rem;
 }
 aside{
     height: 100vh;
@@ -179,9 +179,11 @@ main .analyse > div{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    gap: 12px;
+    justify-content: space-around;
 }
 
 main .analyse > div .status{
@@ -189,9 +191,7 @@ main .analyse > div .status{
     align-items: center;
     justify-content: space-between;
 }
-main .analyse > div:hover{
-    box-shadow: none;
-}
+
 main .analyse h3{
     margin-left: 0.6rem;
     font-size: 1rem;
@@ -216,6 +216,9 @@ main .analyse .sales svg circle{
     stroke: var(--color-success);
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
+}
+.status .info h1{
+    font-size: 18px;
 }
 
 main .analyse .visits svg circle{
@@ -246,7 +249,6 @@ main .new-users .user-list{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -265,4 +267,39 @@ main .new-users .user-list .user img{
     height: 5rem;
     margin-bottom: 0.4rem;
     border-radius: 50%;
+}
+/* recent orders */
+main .recent-orders{
+    margin-top: 1.3rem;
+}
+
+main .recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+
+main .recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
 }
