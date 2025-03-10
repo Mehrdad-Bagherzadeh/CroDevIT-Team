@@ -97,3 +97,18 @@ searchOverlay.addEventListener("click", (e) => {
     document.body.style.overflow = "";
   }
 });
+
+// scroll indicator for blog detail 
+    document.addEventListener('scroll', function() {
+      const blogContainer=document.querySelector('.blog-container')
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        const scrollIndicatorText = document.querySelector('.scroll-indicator-text');
+        const scrollTop = window.scrollY;
+        console.log(document.documentElement.scrollHeight,window.innerHeight )
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        const scrollPercentRounded = Math.round(scrollPercent);
+
+        scrollIndicator.style.background = `conic-gradient(#2EC4FF ${scrollPercentRounded}%, #ddd ${scrollPercentRounded}%)`;
+        scrollIndicatorText.textContent = `${scrollPercentRounded}%`;
+    });
