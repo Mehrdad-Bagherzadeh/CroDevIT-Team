@@ -64,7 +64,8 @@ def faq4(mess):
 
 @bot.message_handler(func=lambda mess:mess.text == "درباره ما")
 def about_us5(mess):
-    bot.send_photo(mess.chat.id, open("Pics/About-us.png", "rb"), caption="درباره بیالـرن\nما در بیالرن خیلی کارا انجام می دیم و من برای این موضوع خیلی تلاش می کنم و این تلاش باعث میشه که خیلی کار خوبی نباشه و جذابیت کار کم باشه")
+    caption = "تیم CroDevIt یک تیم نوپا هست که از پنج پایه اصلی، که هر کدوم مکمل همدیگه هستند، تشکیل شده!\nبرای دیدن اطلاعات بیشتر راجع به هرکدوم از اونا، می تونید از منوی زیر استفاده کنید.\n\nهمچنین از طریق راه های زیر، میتونید با ما در ارتباط باشید!"
+    bot.send_photo(mess.chat.id, open("Pics/About-us.png", "rb"), caption=caption, parse_mode="HTML")
 
 
 @bot.message_handler(func=lambda mess:mess.text == "ارتباط با ما")

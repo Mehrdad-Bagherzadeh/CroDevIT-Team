@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18246c88-c53c-4418-ba23-ee7ed0d58622" name="Changes" comment="Designed &quot;Our Values Button&quot;">
-      <change afterPath="$PROJECT_DIR$/TelegramBot/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TelegramBot/Pics/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TelegramBot/Pics/PM Meths.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TelegramBot/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TelegramBot/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TelegramBot/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TelegramBot/PM Meths.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
