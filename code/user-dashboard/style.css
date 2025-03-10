@@ -30,6 +30,7 @@
 }
 
 *{
+    font-family: 'danalight';
     margin: 0;
     padding: 0;
     outline: 0;
@@ -119,4 +120,49 @@ b{
 }
 aside{
     height: 100vh;
+}
+aside .sidebar:hover{
+    box-shadow: none;
+}
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+aside .sidebar a.active{
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+}
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 18px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+aside .sidebar a:hover span{
+    margin-right: 0.6rem;
 }
