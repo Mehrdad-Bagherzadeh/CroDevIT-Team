@@ -5,11 +5,17 @@ const logos=document.querySelectorAll('.logo-image')
 const darkMode = document.querySelector('.dark-mode');
 
 menuBtn.addEventListener('click', () => {
+    sideMenu.classList.remove('hide');
+    sideMenu.classList.add('show');
     sideMenu.style.display = 'block';
 });
 
 closeBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'none';
+    sideMenu.classList.remove('show');
+    sideMenu.classList.add('hide');
+    setTimeout(() => {
+        sideMenu.style.display = 'none';
+    }, 400);
 });
 
 darkMode.addEventListener('click', () => {
