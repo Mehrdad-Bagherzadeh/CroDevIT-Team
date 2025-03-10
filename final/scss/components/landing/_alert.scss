@@ -1,5 +1,6 @@
 /* Styles of sales alert. */
 .alert {
+  position: absolute;
   text-align: center;
   font-weight: 500;
   background-image: linear-gradient(to right, rgba($color-primary, 0.5), rgba($color-primary, 0), rgba($color-primary, 0.5));

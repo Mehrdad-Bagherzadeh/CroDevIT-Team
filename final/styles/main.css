@@ -121,6 +121,7 @@ svg {
 
 /* Styles of sales alert. */
 .alert {
+  position: absolute;
   text-align: center;
   font-weight: 500;
   background-image: linear-gradient(to right, rgba(46, 196, 255, 0.5), rgba(46, 196, 255, 0), rgba(46, 196, 255, 0.5));
@@ -138,6 +139,15 @@ svg {
 }
 .alert--hide {
   transform: translateY(-100%);
+}
+
+.hero {
+  height: calc(100vh - 42px - 90px);
+  position: relative;
+  top: 90px;
+  background-image: url("../assets/images/landing-hero.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header__nav {
@@ -414,5 +424,5 @@ svg {
 
 /* Relevent styles to header element. */
 .header {
-  height: 150vh;
+  height: 100vh;
 }

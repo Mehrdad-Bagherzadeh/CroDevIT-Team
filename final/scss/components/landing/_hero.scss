@@ -1,0 +1,8 @@
+.hero {
+  height: calc(100vh - 42px - 90px);
+  position: relative;
+  top: 90px;
+  background-image: url('../assets/images/landing-hero.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
