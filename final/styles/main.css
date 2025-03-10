@@ -19,6 +19,14 @@
     transform: scale(1);
   }
 }
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  }
+  100% {
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+  }
+}
 /* Definition of frequently used colors. */
 /* Definition of Dana font family. */
 @font-face {
@@ -142,12 +150,22 @@ svg {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
   height: calc(100vh - 42px - 90px);
   position: relative;
   top: 90px;
   background-image: url("../assets/images/landing-hero.png");
   background-repeat: no-repeat;
   background-size: contain;
+  border-bottom: 2px solid #262626;
+}
+
+.neon-text {
+  font-size: var(--font-size-head);
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
 }
 
 .header__nav {
@@ -420,6 +438,34 @@ svg {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+}
+
+.support-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #2EC4FF;
+  color: #141414;
+  font-size: 18px;
+  border: none;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+  height: 40px;
+  border-radius: 12px;
+  font-weight: 500;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.support-btn img {
+  width: 24px;
+  height: 24px;
 }
 
 /* Relevent styles to header element. */

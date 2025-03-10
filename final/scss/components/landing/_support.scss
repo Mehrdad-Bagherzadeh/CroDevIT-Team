@@ -1,0 +1,27 @@
+.support-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: $color-primary;
+  color: $bg-dark;
+  font-size: 18px;
+  border: none;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+  height: 40px;
+  border-radius: $rounded;
+  font-weight: 500;
+  -webkit-border-radius: $rounded;
+  -moz-border-radius: $rounded;
+  -ms-border-radius: $rounded;
+  -o-border-radius: $rounded;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

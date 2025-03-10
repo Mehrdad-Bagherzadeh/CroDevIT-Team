@@ -1,14 +1,15 @@
-@import './abstracts/animations';
-@import './abstracts/variables';
+@import "./abstracts/animations";
+@import "./abstracts/variables";
 
-@import './base/fonts';
-@import './base/global';
+@import "./base/fonts";
+@import "./base/global";
 
-@import './components/landing/alert';
-@import './components/landing/hero';
-@import './components/landing/navbar';
-@import './components/landing/search-overlay';
+@import "./components/landing/alert";
+@import "./components/landing/hero";
+@import "./components/landing/navbar";
+@import "./components/landing/search-overlay";
+@import "./components/landing/support";
 
-@import './layout/landing/header';
+@import "./layout/landing/header";
 
-@import './pages/landing';
+@import "./pages/landing";

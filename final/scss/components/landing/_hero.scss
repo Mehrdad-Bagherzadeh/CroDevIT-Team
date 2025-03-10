@@ -1,8 +1,18 @@
 .hero {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
   height: calc(100vh - 42px - 90px);
   position: relative;
   top: 90px;
-  background-image: url('../assets/images/landing-hero.png');
+  background-image: url("../assets/images/landing-hero.png");
   background-repeat: no-repeat;
   background-size: contain;
+  border-bottom: $border;
+}
+
+.neon-text {
+  font-size: var(--font-size-head);
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
 }
