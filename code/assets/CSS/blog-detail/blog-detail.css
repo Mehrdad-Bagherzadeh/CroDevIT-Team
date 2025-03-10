@@ -143,17 +143,16 @@ li img{
 /* scroll circle indicator */
 .scroll-indicator-container {
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     display: none;
-    right: 50%;
-    transform: translateX(50%);
+    left: 10px;
 
     z-index: 1000;
 }
 
 .scroll-indicator {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: conic-gradient(#2EC4FF 0%, #2EC4FF 0%, #ddd 0%);
     display: flex;

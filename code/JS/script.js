@@ -110,5 +110,5 @@ searchOverlay.addEventListener("click", (e) => {
         const scrollPercentRounded = Math.round(scrollPercent);
 
         scrollIndicator.style.background = `conic-gradient(#2EC4FF ${scrollPercentRounded}%, #ddd ${scrollPercentRounded}%)`;
-        scrollIndicatorText.textContent = `${scrollPercentRounded}%`;
+        
     });

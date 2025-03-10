@@ -183,9 +183,7 @@ main .analyse > div{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-main .analyse > div:hover{
-    box-shadow: none;
-}
+
 main .analyse > div .status{
     display: flex;
     align-items: center;
@@ -239,4 +237,32 @@ main .analyse .progresss .percentage{
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+main .new-users{
+    margin-top: 1.3rem;
+}
+main .new-users .user-list{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+main .new-users .user-list .user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .new-users .user-list .user img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
 }
