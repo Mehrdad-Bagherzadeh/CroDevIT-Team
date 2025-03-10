@@ -46,4 +46,60 @@
       }
     }
   }
+  & .search__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .search {
+    &__icon {
+      cursor: pointer;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      fill: $color-secondary;
+    }
+    &__input-container {
+      position: relative;
+      margin-bottom: 24px;
+      & > input {
+        width: 100%;
+        padding: 16px 48px 16px 16px;
+        background: $color-grey;
+        border: $border;
+        border-radius: $rounded;
+        outline: none;
+        color: $color-secondary;
+        font-size: 18px;
+        font-weight: 300;
+        -webkit-border-radius: $rounded;
+        -moz-border-radius: $rounded;
+        -ms-border-radius: $rounded;
+        -o-border-radius: $rounded;
+      }
+    }
+  }
+}
+
+.hamburger {
+  // display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $color-secondary;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
 }

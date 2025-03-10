@@ -245,6 +245,59 @@ svg {
   font-weight: 550;
   font-size: 32px;
 }
+.search-overlay .search__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.search-overlay .search__close svg {
+  width: 24px;
+  height: 24px;
+}
+.search-overlay .search__icon {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  fill: #E4E4E7;
+}
+.search-overlay .search__input-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+.search-overlay .search__input-container > input {
+  width: 100%;
+  padding: 16px 48px 16px 16px;
+  background: #262626;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  outline: none;
+  color: #E4E4E7;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #E4E4E7;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
 
 /* Relevent styles to header element. */
 .header {

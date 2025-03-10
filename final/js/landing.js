@@ -1,7 +1,7 @@
 // for search overlay 
 const searchInputs = document.querySelectorAll('.nav__search input, .mobile-search input,.search__icon');
 const searchOverlay = document.querySelector('.search-overlay');
-const closeSearchBtn = document.querySelector('.close-search');
+const closeSearchBtn = document.querySelector('.search__close');
 
 // Open search overlay when clicking on any search input
 searchInputs.forEach(input => {
