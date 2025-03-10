@@ -1,0 +1,55 @@
+header {
+  border-bottom: 1px solid #262626;
+  background: linear-gradient(96deg, rgba(38, 38, 38, 0) -26.82%, #262626 100%);
+  margin-top: 85px; /*to avoid the content going under the nav bar/ad */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 396px;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "danabold";
+  color: var(--dark-text-color);
+  text-align: center;
+}
+
+h1 + p {
+  font-family: "danamedium";
+  color: var(--dark-text-color);
+  font-size: 24px;
+}
+
+.courses-category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.course-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin: 15px; /* Adjust margin to control spacing */
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15, var(--lighter-dark-background));
+  background: var(--Grey-10, var(--background-color));
+  padding: 40px 20px;
+  gap: 20px;
+  flex-basis: 300px;
+}
+
+.course-category h3 {
+  font-family: "danademibold";
+  font-size: var(--font-size-medium-titr);
+  color: var(--dark-text-color);
+}
