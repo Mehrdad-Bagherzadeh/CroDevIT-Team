@@ -1,0 +1,34 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tiny {
+    @media only screen and (max-width: $breakpoint-tiny) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $breakpoint-phone) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: $breakpoint-laptop) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media only screen and (max-width: $breakpoint-large) {
+      @content;
+    }
+  }
+}
+/*
+$breakpoint-tiny: 640px;
+$breakpoint-phone: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1280px;
+$breakpoint-large: 1536px;
+*/

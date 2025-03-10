@@ -218,94 +218,6 @@ svg {
   left: 15%;
 }
 
-.search-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-.search-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-.search-overlay.active .search-overlay-content {
-  transform: translateY(0);
-}
-.search-overlay-content {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 80px auto;
-  background-color: #141414;
-  padding: 24px;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-  transform: translateY(50px);
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transition: transform 0.3s ease;
-}
-.search-overlay-content .search__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
-.search-overlay-content .search__header h2 {
-  font-weight: 550;
-  font-size: 32px;
-}
-.search-overlay .search__close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-}
-.search-overlay .search__close svg {
-  width: 24px;
-  height: 24px;
-}
-.search-overlay .search__icon {
-  cursor: pointer;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  fill: #E4E4E7;
-}
-.search-overlay .search__input-container {
-  position: relative;
-  margin-bottom: 24px;
-}
-.search-overlay .search__input-container > input {
-  width: 100%;
-  padding: 16px 48px 16px 16px;
-  background: #262626;
-  border: 2px solid #262626;
-  border-radius: 12px;
-  outline: none;
-  color: #E4E4E7;
-  font-size: 18px;
-  font-weight: 300;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -410,6 +322,94 @@ svg {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.search-overlay.active .search-overlay-content {
+  transform: translateY(0);
+}
+.search-overlay-content {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  background-color: #141414;
+  padding: 24px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transition: transform 0.3s ease;
+}
+.search-overlay-content .search__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.search-overlay-content .search__header h2 {
+  font-weight: 550;
+  font-size: 32px;
+}
+.search-overlay .search__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.search-overlay .search__close svg {
+  width: 24px;
+  height: 24px;
+}
+.search-overlay .search__icon {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  fill: #E4E4E7;
+}
+.search-overlay .search__input-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+.search-overlay .search__input-container > input {
+  width: 100%;
+  padding: 16px 48px 16px 16px;
+  background: #262626;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  outline: none;
+  color: #E4E4E7;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 /* Relevent styles to header element. */
