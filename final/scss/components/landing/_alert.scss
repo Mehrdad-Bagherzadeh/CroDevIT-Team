@@ -2,12 +2,19 @@
 .alert {
   text-align: center;
   font-weight: 500;
-  padding: 10px;
   background-image: linear-gradient(to right, rgba($color-primary, 0.5), rgba($color-primary, 0), rgba($color-primary, 0.5));
+  position: relative;
+  padding: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  height: 42px;
   &__text {
     font-size: $font-size-xl;
     &--accent {
       color: $color-accent;
     }
+  }
+  &--hide {
+    transform: translateY(-100%);
   }
 }

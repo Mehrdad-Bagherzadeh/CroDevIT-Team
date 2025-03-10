@@ -1,3 +1,48 @@
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+});
+
+// Close menu when clicking a link
+// document.querySelectorAll('.mobile-links a').forEach(link => {
+//   link.addEventListener('click', () => {
+//     hamburger.classList.remove('active');
+//     mobileMenu.classList.remove('active');
+//     document.body.style.overflow = '';
+//   });
+
+// });
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.mobile-menu') && !event.target.closest('.hamburger')) {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+let lastScrollTop = 0;
+const ad = document.querySelector('.alert');
+const nav = document.querySelector('nav');
+const scrollThreshold = 40;  //it's the height we scroll
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Handle ad visibility
+  if (currentScroll > scrollThreshold) {
+    ad.classList.add('hide');
+    nav.classList.add('sticky');
+  } else {
+    ad.classList.remove('hide');
+    nav.classList.remove('sticky');
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+}, { passive: true });
+
 // for search overlay 
 const searchInputs = document.querySelectorAll('.nav__search input, .mobile-search input,.search__icon');
 const searchOverlay = document.querySelector('.search-overlay');

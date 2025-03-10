@@ -1,35 +1,35 @@
 nav{
-    display: flex;
+    /* display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: var(--section-padding);
-    background-color: var(--background-color);
+    background-color: var(--background-color); */
 
 }
 .ad {
-    position: relative;
+    /* position: relative;
     background: var(--dark-background);
     padding: 10px;
     transition: all 0.3s ease;
     transform: translateY(0);
-    height: 42px;
+    height: 42px; */
   }
   
   .ad.hide {
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
   }
   
   nav {
-    position: fixed;
-    top: 42px; /* Initial position below ad */
+    /* position: fixed;
+    top: 42px;
     left: 0;
     right: 0;
     background: var(--lighter-dark-background) !important;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 15px 20px;
+    padding: 15px 20px; */
   }
 /* .link-list .active-link{
     background-color: var(--dark-background) !important;
@@ -39,8 +39,8 @@ nav{
 
 } */
   nav.sticky {
-    top: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   }
   
   /* Add padding to header to prevent content jump */
@@ -171,24 +171,24 @@ header .header-image img{
 
 /* for mobile screen */
 .hamburger {
-  display: none;
+  /* display: none;
   cursor: pointer;
   position: relative;
-  z-index: 100;
+  z-index: 100; */
   
 }
 
 .hamburger span {
-  display: block;
+  /* display: block;
   width: 25px;
   height: 3px;
   background-color: var(--dark-text-color);
   margin: 5px 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 /* mobile siddbar */
 .mobile-menu {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: -100%;
     width: 80%;
@@ -198,70 +198,70 @@ header .header-image img{
     font-family:'danalight';
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; */
   }
   
   .mobile-menu.active {
-    right: 0;
+    /* right: 0;
     opacity: 1;
-    visibility: visible;
+    visibility: visible; */
   }
   
   .mobile-menu-content {
-    padding: 80px 24px;
+    /* padding: 80px 24px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 32px;
+    gap: 32px; */
   }
   
   .mobile-links {
-    list-style: none;
-    padding: 0;
+    /* list-style: none;
+    padding: 0; */
     
   }
   
   .mobile-links li {
-    margin: 24px 0;
+    /* margin: 24px 0;
     transform: translateX(50px);
     opacity: 0;color: var(--dark-text-color);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; */
   }
   
   .mobile-menu.active .mobile-links li {
-    transform: translateX(0);
-    opacity: 1;
+    /* transform: translateX(0);
+    opacity: 1; */
   }
   
-  .mobile-links li:nth-child(1) { transition-delay: 0.1s; }
+  /* .mobile-links li:nth-child(1) { transition-delay: 0.1s; }
   .mobile-links li:nth-child(2) { transition-delay: 0.2s; }
   .mobile-links li:nth-child(3) { transition-delay: 0.3s; }
-  .mobile-links li:nth-child(4) { transition-delay: 0.4s; }
+  .mobile-links li:nth-child(4) { transition-delay: 0.4s; } */
   
   .mobile-links a {
-    text-decoration: none;
+    /* text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 500; */
   }
   
   .mobile-search {
-    position: relative;
+    /* position: relative;
     margin-top: auto;
     transform: translateY(30px);
     opacity: 1;
-    transition: all 0.3s ease 0.5s;
+    transition: all 0.3s ease 0.5s; */
     
   }
   
   .mobile-menu.active .mobile-search {
-    transform: translateY(0);
-    opacity: 1;
+    /* transform: translateY(0);
+    opacity: 1; */
   }
   
   .mobile-search input {
-    width: 100%;
+    /* width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 12px 16px;
@@ -269,18 +269,18 @@ header .header-image img{
     color: var(--dark-text-color);
     background-color: var(--dark-background);
     outline: none;
-    font-size: 1rem;
+    font-size: 1rem; */
   }
   
   .mobile-search .search-icon {
-    position: absolute;
-    left: 12px;
+    /* position: absolute; */
+    /* left: 12px;
     top: 70%;
     transform: translateY(-50%);
     
     width: 40px;
     fill: var(--dark-text-color);
-    height: 40px;
+    height: 40px; */
   }
   /* Search Overlay Styles */
 /* .search-overlay {

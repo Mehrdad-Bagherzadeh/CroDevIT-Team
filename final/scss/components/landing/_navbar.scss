@@ -5,6 +5,20 @@
   padding: 10px;
   width: 100%;
   background-color: $color-grey-dark;
+  position: fixed;
+  top: 42px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  &.sticky {
+    top: 0;
+  }
   .nav__items-container {
     display: flex;
     gap: 40px;
