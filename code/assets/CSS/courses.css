@@ -10,11 +10,17 @@ header {
   margin-bottom: 0;
 }
 
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 h1 {
   font-size: 42px;
   font-family: "danabold";
   color: var(--dark-text-color);
-  text-align: center;
 }
 
 h1 + p {
@@ -70,17 +76,18 @@ main {
   flex-direction: column;
   margin: 0px 80px;
   position: relative;
+  overflow: hidden;
 }
 
 .course-item-header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
 
 .course-category-icon {
-  width: 60px;
-  margin-right: 10px; /* Add some space between the icon and the title */
+  width: 50px;
 }
 
 .course-category-title {
@@ -122,9 +129,9 @@ main {
   gap: 30px;
   position: relative;
   padding-block: 50px;
-  overflow: hidden;
   justify-content: center;
   align-content: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .swipe-btns-container {
@@ -135,6 +142,7 @@ main {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000;
 }
 
 .swipe-btn {
@@ -150,13 +158,13 @@ main {
   cursor: pointer;
 }
 
-.pervious img {
+.previous img {
   transform: scaleX(-1);
 }
 .course-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   border-radius: 12px;
   border: 2px solid var(--Grey-15, #262626);
   padding: 30px;
@@ -255,18 +263,38 @@ main {
   font-size: 24px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
   .course-list-item {
     margin: 0px 10px;
   }
 }
 
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 560px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h1 + p {
+    font-size: 18px;
+  }
+
+  .course-category-icon {
+    width: 32px;
+  }
   .course-category-title {
     font-size: var(--font-size-text-extra);
   }
   .see-more-btn {
-    top: 80px;
+    top: 60px;
     padding: 8px;
     font-size: var(--font-size-text-medium);
   }
