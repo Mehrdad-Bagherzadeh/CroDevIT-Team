@@ -10,6 +10,7 @@ main {
 }
 
 .course-title {
+  margin-top: 35px;
   font-family: "danabold";
   font-size: 48px;
   color: var(--dark-text-color);
@@ -19,6 +20,7 @@ main {
   font-family: "danamedium";
   font-size: 24px;
   color: rgba(228, 228, 231, 0.75);
+  margin-bottom: 12px;
 }
 
 .course-teacher span {
@@ -44,6 +46,29 @@ main {
   font-family: "danabold";
   font-size: 36px;
   color: var(--dark-text-color);
+  margin-top: 86px;
+  position: relative;
+}
+
+.course-section-title::before {
+  content: "";
+  margin-left: 10px;
+  background-color: #2ec4ff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(46, 196, 255, 100%);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
 }
 
 .course-section-title + p {
