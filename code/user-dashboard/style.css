@@ -662,6 +662,7 @@
       align-items: center;
       background-color: var(--color-white);
       padding: 0 var(--padding-1);
+      flex-direction: row-reverse;
       height: 4.6rem;
       width: 100%;
       z-index: 2;
