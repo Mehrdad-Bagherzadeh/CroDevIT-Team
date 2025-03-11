@@ -84,9 +84,10 @@
 
 .neon-text {
   font-size: var(--font-size-head);
-  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
-    0 0 40px #ff005e, 0 0 80px #ff005e;
-  animation: glow 1.5s infinite alternate;
+  /* Simplified text-shadow and added performance hint */
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e;
+  animation: glow 2s infinite alternate;
+  will-change: text-shadow;
 }
 .block {
   position: relative;
@@ -173,12 +174,10 @@
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
-      0 0 40px #ff005e, 0 0 80px #ff005e;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e;
   }
   100% {
-    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff,
-      0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    text-shadow: 0 0 7px #00d4ff, 0 0 14px #00d4ff;
   }
 }
 @keyframes glowing {
