@@ -1,0 +1,84 @@
+main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.course-image {
+  border-radius: 12px;
+}
+
+.course-title {
+  font-family: "danabold";
+  font-size: 48px;
+  color: var(--dark-text-color);
+}
+
+.course-teacher {
+  font-family: "danamedium";
+  font-size: 24px;
+  color: rgba(228, 228, 231, 0.75);
+}
+
+.course-teacher span {
+  font-family: "danamedium";
+  font-size: 24px;
+  color: rgba(255, 176, 0, 0.75);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.rectangle-div {
+  width: 100%;
+  position: relative;
+  background-color: #262626;
+  height: 2px;
+}
+
+.course-section-title {
+  font-family: "danabold";
+  font-size: 36px;
+  color: var(--dark-text-color);
+}
+
+.course-section-title + p {
+  font-family: "danamedium";
+  font-size: 20px;
+  color: rgba(228, 228, 231, 0.75);
+}
+
+.course-card {
+  width: 450px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid #262626;
+}
+
+.course-card-image {
+  width: 100%;
+}
+
+.card-data-pairs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 28px;
+}
+
+.card-data-pairs-container h3 {
+  font-family: "danabold";
+  font-size: 24px;
+  color: var(--dark-text-color);
+}
+
+.card-data-pairs-container p {
+  font-family: "danamedium";
+  font-size: 20px;
+  color: var(--dark-text-color);
+}
