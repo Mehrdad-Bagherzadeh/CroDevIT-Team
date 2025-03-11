@@ -1,5 +1,5 @@
 main {
-  margin-top: 80px;
+  margin-top: 130px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,21 +54,30 @@ main {
 
 .course-card {
   width: 450px;
-  height: 700px;
+  height: fit-content;
   flex-shrink: 0;
   border-radius: 12px;
   border: 2px solid #262626;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .course-card-image {
   width: 100%;
 }
 
+.previous-price {
+  display: block;
+  text-decoration: line-through solid rgba(228, 228, 231, 0.5);
+  color: rgba(228, 228, 231, 0.5);
+}
+
 .card-data-pairs-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 28px;
 }
 
 .card-data-pairs-container h3 {
@@ -78,7 +87,39 @@ main {
 }
 
 .card-data-pairs-container p {
+  text-align: center;
   font-family: "danamedium";
   font-size: 20px;
   color: var(--dark-text-color);
+}
+
+p.course-card-difficulty {
+  color: #0bff7b;
+}
+
+.course-card-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  all: unset;
+  width: 180px;
+  text-align: center;
+  padding-block: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "danamedium";
+  font-size: 24px;
+  color: var(--dark-text-color);
+}
+
+.enrol-btn {
+  background: #2ec4ff;
+}
+
+.see-sections-btn {
+  border: 1px solid #2ec4ff;
 }
