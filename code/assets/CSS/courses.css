@@ -23,6 +23,10 @@ h1 + p {
   font-size: 24px;
 }
 
+main {
+  margin-top: 0;
+}
+
 .courses-category-container {
   display: flex;
   flex-direction: row;
@@ -32,7 +36,7 @@ h1 + p {
   width: 100%;
 }
 
-.course-category {
+.category-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,8 +52,263 @@ h1 + p {
   flex-basis: 300px;
 }
 
-.course-category h3 {
+.category-icon h3 {
   font-family: "danademibold";
-  font-size: var(--font-size-medium-titr);
+  font-size: var(--font-size-text-extra);
   color: var(--dark-text-color);
+}
+
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.course-list-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 80px;
+  position: relative;
+}
+
+.course-item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.course-category-icon {
+  width: 60px;
+  margin-right: 10px; /* Add some space between the icon and the title */
+}
+
+.course-category-title {
+  color: var(--dark-text-color);
+  font-family: "danabold";
+  font-size: var(--font-size-medium-titr);
+}
+
+.course-category-subtitle {
+  color: var(--dark-text-color);
+  font-family: "danalight";
+}
+
+.see-more-btn {
+  all: unset;
+  padding: 12px 24px;
+  color: var(--dark-text-color);
+  font-family: "danabold";
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  border: 2px solid var(--lighter-dark-background);
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.see-more-btn:hover {
+  background-color: var(
+    --lighter-dark-background
+  ); /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.course-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+  padding-block: 50px;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+}
+
+.swipe-btns-container {
+  display: flex;
+  gap: 26px;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swipe-btn {
+  all: unset;
+  width: 80px;
+  height: 80px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  border: 2px solid var(--lighter-dark-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pervious img {
+  transform: scaleX(-1);
+}
+.course-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--Grey-15, #262626);
+  padding: 30px;
+}
+
+.teacher {
+  border-radius: 28px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-10, #1a1a1a);
+  padding: 8px 14px;
+  align-items: flex-start;
+  width: fit-content;
+  color: var(--dark-text-color);
+  font-family: "danamedium";
+}
+
+.course-title {
+  color: var(--dark-text-color);
+  font-family: "danabold";
+  font-size: var(--font-size-medium-titr);
+}
+
+.course-description {
+  color: rgba(228, 228, 231, 0.5);
+  text-align: right;
+  font-family: "danalight";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.course-skills-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.course-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 28px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-10, #1a1a1a);
+  padding: 8px 14px;
+}
+
+.course-skill span {
+  color: var(--dark-text-color);
+}
+
+.price-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.enroll-course-btn {
+  all: unset;
+  cursor: pointer;
+  font-family: "danabold";
+  font-size: 20px;
+  padding: 18px 24px;
+  gap: 8px;
+  border-radius: 10px;
+  background: #2ec4ff;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.enroll-course-btn:hover {
+  background-color: #1a8fbf; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly scale the button */
+  box-shadow: 0 0px 8px #1a8fbf; /* Add a box-shadow */
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price-text {
+  color: var(--dark-text-color);
+  text-align: left;
+  font-family: "danamedium";
+  color: rgba(228, 228, 231, 0.5);
+  font-size: 18px;
+}
+
+.course-price {
+  color: var(--dark-text-color);
+  font-family: "danabold";
+  font-size: 24px;
+}
+
+@media (max-width: 1500px) {
+  .course-list-item {
+    margin: 0px 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .course-category-title {
+    font-size: var(--font-size-text-extra);
+  }
+  .see-more-btn {
+    top: 80px;
+    padding: 8px;
+    font-size: var(--font-size-text-medium);
+  }
+  .course-item {
+    width: 320px;
+    gap: 10px;
+    padding: 15px;
+  }
+  .swipe-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .swipe-btn img {
+    width: 25px;
+  }
+
+  .teacher {
+    font-size: var(--font-size-text-medium);
+  }
+  .course-title {
+    font-size: var(--font-size-text-extra);
+  }
+  .course-description {
+    font-size: var(--font-size-text-medium);
+  }
+  .course-skills-container {
+    gap: 4px;
+  }
+  .course-skill {
+    padding: 4px;
+    font-size: var(--font-size-text-medium);
+  }
+  .enroll-course-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .price-text {
+    font-size: var(--font-size-text-medium);
+  }
+  .course-price {
+    font-size: var(--font-size-text-large);
+  }
 }
