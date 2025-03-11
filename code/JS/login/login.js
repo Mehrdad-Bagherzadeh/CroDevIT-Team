@@ -5,6 +5,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const pinInputs = document.querySelectorAll(".pin");
   const verifyBtn = document.getElementById("verifyBtn");
 
+  loginInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent accidental form submission
+      loginBtn.click(); // Simulate login button click
+    }
+  });
+
+  // Submit PIN with "Enter"
+  pinInputs.forEach((input, index, inputs) => {
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        verifyBtn.click(); // Simulate verify button click
+      }
+    });
+  });
+
   // Create an error message for the login input
   const errorMessage = document.createElement("p");
   errorMessage.id = "errorMessage";
