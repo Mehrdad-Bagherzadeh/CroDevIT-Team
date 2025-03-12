@@ -45,7 +45,7 @@ There will be a dashboard for Each user on BiaLearn. What really Matters about t
 - ✏️ Active Communities
   - one other thing that makes BiaLearn a Bit Special is Active communities. You can simply Talk to your peers who are also learning alongside you. **Ask, Inspire and Make BiaLearn A better Place For Everyone!**
 > [!CAUTION]
-> BiaLearn Recommends not share any sensetive info within Communities.
+> BiaLearn Recommends not to share any sensetive info within Communities.
  
   ## 📞 Contact us ![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white) ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
   If you still have any Questions about How to use BiaLearn, We'll be Pleased to halp you out there!
