@@ -1,15 +1,46 @@
 .hero {
+  padding-right: 42px;
   display: flex;
-  align-items: center;
-  padding-right: 50px;
-  height: calc(100vh - 42px - 90px);
+  justify-content: space-between;
+  align-items: start;
   position: relative;
-  top: 90px;
-  background-image: url("../assets/images/landing-hero.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-top: 100px;
+  gap: 16px;
   border-bottom: $border;
-  font-size: 30px;
+  &__bottom-arrow {
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $color-grey;
+    img {
+      height: 80%;
+    }
+  }
+  &__content {
+    align-self: center;
+    padding-bottom: 68px;
+    p {
+      font-size: 18px;
+      line-height: 2;
+      margin-top: 32px;
+      font-weight: 300;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 550;
+    }
+  }
+  &__btn {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+  }
 }
 
 .neon-text {
