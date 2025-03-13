@@ -254,8 +254,21 @@ p.course-card-difficulty {
   background: #2ec4ff;
 }
 
+.enrol-btn:hover {
+  background: #1aa3cc;
+  transform: scale(1.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
 .see-session-btn {
   border: 1px solid #2ec4ff;
+}
+
+.see-session-btn:hover {
+  border-color: #1aa3cc;
+  color: #1aa3cc;
+  transform: scale(1.05);
+  transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 /* Responsive Design */
