@@ -14,7 +14,6 @@ main {
 .course-image {
   border-radius: 12px;
   width: 100%; /* Make the image responsive */
-  max-width: 600px;
   height: auto;
 }
 
@@ -68,10 +67,10 @@ main {
   animation: pulse-animation 2s infinite;
 }
 
-.session-section {
+.sessions-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .sessions-container {
@@ -92,6 +91,8 @@ main {
   padding: 10px;
   border-radius: 12px;
   color: var(--dark-text-color);
+  font-size: 26px;
+  padding-block: 20px;
   border: 2px solid #262626;
   position: relative;
   transition: border-radius 0.3s;
@@ -224,7 +225,7 @@ p.course-card-difficulty {
   background: #2ec4ff;
 }
 
-.see-sections-btn {
+.see-session-btn {
   border: 1px solid #2ec4ff;
 }
 
@@ -247,7 +248,7 @@ p.course-card-difficulty {
 
 @media screen and (max-width: 1024px) {
   .course-card {
-    width: 90%;
+    width: 70%;
     margin-top: 20px;
   }
 }
@@ -261,8 +262,16 @@ p.course-card-difficulty {
     font-size: 28px;
     text-align: center;
   }
+  .season {
+    font-size: 20px;
+  }
+
+  .session {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
   .btn {
-    width: 100%;
     padding: 14px;
   }
   .course-card {
@@ -283,5 +292,14 @@ p.course-card-difficulty {
   }
   .course-card {
     padding: 16px;
+  }
+  .course-card-btn-container {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .btn {
+    font-size: 20px;
   }
 }
