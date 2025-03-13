@@ -55,6 +55,11 @@ main {
   position: relative;
 }
 
+.course-section-title + p {
+  color: rgba(228, 228, 231, 0.75);
+  font-family: "danamedium";
+  font-size: 24px;
+}
 .course-section-title::before {
   content: "";
   margin-left: 10px;
