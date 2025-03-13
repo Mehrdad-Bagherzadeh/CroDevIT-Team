@@ -32,7 +32,7 @@ main {
   margin-bottom: 12px;
 }
 
-.course-teacher span {
+.course-teacher a {
   font-family: "danamedium";
   font-size: 24px;
   color: rgba(255, 176, 0, 0.75);
@@ -55,7 +55,7 @@ main {
   position: relative;
 }
 
-.course-section-title + p {
+.course-section-description {
   color: rgba(228, 228, 231, 0.75);
   font-family: "danamedium";
   font-size: 24px;
@@ -87,6 +87,7 @@ main {
   border: 1px solid var(--Grey-15, #262626);
   background: var(--Grey-10, #1a1a1a);
   padding: 8px 14px;
+  margin-bottom: 10px;
 }
 
 .course-skill span {
