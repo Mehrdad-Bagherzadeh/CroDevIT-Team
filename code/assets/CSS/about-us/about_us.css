@@ -301,6 +301,10 @@ padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.team-item:nth-child(){
+  flex-direction: row-reverse;
 }
 .line{
   width: 100px;

@@ -16,6 +16,7 @@ header .bottom_arrow {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(50%);
   right: 50%;
   width: 60px;
   height: 60px;
@@ -54,7 +55,7 @@ header .header-content h1 {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "danalight";
-  color: var(--light-text-color);
+  color: black;
   background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
@@ -62,8 +63,9 @@ header .header-content h1 {
   transition: background-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 .btn-contained:hover {
-  background-color: var(--accent-color);
+  background-color: var(--emotion-color);
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(93, 91, 91, 0.2);
   color: var(--text-color);
@@ -327,7 +329,7 @@ main {
 .stars {
   display: flex;
   gap: 10px;
-  justify-content: end;
+  justify-content: start;
   margin: 16px 24px;
 }
 .star {
@@ -368,9 +370,22 @@ main {
 }
 .comment-author > div {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
   align-items: end;
+}
+
+.comment-author div > div p{
+  justify-self: end;
+  text-align: end ;
+}
+.comment-author  img{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .comment-author p {
   font-size: var(--font-size-mobile);
@@ -378,9 +393,19 @@ main {
   color: var(--dark-text-color);
 }
 .comment-author span {
-  font-size: var(--font-size-mobile);
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  position: relative;
   font-family: "danalight";
   color: var(--gray-color);
+}
+.comment-author span img{
+  position: absolute;
+  right: -45px;
 }
 /* questions */
 .questions > p > a {

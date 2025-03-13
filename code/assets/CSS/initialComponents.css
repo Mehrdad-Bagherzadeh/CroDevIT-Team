@@ -62,10 +62,7 @@ nav {
   color: var(--dark-text-color);
   font-size: var(--font-size-nav);
 }
-.link-list li > a{
 
-  
-}
 .link-list .active-link {
   color: var(--primary-color) !important;
   
@@ -93,6 +90,9 @@ nav.sticky {
   justify-content: center;
   align-items: center;
 }
+.link-list li a:hover{
+  color: var(--primary-color);
+}
 
 .left-side-nav button {
   border-radius: 4px;
@@ -107,32 +107,33 @@ nav.sticky {
   background: #141414;
 }
 .search-container {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   position: relative;
 }
-.left-side-nav input {
-  padding: 10px;
+.left-side-nav .btn-outline {
+  padding: 10px !important;
   border-radius: 4px;
-
-  border: 2px solid #262626;
+  width: 120px !important ;
+  border: 2px solid var(--primary-color);
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   color: var(--dark-text-color);
   font-family: "danalight";
-  width: 250px;
   height: 52px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #141414;
+  background: transparent !important;
 }
 .search-container svg {
   width: 20px;
   height: 20px;
-  position: absolute;
   fill: var(--dark-text-color);
-  right: 80%;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 .support-btn {
   position: fixed;
@@ -318,8 +319,22 @@ footer {
   gap: 24px;
   color: var(--dark-text-color);
 }
+.left-side-nav{
+  display: flex ;
+  align-items: center;
+   gap: 10px;
+}
+.left-side-nav .btn-outline {
+  width: 100px;
+  border-radius: 10px;
+}
+.footer-list li {
+  font-family: "danamedium";
+  font-size: 16px;
+}
 .header-list {
   font-family: "danademibold";
+  font-size:24px !important;
 }
 .footer-list ul,
 .footer-social ul {
@@ -406,6 +421,9 @@ footer {
   opacity: 0;
   color: var(--dark-text-color);
   transition: all 0.3s ease;
+}
+.mobile-links li.active a{
+  color: #414141;
 }
 
 .mobile-menu.active .mobile-links li {
@@ -528,7 +546,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: var(--accent-color);
+  background-color: var(--emotion-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -728,22 +746,15 @@ footer {
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
-}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 
 /* media queries */
 @media only screen and (max-width: 600px) {
   .mobile-menu {
     display: block;
-    width:80% !important;
+    height: 100vh;
+    width:70% !important;
+    
   }
 }
 @media screen and (max-width: 900px) {

@@ -2,16 +2,43 @@ nav{
     position: fixed;
     top: 0;
 }
+
+.scroll-top img{
+    
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(180deg);
+}
+.scroll-top.active{
+    display: block;
+}
 .blog-container {
   padding: var(--section-padding);
   align-items: start;
   gap: 100px;
   display: flex;
-  height: 1000px;
-  overflow-y: auto;
-  
-}
+  height:100svh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 
+}
+.scroll-top{
+    position: absolute;
+    bottom: -100px;
+    display: none;
+    right: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .breadcrumbs , .breadcrumbs-left-section{
   display: flex;
   justify-content: start;
@@ -45,6 +72,8 @@ nav{
     display: flex;
     align-items: start;
     flex-direction: column;
+    height: 1000px;
+    overflow-y: auto;
     
 }
 .left-section {
@@ -52,7 +81,7 @@ nav{
     position: sticky;
     padding: 12px;
     display: flex;
-    width: 30%;
+    width: 400px;
     top:100px;
     align-self: left;
     flex:1 ;
@@ -75,6 +104,10 @@ nav{
 
     color: var(--dark-text-color);
 }
+.left-section-item > img{
+    width: 50px;
+    height: 50px;
+}
 .left-section-item h3{
     font-family: 'danabold';
     font-size: 24px;
@@ -84,8 +117,12 @@ nav{
     font-size: 24px;
 }
 .left-section-item li{
-    display: flex;
+  
+}
+.left-section li > a{
+      display: flex;
     align-items: center;
+    justify-content: start;
     gap: 12px;
 }
 li img{
@@ -143,17 +180,16 @@ li img{
 /* scroll circle indicator */
 .scroll-indicator-container {
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     display: none;
-    right: 50%;
-    transform: translateX(50%);
+    left: 10px;
 
     z-index: 1000;
 }
 
 .scroll-indicator {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: conic-gradient(#2EC4FF 0%, #2EC4FF 0%, #ddd 0%);
     display: flex;
@@ -171,7 +207,7 @@ li img{
     color: #000;
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1400px) {
     .scroll-indicator-container{display: block;}
     nav{
         position: fixed;

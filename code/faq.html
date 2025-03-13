@@ -22,19 +22,22 @@
     </div>
     <nav>
       <div class="logo-container">
-        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
-      </div>
+        <a href="./index.html">
+          <img src="./assets/images/home/logo-dark.png" alt="بیالرن" /></a>      </div>
       <div class="links-container">
         <ul class="link-list">
-          <li><a href="#" class="active-link">خانه </a></li>
+          <li><a href="./index.html">خانه </a></li>
           <li><a href="#" class="">دوره ها </a></li>
-          <li><a href="#" class=""> درباره ما </a></li>
-          <li><a href="#" class=""> بلاگ</a></li>
+          <li><a href="./about-us.html" class=""> درباره ما </a></li>
+          <li><a href="./blogs.html" class=""> بلاگ</a></li>
+          
         </ul>
       </div>
       <div class="left-side-nav">
+
         <div class="search-container">
-          <input type="text" placeholder="جست و جو" name="" id="" />
+          <a href="./login.html"> <button class="btn-outline"> ورود | ثبت نام </button></a>
+
           <svg class="search-icon">
             <use
               xlink:href="./assets/Images/home/icons/sprite.svg#search"
@@ -76,10 +79,12 @@
       <div class="mobile-menu">
         <div class="mobile-menu-content">
           <ul class="mobile-links">
-            <li class=""><a href="#" class="neon-text">خانه </a></li>
-            <li><a href="#" class="neon-text">دوره ها </a></li>
-            <li><a href="#" class="neon-text">درباره ما </a></li>
-            <li><a href="#" class="neon-text">بلاگ</a></li>
+            <li class=""><a href="./index.html" class="">خانه </a></li>
+            <li><a href="#" class="">دوره ها </a></li>
+            <li><a href="./about-us.html" class="">درباره ما </a></li>
+            <li><a href="./blogs.html" class="">بلاگ</a></li>
+            <li>  <a href="./login.html" class="btn-contained">   ورود | ثبت نام</a></li>
+
             <div class="mobile-search">
               <input type="text" placeholder="جست و جو" />
               <svg class="search-icon">
@@ -92,6 +97,7 @@
         </div>
       </div>
     </nav>
+
 
     <main>
       <div class="question-search-container">
@@ -168,61 +174,62 @@
           <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت
           در ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
         </p>
-        <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
-      </div>
+        <a href="https://www.linkedin.com/company/bialearn/">
+          <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+        </a>      </div>
     </main>
 
-    <footer>
-      <div class="footer">
-        <div class="subscription">
-          <img src="./assets/Images/home/logo-dark 1.png" alt="" />
-          <p>از جدیدترین رویداد ها بهره مند شوید</p>
-          <div class="sub-form">
-            <input type="text" placeholder="ایمیل خود را وارد کنید" />
-            <button class="btn-contained">ارسال</button>
-          </div>
-          <p class="policy">
-            ارسال ایمیل توسط شما به این معناست که <a href="">قوانین</a> ما را
-            پذیرفته اید
-          </p>
+    <div class="footer">
+      <div class="subscription">
+        <img src="./assets/Images/home/logo-dark 1.png" alt="" />
+        <p>از جدیدترین رویداد ها بهره مند شوید</p>
+        <div class="sub-form">
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button class="btn-contained">ارسال</button>
         </div>
-        <div class="footer-list">
-          <ul>
-            <li class="header-list">عنوان</li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-          </ul>
-          <ul>
-            <li class="header-list">عنوان</li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assets/Images/home/icons/youtube.svg"
-                  alt="youtube"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/Images/home/icons/twiter.svg" alt="twiter"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/Images/home/icons/linkedin.svg" alt=""
-              /></a>
-            </li>
-          </ul>
-        </div>
+        <p class="policy">
+          ارسال ایمیل توسط شما به این معناست که <a href="">قوانین</a> ما را
+          پذیرفته اید
+        </p>
       </div>
-    </footer>
+      <div class="footer-list">
+        <!-- <ul>
+          <li class="header-list">عنوان</li>
+          <li><a href="#">لینک</a></li>
+          <li><a href="#">لینک</a></li>
+          <li><a href="#">لینک</a></li>
+        </ul> -->
+        <ul>
+          <li class="header-list">بیالرن</li>
+          <li><a href="#">فرصت های شغلی</a></li>
+          <li><a href="#">همکاری با ما</a></li>
+          <li><a href="#">فروش سازمانی</a></li>
+          <li><a href="#">پشتیبانی</a></li>
+          <li><a href="./faq.html">سوالات متداول</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/Images/home/icons/intagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/Images/home/icons/x.svg" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/bialearn/"
+              ><img src="./assets/Images/home/icons/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="copy-right">
       <p>️کپی‌رایت 2025، تمامی حقوق برای <a href="">CroDevIT</a> محفوظ است.</p>
       <p>All Right Deserved; Developed by CRODEVIT team</p>

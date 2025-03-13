@@ -148,7 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   verifyBtn.addEventListener("click", () => {
     if (validatePin()) {
-      alert("ورود موفقیت‌آمیز!"); // Replace with actual submission logic
+      alert("ورود موفقیت‌آمیز!");
+      window.location.href = "../user-dashboard/index.html"; // Replace with the actual path to your dashboard page
+
+      // Replace with actual submission logic
     }
   });
 

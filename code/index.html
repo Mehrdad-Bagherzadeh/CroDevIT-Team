@@ -21,7 +21,8 @@
     </div>
     <nav>
       <div class="logo-container">
-        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
+        <a href="./index.html">
+        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" /></a>
       </div>
       <div class="links-container">
         <ul class="link-list">
@@ -33,7 +34,10 @@
       </div>
       <div class="left-side-nav">
         <div class="search-container">
-          <input type="text" placeholder="جست و جو" name="" id="" />
+          <a href="./login.html">
+            <button class="btn-outline">ورود | ثبت نام</button></a
+          >
+
           <svg class="search-icon">
             <use
               xlink:href="./assets/Images/home/icons/sprite.svg#search"
@@ -75,10 +79,14 @@
       <div class="mobile-menu">
         <div class="mobile-menu-content">
           <ul class="mobile-links">
-            <li class=""><a href="./index.html" class="">خانه </a></li>
+            <li class="active"><a c href="./index.html">خانه </a></li>
             <li><a href="#" class="">دوره ها </a></li>
             <li><a href="./about-us.html" class="">درباره ما </a></li>
             <li><a href="./blogs.html" class="">بلاگ</a></li>
+            <li>
+              <a href="./login.html" class="btn-contained"> ورود | ثبت نام</a>
+            </li>
+
             <div class="mobile-search">
               <input type="text" placeholder="جست و جو" />
               <svg class="search-icon">
@@ -92,7 +100,6 @@
       </div>
     </nav>
 
-
     <div id="chatSupportComponent"></div>
     <header>
       <div class="header-content">
@@ -105,7 +112,9 @@
         </p>
         <div class="header-btn">
           <button class="btn-outline">بیشتر بدون !</button>
-          <a href="./login.html"> <button class="glow-on-hover">ورود/ثبت نام</button></a>
+          <a href="./login.html">
+            <button class="glow-on-hover">ورود/ثبت نام</button></a
+          >
         </div>
       </div>
       <div class="header-image">
@@ -291,8 +300,11 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>حمید محمدی</p>
+                    <span>Talent Acquisition Specialist </span>
+                  </div>
+                  <img src="./assets/Images/home/snapp_logo.png" alt="" />
                 </div>
                 <img src="./assets/Images/home/Profile.svg" alt="" />
               </div>
@@ -325,10 +337,12 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>ارشیا ستوده</p>
+                    <span style="text-align: end"> Frontend Developer </span>
+                  </div>
                 </div>
-                <img src="./assets/Images/home/Profile.svg" alt="" />
+                <img src="./assets/Images/home/sotoode.png" alt="" />
               </div>
             </div>
             <div class="comments-item">
@@ -359,10 +373,12 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>مهشید مغانلو</p>
+                    <span>دانشجوی ارشد بیوتکنولوژی </span>
+                  </div>
                 </div>
-                <img src="./assets/Images/home/Profile.svg" alt="" />
+                <img src="./assets/Images/home/master-student.avif" alt="" />
               </div>
             </div>
           </div>
@@ -419,7 +435,9 @@
           <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت
           در ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
         </p>
-        <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+        <a href="https://www.linkedin.com/company/bialearn/">
+          <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+        </a>
       </div>
     </main>
     <footer>
@@ -437,17 +455,19 @@
           </p>
         </div>
         <div class="footer-list">
-          <ul>
+          <!-- <ul>
             <li class="header-list">عنوان</li>
             <li><a href="#">لینک</a></li>
             <li><a href="#">لینک</a></li>
             <li><a href="#">لینک</a></li>
-          </ul>
+          </ul> -->
           <ul>
-            <li class="header-list">عنوان</li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
+            <li class="header-list">بیالرن</li>
+            <li><a href="#">فرصت های شغلی</a></li>
+            <li><a href="#">همکاری با ما</a></li>
+            <li><a href="#">فروش سازمانی</a></li>
+            <li><a href="#">پشتیبانی</a></li>
+            <li><a href="./faq.html">سوالات متداول</a></li>
           </ul>
         </div>
         <div class="footer-social">
@@ -455,18 +475,20 @@
             <li>
               <a href="#"
                 ><img
-                  src="./assets/Images/home/icons/youtube.svg"
-                  alt="youtube"
+                  src="./assets/Images/home/icons/intagram.svg"
+                  alt="instagram"
               /></a>
             </li>
             <li>
               <a href="#"
-                ><img src="./assets/Images/home/icons/twiter.svg" alt="twiter"
+                ><img src="./assets/Images/home/icons/x.svg" alt="X"
               /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./assets/Images/home/icons/linkedin.svg" alt=""
+              <a href="https://www.linkedin.com/company/bialearn/"
+                ><img
+                  src="./assets/Images/home/icons/linkedin.svg"
+                  alt="linkedin"
               /></a>
             </li>
           </ul>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>داشبورد کاربری بیا لرن</title>
+  </head>
+  <body class="dark-mode-variables">
+    <div class="container">
+      <!-- side bar menu -->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <img class="logo-image active-logo" src="../assets/Images/logo-dark.svg" />
+            <img class="logo-image" src="../assets/Images/logo-light.svg" />
+          </div>
+          <div class="close close-btn" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>پنل کاربری</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>آمار</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>آنالیز دوره</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> mail_outline </span>
+            <h3>تیکت پشتیبانی</h3>
+          </a>
+          <a href="#" >
+            <span class="material-icons-sharp"> inventory </span>
+            <h3>کلاس های فعال</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> report_gmailerrorred </span>
+            <h3>گزارش</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>تنظیمات بصری</h3>
+          </a>
+
+          <a href="#">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>خروج</h3>
+          </a>
+        </div>
+      </aside>
+      <main>
+        <h1 class="head-title">آنالیز </h1>
+        <div class="analyse">
+          <div class="sales">
+            <div class="status">
+              <div class="info">
+                <h3>میزان درآمد</h3>
+                <p>65,024 تومن</p>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>+81%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visits">
+            <div class="status">
+              <div class="info">
+                <h3>فعالیت</h3>
+                <p>24</p>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>-48%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="searches">
+            <div class="status">
+              <div class="info">
+                <h3>امتیاز کاربر</h3>
+                <p>14,147</p>
+              </div>
+              <div class="progresss">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>+21%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- New Users Section -->
+        <div class="new-users">
+          <h2>استادان فعال</h2>
+          <div class="user-list">
+            <div class="user">
+              <img src="../assets/Images/dashboard/person3.webp" />
+              <h3>علی</h3>
+              <p>54 د</p>
+            </div>
+            <div class="user">
+              <img src="../assets/Images/dashboard/person2.webp" />
+              <h3>امیر</h3>
+              <p>1 س</p>
+            </div>
+            <div class="user">
+              <img src="../assets/Images/dashboard/person1.webp" />
+              <h3>سعید روحبخش</h3>
+              <p>6 س</p>
+            </div>
+            <div class="user">
+              <img src="../assets/Images/dashboard/plus.png" />
+              <h3>بیشتر</h3>
+              <p>کاربر جدید</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of New Users Section -->
+        <div class="recent-orders">
+          <h2>سفارشات قبلی</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>برنامه نویسی پایتون</th>
+                <th>کد دوره</th>
+                <th>پرداختی</th>
+                <th>وضعیت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>مقدماتی</td>
+                <td>1002</td>
+                <td>500,000 تومان</td>
+                <td>پرداخت شده</td>
+              </tr>
+              <tr>
+                <td>پیشرفته</td>
+                <td>1003</td>
+                <td>700,000 تومان</td>
+                <td>در انتظار پرداخت</td>
+              </tr>
+              <tr>
+                <td>دوره جامع</td>
+                <td>1004</td>
+                <td>1,200,000 تومان</td>
+                <td>پرداخت شده</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">نشان دادن همه</a>
+        </div>
+      </main>
+      <!-- righ section -->
+      <div class="right-section">
+        <div class="nav">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="dark-mode">
+            <span class="material-icons-sharp "> light_mode </span>
+            <span class="material-icons-sharp active"> dark_mode </span>
+          </div>
+
+          <div class="profile">
+            <div class="info">
+              <p>سلام, <b> مهدیار جون </b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="../assets/Images/dashboard/myPic.png" />
+            </div>
+          </div>
+        </div>
+        <div class="user-profile">
+          <div class="logo">
+            <img src="../assets/Images/home/Group 3.png" />
+            <h2>مهدیار واعظ</h2>
+            <p>دانشگاه فردوسی</p>
+          </div>
+        </div>
+        <!-- end of the nav -->
+        <div class="reminders">
+          <div class="header">
+            <h2>یادآوری</h2>
+            <span class="material-icons-sharp"> notifications_none </span>
+          </div>
+
+          <div class="notification">
+            <div class="icon">
+              <span class="material-icons-sharp"> volume_up </span>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h3> کلاس مارکتینگ </h3>
+                <small class="text_muted"> 14:00 - 20:00 </small>
+              </div>
+              <span class="material-icons-sharp"> more_vert </span>
+            </div>
+          </div>
+
+          <div class="notification deactive">
+            <div class="icon">
+              <span class="material-icons-sharp"> edit </span>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h3>ساعت کاری</h3>
+                <small class="text_muted"> 08:00 - 12:00 </small>
+              </div>
+              <span class="material-icons-sharp"> more_vert </span>
+            </div>
+          </div>
+
+          <div class="notification add-reminder">
+            <div>
+              <span class="material-icons-sharp"> add </span>
+              <h3>اضافه کردن یادآور</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"> </script>
+</html>
