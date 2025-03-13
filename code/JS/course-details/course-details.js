@@ -6,13 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".season").forEach((question) => {
         question.addEventListener("click", function () {
           const isActive = this.classList.contains("active");
-          document.querySelectorAll(".season").forEach((q) => {
-            q.classList.remove("active");
-            q.setAttribute("aria-expanded", "false");
-            q.nextElementSibling.style.maxHeight = "0"; // Collapse all
-          });
 
-          if (!isActive) {
+          if (isActive) {
+            this.classList.remove("active");
+            this.setAttribute("aria-expanded", "false");
+            this.nextElementSibling.style.maxHeight = "0"; // Collapse the answer
+          } else {
             this.classList.add("active");
             this.setAttribute("aria-expanded", "true");
             const answer = this.nextElementSibling;
