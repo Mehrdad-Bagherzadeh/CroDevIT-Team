@@ -93,6 +93,7 @@ main {
   color: var(--dark-text-color);
   font-size: 26px;
   padding-block: 20px;
+  padding-left: 50px;
   border: 2px solid #262626;
   position: relative;
   transition: border-radius 0.3s;
@@ -107,6 +108,7 @@ main {
   height: 20px;
   position: absolute;
   left: 15px;
+  top: 30px;
 
   transition: transform 0.3s ease;
 }
