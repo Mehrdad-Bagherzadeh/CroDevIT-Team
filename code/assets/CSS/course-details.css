@@ -72,6 +72,27 @@ main {
   animation: pulse-animation 2s infinite;
 }
 
+.course-skills-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.course-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 28px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-10, #1a1a1a);
+  padding: 8px 14px;
+}
+
+.course-skill span {
+  color: var(--dark-text-color);
+}
+
 .sessions-section {
   display: flex;
   flex-direction: column;
