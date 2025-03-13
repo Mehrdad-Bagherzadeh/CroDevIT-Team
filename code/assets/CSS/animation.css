@@ -138,7 +138,7 @@
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       120deg,
-     #2EC4FF, /* Dark Blue */
+     #011720, /* Dark Blue */
       
      hsl(0, 0%, 5%)      /* Black */
     );
