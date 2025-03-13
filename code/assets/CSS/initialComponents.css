@@ -62,10 +62,7 @@ nav {
   color: var(--dark-text-color);
   font-size: var(--font-size-nav);
 }
-.link-list li > a{
 
-  
-}
 .link-list .active-link {
   color: var(--primary-color) !important;
   
@@ -93,6 +90,9 @@ nav.sticky {
   justify-content: center;
   align-items: center;
 }
+.link-list li a:hover{
+  color: var(--primary-color);
+}
 
 .left-side-nav button {
   border-radius: 4px;
@@ -107,10 +107,11 @@ nav.sticky {
   background: #141414;
 }
 .search-container {
-  width: 250px;
+  width: 150px;
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   position: relative;
 }
 .left-side-nav .btn-outline {
@@ -131,11 +132,8 @@ nav.sticky {
 .search-container svg {
   width: 20px;
   height: 20px;
-  position: absolute;
   fill: var(--dark-text-color);
-  right: 95%;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 .support-btn {
   position: fixed;
@@ -423,6 +421,9 @@ footer {
   opacity: 0;
   color: var(--dark-text-color);
   transition: all 0.3s ease;
+}
+.mobile-links li.active a{
+  color: #414141;
 }
 
 .mobile-menu.active .mobile-links li {
@@ -745,22 +746,15 @@ footer {
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
-}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 
 /* media queries */
 @media only screen and (max-width: 600px) {
   .mobile-menu {
     display: block;
-    width:80% !important;
+    height: 100vh;
+    width:70% !important;
+    
   }
 }
 @media screen and (max-width: 900px) {

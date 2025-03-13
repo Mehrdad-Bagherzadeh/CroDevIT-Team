@@ -125,7 +125,6 @@
   
   aside {
     height: 100vh;
-    margin-top: 2rem;
   }
   
   aside .toggle {
@@ -580,29 +579,50 @@
       grid-template-columns: 1fr;
       padding: 0 var(--padding-1);
     }
-    
+  
     aside {
       position: fixed;
       background-color: var(--color-white);
       width: 15rem;
       z-index: 3;
       height: 100vh;
-      margin-top: 0;
       right: 0;
-      top: 0;
       display: none;
       animation: showMenu 0.4s ease forwards;
     }
-    .sidebar{
-        top: 0;
-        margin-top: 0;
-    }
+  
     @keyframes showMenu {
       to {
         left: 0;
       }
     }
   
+    @keyframes slideIn {
+        from {
+            right: -15rem;
+        }
+        to {
+            right: 0;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            right: 0;
+        }
+        to {
+            right: -15rem;
+        }
+    }
+
+    aside.show {
+        animation: slideIn 0.4s forwards;
+    }
+
+    aside.hide {
+        animation: slideOut 0.4s forwards;
+    }
+
     aside .logo {
       margin-left: 1rem;
     }
@@ -662,7 +682,6 @@
       align-items: center;
       background-color: var(--color-white);
       padding: 0 var(--padding-1);
-      flex-direction: row-reverse;
       height: 4.6rem;
       width: 100%;
       z-index: 2;
@@ -689,29 +708,3 @@
       font-size: 2rem;
     }
   }
-
-@keyframes slideIn {
-    from {
-        right: -15rem;
-    }
-    to {
-        right: 0;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        right: 0;
-    }
-    to {
-        right: -15rem;
-    }
-}
-
-aside.show {
-    animation: slideIn 0.4s forwards;
-}
-
-aside.hide {
-    animation: slideOut 0.4s forwards;
-}

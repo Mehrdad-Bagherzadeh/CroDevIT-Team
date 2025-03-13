@@ -100,9 +100,8 @@ searchOverlay.addEventListener("click", (e) => {
 
 // scroll indicator for blog detail 
     document.addEventListener('scroll', function() {
-      const blogContainer=document.querySelector('.blog-container')
         const scrollIndicator = document.querySelector('.scroll-indicator');
-        const scrollIndicatorText = document.querySelector('.scroll-indicator-text');
+        if(scrollIndicator){
         const scrollTop = window.scrollY;
         console.log(document.documentElement.scrollHeight,window.innerHeight )
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -110,5 +109,6 @@ searchOverlay.addEventListener("click", (e) => {
         const scrollPercentRounded = Math.round(scrollPercent);
 
         scrollIndicator.style.background = `conic-gradient(#2EC4FF ${scrollPercentRounded}%, #ddd ${scrollPercentRounded}%)`;
-        
+        }
+        else ''
     });

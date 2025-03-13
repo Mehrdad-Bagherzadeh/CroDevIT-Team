@@ -147,6 +147,10 @@
   border-radius: 12px;
   border: 2px solid var(--Grey-15, #262626);
   background: var(--Grey-08, #141414);
+  cursor: pointer;
+}
+.blog-item:hover{
+  border: 2px solid var(--emotion-color);
 }
 .blog-item img {
   width: 100%;

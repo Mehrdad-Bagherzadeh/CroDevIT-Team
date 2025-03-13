@@ -55,7 +55,7 @@ header .header-content h1 {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "danalight";
-  color: var(--light-text-color);
+  color: black;
   background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
@@ -65,7 +65,7 @@ header .header-content h1 {
 }
 
 .btn-contained:hover {
-  background-color: var(--accent-color);
+  background-color: var(--emotion-color);
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(93, 91, 91, 0.2);
   color: var(--text-color);
