@@ -17,17 +17,7 @@ closeBtn.addEventListener('click', () => {
         sideMenu.style.display = 'none';
     }, 400);
 });
-window.addEventListener('click',(e)=>{
-    if(
-        !e.target.closest('aside') &&
-       !e.target.closest('#menu-btn')){
-        sideMenu.classList.remove('show');
-        sideMenu.classList.add('hide');
-        setTimeout(() => {
-            sideMenu.style.display = 'none';
-        }, 400);
-    }
-})
+
 darkMode.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode-variables');
     logos.forEach((logo)=>{
