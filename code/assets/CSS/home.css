@@ -426,6 +426,9 @@ main {
   min-height: 400px;
   width: 400px;
   align-items: center;
+  z-index: 4;
+  background-color: var(--dark-background);
+  position: relative;
 }
 .questions-item {
   margin-top: 24px;
@@ -437,6 +440,10 @@ main {
   width: 90%;
   padding: 16px;
   align-items: center;
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: right;
 }
 .questions-item::before {
   content: "";
@@ -476,11 +483,39 @@ main {
   background-color: var(--lighter-dark-background);
   border-radius: 10px 0 0 10px;
   margin-top: 36px;
+  position: relative;
+  overflow: hidden;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 870px) {
-  .answer {
-    margin-top: 0;
+.slide-out-right {
+  animation-name: slideOutRight;
+}
+
+.slide-in-left {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -498,6 +533,34 @@ main {
 }
 
 /* media queries */
+
+@media only screen and (max-width: 870px) {
+  .answer {
+    margin-top: 0;
+    border-radius: 0px 0 10px 10px;
+  }
+  @keyframes slideOutRight {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
 
 @media only screen and (max-width: 1050px) {
   .copy-right {

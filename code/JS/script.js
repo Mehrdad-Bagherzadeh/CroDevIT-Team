@@ -28,7 +28,6 @@ document.addEventListener("click", (event) => {
     hamburger.classList.remove("active");
     mobileMenu.classList.remove("active");
     document.body.style.overflow = "";
-
   }
 });
 let lastScrollTop = 0;
@@ -98,17 +97,66 @@ searchOverlay.addEventListener("click", (e) => {
   }
 });
 
-// scroll indicator for blog detail 
-    document.addEventListener('scroll', function() {
-        const scrollIndicator = document.querySelector('.scroll-indicator');
-        if(scrollIndicator){
-        const scrollTop = window.scrollY;
-        console.log(document.documentElement.scrollHeight,window.innerHeight )
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        const scrollPercentRounded = Math.round(scrollPercent);
+// scroll indicator for blog detail
+document.addEventListener("scroll", function () {
+  const scrollIndicator = document.querySelector(".scroll-indicator");
+  if (scrollIndicator) {
+    const scrollTop = window.scrollY;
+    console.log(document.documentElement.scrollHeight, window.innerHeight);
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    const scrollPercentRounded = Math.round(scrollPercent);
 
-        scrollIndicator.style.background = `conic-gradient(#2EC4FF ${scrollPercentRounded}%, #ddd ${scrollPercentRounded}%)`;
-        }
-        else ''
+    scrollIndicator.style.background = `conic-gradient(#2EC4FF ${scrollPercentRounded}%, #ddd ${scrollPercentRounded}%)`;
+  } else "";
+});
+
+//FAQ functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".questions-item p");
+  const answerSection = document.querySelector(".answer");
+  const answerTitle = answerSection.querySelector("h4");
+  const answerText = answerSection.querySelector("p");
+
+  questions.forEach((question) => {
+    question.addEventListener("click", () => {
+      // Remove active class from all questions
+      questions.forEach((q) => q.classList.remove("active"));
+
+      // Add active class to the clicked question
+      question.classList.add("active");
+
+      // Get new title and answer
+      const newTitle = question.textContent.trim();
+      const newAnswer = question.getAttribute("data-answer");
+
+      // Slide out the current answer section
+      answerSection.classList.add("slide-out-right");
+
+      // Wait for the slide-out animation to finish
+      answerSection.addEventListener(
+        "animationend",
+        () => {
+          // Update the content
+          answerTitle.textContent = newTitle;
+          answerText.textContent = newAnswer;
+
+          // Slide in the new answer section
+          answerSection.classList.remove("slide-out-right");
+          answerSection.classList.add("slide-in-left");
+
+          // Remove the slide-in class after the animation
+          answerSection.addEventListener(
+            "animationend",
+            () => {
+              answerSection.classList.remove("slide-in-left");
+            },
+            { once: true }
+          );
+        },
+        { once: true }
+      );
     });
+  });
+});
