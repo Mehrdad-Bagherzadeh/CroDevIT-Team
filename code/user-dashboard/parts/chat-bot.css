@@ -3,6 +3,12 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: auto; /*we don't need the sidebar on the left*/
+  }
+}
+
 body {
   margin: 0;
   overflow: hidden; /* Prevent scrolling */
