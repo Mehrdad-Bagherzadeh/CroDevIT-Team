@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 100px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid; /* Corrected from 'gird' to 'grid' */
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+h1 {
+  font-family: "danabold";
+  font-size: 36px;
+  align-self: center;
+  color: var(--dark-text-color);
+}
+
+.user-img-container {
+  justify-self: left;
+  position: relative;
+}
+
+.user-img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.pen-img {
+  position: absolute;
+  width: 32px;
+  bottom: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.input-container label {
+  font-family: "danamedium";
+  font-size: 24px;
+  color: var(--dark-text-color);
+}
+
+.input-container input {
+  all: unset;
+  font-family: "danamedium";
+  font-size: 18px;
+  padding: 15px 20px;
+  border: 2px solid rgb(65, 65, 65);
+  border-radius: 15px;
+  color: var(--dark-text-color);
+  transition: all 0.3s; /* Added 's' for seconds */
+}
+
+.input-container input:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.input-container img {
+  position: absolute;
+  width: 32px;
+  left: 15px;
+  top: 60px;
+}
+
+.edit-info-btn {
+  all: unset;
+  grid-column: 2;
+  width: 150px;
+  background-color: var(--primary-color);
+  color: var(--dark-text-color);
+  font-family: "danamedium";
+  padding: 15px 25px;
+  border-radius: 15px;
+  justify-self: left;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  cursor: pointer;
+}
+
+.edit-info-btn:hover {
+  background-color: #29a2d2;
+}
+
+.line {
+  grid-column: 1 / -1; /* Span all columns */
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the line */
+  background-color: rgb(65, 65, 65); /* Line color */
+}
+
+h2 {
+  grid-column: 1 / -1; /* Span all columns */
+  font-family: "danabold";
+  font-size: 36px;
+  color: var(--dark-text-color);
+}
+
+.change-password-btn {
+  all: unset;
+  grid-column: 2;
+  font-family: "danabold";
+  width: 150px;
+  border: 2px solid var(--primary-color);
+  color: var(--dark-text-color);
+  justify-self: left;
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  cursor: pointer;
+}
+
+.change-password-btn:hover {
+  background-color: var(--primary-color);
+}

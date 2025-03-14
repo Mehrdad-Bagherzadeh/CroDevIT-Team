@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../assets/CSS/globale.css" />
+    <link rel="stylesheet" href="../../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="user-info.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>جزئیات حساب کاربری</h1>
+      <div class="user-img-container">
+        <img
+          src="../../assets/Images/dashboard-user-info/arshia.jpg"
+          alt=""
+          class="user-img"
+        />
+
+        <img
+          src="../../assets/Images/dashboard-user-info/pen.svg"
+          alt=""
+          class="pen-img"
+        />
+      </div>
+      <div class="input-container">
+        <label for="name">نام و نام خوانوادگی</label>
+        <input id="name" type="text" />
+        <img src="../../assets/Images/dashboard-user-info/user.svg" alt="" />
+      </div>
+      <div class="input-container">
+        <label for="user-name">نام کاربری</label>
+        <input id="user-name" type="text" />
+        <img src="../../assets/Images/dashboard-user-info/user.svg" alt="" />
+      </div>
+      <div class="input-container">
+        <label for="email">ایمیل</label>
+        <input id="email" type="text" />
+        <img src="../../assets/Images/dashboard-user-info/mail.svg" alt="" />
+      </div>
+      <div class="input-container">
+        <label for="phone">شماره تلفن</label>
+        <input id="phone" type="text" />
+        <img src="../../assets/Images/dashboard-user-info/phone.svg" alt="" />
+      </div>
+      <button class="edit-info-btn">ویرایش اطلاعات کاربری</button>
+      <div class="line"></div>
+      <h2>تعویض رمز عبور:</h2>
+      <div class="input-container">
+        <label for="password">رمز عبور فعلی</label>
+        <input id="password" type="password" />
+        <img src="../../assets/Images/dashboard-user-info/lock.svg" alt="" />
+      </div>
+      <div class="input-container">
+        <label for="confirm-password">رمز عبور جدید</label>
+        <input id="confirm-password" type="password" />
+        <img src="../../assets/Images/dashboard-user-info/lock.svg" alt="" />
+      </div>
+      <button class="change-password-btn">تغییر رمز عبور</button>
+    </main>
+  </body>
 </html>
