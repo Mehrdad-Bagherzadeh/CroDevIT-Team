@@ -376,12 +376,11 @@ main {
   align-items: end;
 }
 
-.comment-author div > div p{
+.comment-author div > div p {
   justify-self: end;
-  text-align: end ;
+  text-align: end;
 }
-.comment-author  img{
-
+.comment-author img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -403,7 +402,7 @@ main {
   font-family: "danalight";
   color: var(--gray-color);
 }
-.comment-author span img{
+.comment-author span img {
   position: absolute;
   right: -45px;
 }
@@ -439,11 +438,25 @@ main {
   padding: 16px;
   align-items: center;
 }
-.questions-item .dot {
-  width: 10px;
-  height: 10px;
+.questions-item::before {
+  content: "";
+  margin-left: 10px;
+  background-color: #2ec4ff;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(46, 196, 255, 100%);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
 }
 .questions-item > p {
   font-size: var(--font-size-text-large);
@@ -476,7 +489,6 @@ main {
   color: var(--dark-text-color);
   font-family: "danalight";
 }
-
 
 /* media queries */
 
@@ -571,13 +583,12 @@ main {
   .box-icons-item {
     width: 320px;
   }
-  .social{
-    background-image:none;
+  .social {
+    background-image: none;
     min-height: 300px;
 
     background-size: contain;
     text-align: center;
-
   }
   .social p {
     max-width: 100%;
@@ -591,8 +602,8 @@ main {
   }
 }
 @media only screen and (max-width: 1500px) {
-   .social{
-   }
+  .social {
+  }
 }
 @media only screen and (max-width: 750px) {
   main,
