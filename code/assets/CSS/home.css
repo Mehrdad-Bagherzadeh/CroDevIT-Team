@@ -477,6 +477,13 @@ main {
   border-radius: 10px 0 0 10px;
   margin-top: 36px;
 }
+
+@media only screen and (max-width: 870px) {
+  .answer {
+    margin-top: 0;
+  }
+}
+
 .answer h4 {
   padding: 12px;
   font-size: var(--font-size-text-large);
@@ -605,6 +612,7 @@ main {
   .social {
   }
 }
+
 @media only screen and (max-width: 750px) {
   main,
   footer {
