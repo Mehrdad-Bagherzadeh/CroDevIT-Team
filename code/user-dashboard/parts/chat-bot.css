@@ -160,6 +160,7 @@ body {
   align-items: center;
   padding: 25px 25px;
   height: 100%;
+  overflow-y: auto;
 }
 
 .search-conversation {
