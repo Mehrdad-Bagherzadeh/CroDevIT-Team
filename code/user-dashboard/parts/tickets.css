@@ -44,7 +44,8 @@ h1 {
 }
 .ticket {
   position: relative;
-  top: -260px;
+  top: -280px;
+  margin-top: 20px;
 }
 .title {
   font-weight: 600;
@@ -104,9 +105,9 @@ input:focus {
 }
 img {
   position: absolute;
-  left: 30px;
+  left: calc(5% - 6px);
   height: 50%;
-  background-color: #2EC4FF;
+  background-color: #2ec4ff;
   padding: 5px;
   border-radius: 500px;
   -webkit-border-radius: 500px;
