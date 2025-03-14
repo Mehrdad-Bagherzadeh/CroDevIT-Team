@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="chat-bot.css" />
+
+    <title>داشبورد کاربری بیا لرن</title>
+  </head>
+  <body class="dark-mode-variables">
+    <div class="container">
+      <!-- side bar menu -->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <img
+              class="logo-image active-logo"
+              src="../assets/Images/logo-dark.svg"
+            />
+            <img class="logo-image" src="../assets/Images/logo-light.svg" />
+          </div>
+          <div class="close close-btn" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>پنل کاربری</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>آمار</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>آنالیز دوره</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> mail_outline </span>
+            <h3>تیکت پشتیبانی</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> inventory </span>
+            <h3>کلاس های فعال</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> report_gmailerrorred </span>
+            <h3>گزارش</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>تنظیمات بصری</h3>
+          </a>
+
+          <a href="#">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>خروج</h3>
+          </a>
+        </div>
+      </aside>
+      <main class="chat-bot-section">
+        <div class="chat-section">
+          <div class="messages">
+            <!-- Messages will be dynamically added here -->
+            <p class="support-message">درود بر شما, سوالتو بپرس😊</p>
+          </div>
+
+          <div class="chat-input">
+            <button class="mic-btn">
+              <img src="../../assets/Images/support/mic.svg" alt="" />
+            </button>
+            <button class="paper-clip-btn">
+              <img src="../../assets/Images/support/paper-clip.svg" alt="" />
+            </button>
+            <input
+              type="text"
+              id="chatMessage"
+              placeholder="اینجا بنویسید.... "
+            />
+
+            <button class="send-btn" onclick="sendMessage()">
+              <img
+                src="../../assets/Images/support/send-paper-plane.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="chat-bot-conversation-section">
+          <div class="chat-bot-title">
+            <img
+              src="../../assets/Images/dashboard-chat-bot/chat-gpt.svg"
+              alt=""
+            />
+            چت بات مشاوره بیالرن
+          </div>
+          <div class="conversations-section">
+            <input
+              type="text"
+              placeholder="جست و جو..."
+              class="search-conversation"
+            />
+            <div class="conversations-header">
+              <p>گفت و گو ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="conversations-header">
+              <p>بایگانی و پوشه ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>
