@@ -16,7 +16,7 @@ body {
 }
 .container {
   background-color: #1a1a1a;
-  height: 50%;
+  height: 90%;
   width: 80%;
   border-radius: 12px;
   border: 2px solid #262626;
@@ -25,6 +25,26 @@ body {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading {
+  background-color: #262626;
+  width: calc(100% + 40px);
+  position: relative;
+  top: -20px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding: 10px 0;
+}
+h1 {
+  margin-right: 20px;
+}
+.ticket {
+  position: relative;
+  top: -260px;
 }
 .title {
   font-weight: 600;
@@ -41,7 +61,7 @@ body {
 }
 .answer {
   padding: 20px;
-  background: #000;
+  background: #3e3f41;
   margin-top: 10px;
   margin-right: 50px;
   border-radius: 12px;
@@ -49,5 +69,57 @@ body {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+input {
+  width: 90%;
+  position: relative;
+  padding: 15px;
+  font-family: Dana;
+  font-weight: 600;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border: 2px solid #262626;
+  background-color: #262626;
+  color: #e4e4e7;
+  outline: none;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+input:focus {
+  background-color: #e4e4e7;
+  color: #141414;
+}
+img {
+  position: absolute;
+  left: 30px;
+  height: 50%;
+  background-color: #2EC4FF;
+  padding: 5px;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+img:hover {
+  background-color: #3cadda;
 }
