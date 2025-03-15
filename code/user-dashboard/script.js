@@ -1,31 +1,64 @@
-const sideMenu = document.querySelector("aside");
-const menuBtn = document.getElementById("menu-btn");
-const closeBtn = document.getElementById("close-btn");
-const logos = document.querySelectorAll(".logo-image");
-const darkMode = document.querySelector(".dark-mode");
+//side navbar
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.querySelector(".sidebar");
+  const closeBtn = document.querySelector(".sidebar .close-btn");
+  const hamburger = document.querySelector(".hamburger");
 
-menuBtn.addEventListener("click", () => {
-  sideMenu.classList.remove("hide");
-  sideMenu.classList.add("show");
-  sideMenu.style.display = "block";
-});
-
-closeBtn.addEventListener("click", () => {
-  sideMenu.classList.remove("show");
-  sideMenu.classList.add("hide");
-  setTimeout(() => {
-    sideMenu.style.display = "none";
-  }, 400);
-});
-
-darkMode.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode-variables");
-  logos.forEach((logo) => {
-    console.log("hi");
-    logo.classList.toggle("active-logo");
+  // Toggle sidebar visibility
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.add("active");
   });
-  darkMode.querySelector("span:nth-child(1)").classList.toggle("active");
-  darkMode.querySelector("span:nth-child(2)").classList.toggle("active");
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+
+  const listItems = document.querySelectorAll(".sidebar ul li");
+
+  listItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Remove 'selected' class from all list items
+      listItems.forEach((li) => li.classList.remove("selected"));
+
+      // Add 'selected' class to the clicked item
+      item.classList.add("selected");
+    });
+  });
+
+  const conversationSection = document.querySelector(
+    ".chat-bot-conversation-section"
+  );
+  const sidebarBtn = document.querySelector(".conversation-sidebar-btn");
+
+  // Toggle sidebar visibility
+  sidebarBtn.addEventListener("click", () => {
+    conversationSection.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+
+  const sidebarLinks = document.querySelectorAll(".sidebar ul li");
+  const contentContainers = document.querySelectorAll(".content-container");
+
+  sidebarLinks.forEach((link, index) => {
+    link.addEventListener("click", () => {
+      // Remove 'selected' class from all sidebar items
+      sidebarLinks.forEach((item) => item.classList.remove("selected"));
+
+      // Add 'selected' class to the clicked item
+      link.classList.add("selected");
+
+      // Hide all content containers
+      contentContainers.forEach((container) =>
+        container.classList.remove("active")
+      );
+
+      // Show the corresponding content container
+      contentContainers[index].classList.add("active");
+    });
+  });
 });
 
 //chat-bot functionality

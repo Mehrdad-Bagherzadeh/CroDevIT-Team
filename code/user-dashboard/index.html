@@ -8,245 +8,250 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="../assets/CSS/globale.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>داشبورد کاربری بیا لرن</title>
   </head>
-  <body class="dark-mode-variables">
-    <div class="container">
-      <!-- side bar menu -->
-      <aside>
-        <div class="toggle">
-          <div class="logo">
-            <img class="logo-image active-logo" src="../assets/Images/logo-dark.svg" />
-            <img class="logo-image" src="../assets/Images/logo-light.svg" />
+  <body>
+    <!-- Hamburger Button -->
+    <button id="toggleBtn" class="hamburger">&#9776;</button>
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <button class="close-btn">
+        <img src="../assets/Images/dashboard/close.svg" alt="" />
+      </button>
+      <img
+        src="../assets/Images/dashboard/arshia.jpg"
+        alt=""
+        class="dashboard-user-image"
+      />
+      <h2 class="dashboard-user-name">ارشیا ستوده</h2>
+      <ul>
+        <li>
+          <img
+            src="../assets/Images/dashboard/dashboard.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">داشبورد</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/hat.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">دوره ها</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/briefcase.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">کارفرما ها</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/question.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">تیکت ها</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/chat.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">چت بات</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/user-info.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">اطلاعات کاربری</a>
+        </li>
+      </ul>
+
+      <button class="log-out-btn">خروج از حساب</button>
+    </nav>
+
+    <div class="content-container panel-content"></div>
+
+    <div class="content-container courses-content"></div>
+
+    <div class="content-container employers-content"></div>
+
+    <div class="content-container tickets-content"></div>
+
+    <div class="content-container caht-bot-content">
+      <button class="conversation-sidebar-btn">
+        <img src="../assets/Images/dashboard/conversation-sidebar.svg" alt="" />
+      </button>
+      <div class="chat-bot-section">
+        <div class="chat-section">
+          <div class="messages">
+            <!-- Messages will be dynamically added here -->
+            <p class="support-message">درود بر شما, سوالتو بپرس😊</p>
           </div>
-          <div class="close close-btn" id="close-btn">
-            <span class="material-icons-sharp"> close </span>
+
+          <div class="chat-input">
+            <button class="mic-btn">
+              <img src="../assets/Images/support/mic.svg" alt="" />
+            </button>
+            <button class="paper-clip-btn">
+              <img src="../assets/Images/support/paper-clip.svg" alt="" />
+            </button>
+            <input
+              type="text"
+              id="chatMessage"
+              placeholder="اینجا بنویسید.... "
+            />
+
+            <button class="send-btn" onclick="sendMessage()">
+              <img src="../assets/Images/support/send-paper-plane.svg" alt="" />
+            </button>
           </div>
         </div>
 
-        <div class="sidebar">
-          <a href="#">
-            <span class="material-icons-sharp"> person_outline </span>
-            <h3>پنل کاربری</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons-sharp"> receipt_long </span>
-            <h3>آمار</h3>
-          </a>
-          <a href="#" class="active">
-            <span class="material-icons-sharp"> insights </span>
-            <h3>آنالیز دوره</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons-sharp"> mail_outline </span>
-            <h3>تیکت پشتیبانی</h3>
-          </a>
-          <a href="#" >
-            <span class="material-icons-sharp"> inventory </span>
-            <h3>کلاس های فعال</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons-sharp"> report_gmailerrorred </span>
-            <h3>گزارش</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons-sharp"> settings </span>
-            <h3>تنظیمات بصری</h3>
-          </a>
-
-          <a href="#">
-            <span class="material-icons-sharp"> logout </span>
-            <h3>خروج</h3>
-          </a>
-        </div>
-      </aside>
-      <main>
-        <h1 class="head-title">آنالیز </h1>
-        <div class="analyse">
-          <div class="sales">
-            <div class="status">
-              <div class="info">
-                <h3>میزان درآمد</h3>
-                <p>65,024 تومن</p>
+        <div class="chat-bot-conversation-section">
+          <div class="chat-bot-title">
+            <img
+              src="../assets/Images/dashboard-chat-bot/chat-gpt.svg"
+              alt=""
+            />
+            چت بات مشاوره بیالرن
+          </div>
+          <div class="conversations-section">
+            <input
+              type="text"
+              placeholder="جست و جو..."
+              class="search-conversation"
+            />
+            <div class="conversations-header">
+              <p>گفت و گو ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
-              <div class="progresss">
-                <svg>
-                  <circle cx="38" cy="38" r="36"></circle>
-                </svg>
-                <div class="percentage">
-                  <p>+81%</p>
-                </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
             </div>
-          </div>
-          <div class="visits">
-            <div class="status">
-              <div class="info">
-                <h3>فعالیت</h3>
-                <p>24</p>
+            <div class="conversations-header">
+              <p>بایگانی و پوشه ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
-              <div class="progresss">
-                <svg>
-                  <circle cx="38" cy="38" r="36"></circle>
-                </svg>
-                <div class="percentage">
-                  <p>-48%</p>
-                </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
-            </div>
-          </div>
-          <div class="searches">
-            <div class="status">
-              <div class="info">
-                <h3>امتیاز کاربر</h3>
-                <p>14,147</p>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
-              <div class="progresss">
-                <svg>
-                  <circle cx="38" cy="38" r="36"></circle>
-                </svg>
-                <div class="percentage">
-                  <p>+21%</p>
-                </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img
+                  src="../assets/Images/dashboard-chat-bot/three-dots.svg"
+                  alt=""
+                />
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- New Users Section -->
-        <div class="new-users">
-          <h2>استادان فعال</h2>
-          <div class="user-list">
-            <div class="user">
-              <img src="../assets/Images/dashboard/person3.webp" />
-              <h3>علی</h3>
-              <p>54 د</p>
-            </div>
-            <div class="user">
-              <img src="../assets/Images/dashboard/person2.webp" />
-              <h3>امیر</h3>
-              <p>1 س</p>
-            </div>
-            <div class="user">
-              <img src="../assets/Images/dashboard/person1.webp" />
-              <h3>سعید روحبخش</h3>
-              <p>6 س</p>
-            </div>
-            <div class="user">
-              <img src="../assets/Images/dashboard/plus.png" />
-              <h3>بیشتر</h3>
-              <p>کاربر جدید</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- End of New Users Section -->
-        <div class="recent-orders">
-          <h2>سفارشات قبلی</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>برنامه نویسی پایتون</th>
-                <th>کد دوره</th>
-                <th>پرداختی</th>
-                <th>وضعیت</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>مقدماتی</td>
-                <td>1002</td>
-                <td>500,000 تومان</td>
-                <td>پرداخت شده</td>
-              </tr>
-              <tr>
-                <td>پیشرفته</td>
-                <td>1003</td>
-                <td>700,000 تومان</td>
-                <td>در انتظار پرداخت</td>
-              </tr>
-              <tr>
-                <td>دوره جامع</td>
-                <td>1004</td>
-                <td>1,200,000 تومان</td>
-                <td>پرداخت شده</td>
-              </tr>
-            </tbody>
-          </table>
-          <a href="#">نشان دادن همه</a>
-        </div>
-      </main>
-      <!-- righ section -->
-      <div class="right-section">
-        <div class="nav">
-          <button id="menu-btn">
-            <span class="material-icons-sharp"> menu </span>
-          </button>
-          <div class="dark-mode">
-            <span class="material-icons-sharp "> light_mode </span>
-            <span class="material-icons-sharp active"> dark_mode </span>
-          </div>
-
-          <div class="profile">
-            <div class="info">
-              <p>سلام, <b> مهدیار جون </b></p>
-              <small class="text-muted">Admin</small>
-            </div>
-            <div class="profile-photo">
-              <img src="../assets/Images/dashboard/myPic.png" />
-            </div>
-          </div>
-        </div>
-        <div class="user-profile">
-          <div class="logo">
-            <img src="../assets/Images/home/Group 3.png" />
-            <h2>مهدیار واعظ</h2>
-            <p>دانشگاه فردوسی</p>
-          </div>
-        </div>
-        <!-- end of the nav -->
-        <div class="reminders">
-          <div class="header">
-            <h2>یادآوری</h2>
-            <span class="material-icons-sharp"> notifications_none </span>
-          </div>
-
-          <div class="notification">
-            <div class="icon">
-              <span class="material-icons-sharp"> volume_up </span>
-            </div>
-            <div class="content">
-              <div class="info">
-                <h3> کلاس مارکتینگ </h3>
-                <small class="text_muted"> 14:00 - 20:00 </small>
-              </div>
-              <span class="material-icons-sharp"> more_vert </span>
-            </div>
-          </div>
-
-          <div class="notification deactive">
-            <div class="icon">
-              <span class="material-icons-sharp"> edit </span>
-            </div>
-            <div class="content">
-              <div class="info">
-                <h3>ساعت کاری</h3>
-                <small class="text_muted"> 08:00 - 12:00 </small>
-              </div>
-              <span class="material-icons-sharp"> more_vert </span>
-            </div>
-          </div>
-
-          <div class="notification add-reminder">
-            <div>
-              <span class="material-icons-sharp"> add </span>
-              <h3>اضافه کردن یادآور</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="content-container user-info-content">
+      <div class="user-info-container">
+        <h1 class="user-info-title">جزئیات حساب کاربری</h1>
+        <div class="user-img-container">
+          <img
+            src="../assets/Images/dashboard-user-info/arshia.jpg"
+            alt=""
+            class="user-img"
+          />
+
+          <img
+            src="../assets/Images/dashboard-user-info/pen.svg"
+            alt=""
+            class="pen-img"
+          />
+        </div>
+        <div class="input-container">
+          <label for="name">نام و نام خوانوادگی</label>
+          <input id="name" type="text" />
+          <img src="../assets/Images/dashboard-user-info/user.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="user-name">نام کاربری</label>
+          <input id="user-name" type="text" />
+          <img src="../assets/Images/dashboard-user-info/user.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="email">ایمیل</label>
+          <input id="email" type="text" />
+          <img src="../assets/Images/dashboard-user-info/mail.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="phone">شماره تلفن</label>
+          <input id="phone" type="text" />
+          <img src="../assets/Images/dashboard-user-info/phone.svg" alt="" />
+        </div>
+        <button class="edit-info-btn">ویرایش اطلاعات کاربری</button>
+        <div class="line"></div>
+        <h2 class="change-password-title">تعویض رمز عبور:</h2>
+        <div class="input-container">
+          <label for="password">رمز عبور فعلی</label>
+          <input id="password" type="password" />
+          <img src="../assets/Images/dashboard-user-info/lock.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="confirm-password">رمز عبور جدید</label>
+          <input id="confirm-password" type="password" />
+          <img src="../assets/Images/dashboard-user-info/lock.svg" alt="" />
+        </div>
+        <button class="change-password-btn">تغییر رمز عبور</button>
+      </div>
+    </div>
   </body>
-  <script src="script.js"> </script>
+  <script src="script.js"></script>
 </html>
