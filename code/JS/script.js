@@ -28,6 +28,7 @@ document.addEventListener("click", (event) => {
     hamburger.classList.remove("active");
     mobileMenu.classList.remove("active");
     document.body.style.overflow = "";
+
   }
 });
 let lastScrollTop = 0;
