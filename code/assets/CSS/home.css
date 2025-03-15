@@ -75,11 +75,19 @@ header .btn-outline {
   font-size: var(--font-size-btn);
   background-color: var(--dark-background);
   color: var(--primary-color);
+  border: 3px solid var(--lighter-dark-background);
   font-family: "danabold";
   cursor: pointer;
   gap: 8px;
   border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+header .btn-outline:hover {
+  background-color: var(--lighter-dark-background);
+}
+
 header .btn-contained,
 .social .btn-contained,
 .footer .btn-contained {
