@@ -22,19 +22,25 @@ h1 {
 }
 
 .user-img-container {
-  justify-self: left;
-  position: relative;
+  justify-self: left; /* Center the container in the grid */
+  position: relative; /* Ensure this container is the reference for positioning */
+  display: inline-block; /* Wrap tightly around the .user-img */
 }
 
 .user-img {
   border-radius: 50%;
   width: 150px;
+  display: block; /* Ensure proper alignment */
 }
 
 .pen-img {
-  position: absolute;
-  width: 32px;
-  bottom: 0;
+  position: absolute; /* Position relative to the .user-img-container */
+  width: 40px; /* Adjust size for smaller screens */
+  bottom: 10px; /* Adjust to position relative to the bottom of the user-img */
+  right: 10px; /* Adjust to position relative to the right of the user-img */
+  background-color: rgb(57, 57, 57);
+  padding: 8px; /* Adjust padding for smaller screens */
+  border-radius: 50%;
 }
 
 .input-container {
@@ -123,4 +129,25 @@ h2 {
 
 .change-password-btn:hover {
   background-color: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-img-container {
+    justify-self: center; /* Center the container */
+    display: flex; /* Ensure proper alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    align-self: center;
+  }
+
+  .pen-img {
+    width: 40px; /* Reduce size for smaller screens */
+    bottom: 5px; /* Adjust position for smaller screens */
+    right: 5px; /* Adjust position for smaller screens */
+  }
 }
