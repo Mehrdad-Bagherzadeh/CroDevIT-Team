@@ -109,7 +109,6 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 10000;
 }
 
 /* Add close button styles */
@@ -260,7 +259,7 @@ body {
   width: 24px;
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1200px) {
   .search-field {
     width: 80%;
     display: flex;
@@ -287,17 +286,6 @@ body {
   }
 }
 
-.course-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: auto;
-  gap: 12px;
-  justify-content: center;
-  width: 100%;
-  overflow-x: hidden;
-}
-
 .course-item {
   display: flex;
   flex-direction: column;
@@ -305,7 +293,6 @@ body {
   border-radius: 12px;
   border: 2px solid var(--Grey-15, #262626);
   padding: 30px;
-  max-width: 450px;
 }
 
 .teacher {
@@ -355,46 +342,50 @@ body {
   color: var(--dark-text-color);
 }
 
-.progress-container {
+.price-button-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.progress-text {
-  font-family: "danamedium";
-  font-size: 16px;
-  color: var(--dark-text-color);
+.enroll-course-btn {
+  all: unset;
+  cursor: pointer;
+  font-family: "danabold";
+  font-size: 20px;
+  padding: 18px 24px;
+  gap: 8px;
+  border-radius: 10px;
+  background: #2ec4ff;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
 }
-.progress {
-  background: rgba(255, 255, 255, 0.1);
-  justify-content: flex-end;
-  border-radius: 100px;
-  align-items: center;
-  position: relative;
-  padding: 0;
+
+.enroll-course-btn:hover {
+  background-color: #1a8fbf; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly scale the button */
+  box-shadow: 0 0px 8px #1a8fbf; /* Add a box-shadow */
+}
+
+.price-container {
   display: flex;
-  height: 20px;
-  width: calc(100% - 150px);
+  flex-direction: column;
+  gap: 15px;
 }
 
-.progress-value {
-  animation: load 3s normal forwards;
-  box-shadow: 0 1px 10px 0px var(--primary-color);
-  border-radius: 100px;
-  background: var(--primary-color);
-  height: 20px;
-  width: 0;
+.price-text {
+  color: var(--dark-text-color);
+  text-align: left;
+  font-family: "danamedium";
+  color: rgba(228, 228, 231, 0.5);
+  font-size: 18px;
 }
 
-@keyframes load {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 68%;
-  }
+.course-price {
+  color: var(--dark-text-color);
+  font-family: "danabold";
+  font-size: 24px;
 }
 
 /*TICKETS STYLES*/
