@@ -159,8 +159,9 @@ main {
   font-size: 36px;
 }
 .courses-item > img {
-  border-radius: 0 !important;
+  
   height: 225px;
+  border-radius: 10px !important;
 }
 
 .courses .courses-head svg {

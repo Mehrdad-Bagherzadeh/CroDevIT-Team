@@ -238,7 +238,7 @@ li img{
 }
 
 .blog-content img{
-    border: 10px;
+    border-radius: 10px;
     width: 900px;
     align-self: center;
 }
