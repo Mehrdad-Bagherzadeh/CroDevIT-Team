@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بیالرن</title>
+    <title>بیالـرن | آموزش آنلاین و مهارت‌آموزی برای ورود به بازار کار</title>
+    <meta
+      name="description"
+      content="بیالـرن، پلتفرم جامع آموزش آنلاین و مهارت‌آموزی! با دوره‌های کاربردی، پروژه‌محور و گواهینامه معتبر، مهارت‌های موردنیاز را یاد بگیر و برای ورود به بازار کار آماده شو..."
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/Images/logo-light.svg"
+    />
     <link rel="stylesheet" href="./assets/CSS/initialComponents.css" />
     <link rel="stylesheet" href="./assets/CSS/globale.css" />
     <link rel="stylesheet" href="./assets/CSS/home.css" />
@@ -21,19 +30,24 @@
     </div>
     <nav>
       <div class="logo-container">
-        <img src="./assets/images/home/logo-dark.png" alt="بیالرن" />
+        <a href="./index.html">
+          <img src="./assets/images/home/logo-dark.png" alt="بیالرن"
+        /></a>
       </div>
       <div class="links-container">
         <ul class="link-list">
-          <li><a href="#" class="active-link">خانه </a></li>
-          <li><a href="#" class="">دوره ها </a></li>
-          <li><a href="#" class=""> درباره ما </a></li>
-          <li><a href="#" class=""> بلاگ</a></li>
+          <li><a href="./index.html" class="active-link">خانه </a></li>
+          <li><a href="./courses.html" class="">دوره ها </a></li>
+          <li><a href="./about-us.html" class=""> درباره ما </a></li>
+          <li><a href="./blogs.html" class=""> بلاگ</a></li>
         </ul>
       </div>
       <div class="left-side-nav">
         <div class="search-container">
-          <input type="text" placeholder="جست و جو" name="" id="" />
+          <a href="./login.html">
+            <button class="btn-outline">ورود | ثبت نام</button></a
+          >
+
           <svg class="search-icon">
             <use
               xlink:href="./assets/Images/home/icons/sprite.svg#search"
@@ -75,10 +89,16 @@
       <div class="mobile-menu">
         <div class="mobile-menu-content">
           <ul class="mobile-links">
-            <li class=""><a href="#" class="">خانه </a></li>
-            <li><a href="#" class="">دوره ها </a></li>
-            <li><a href="#" class="">درباره ما </a></li>
-            <li><a href="#" class="">بلاگ</a></li>
+
+            <li class="active"><a c href="./index.html">خانه </a></li>
+            <li><a href="./courses.html" class="">دوره ها </a></li>
+            <li><a href="./about-us.html" class="">درباره ما </a></li>
+            <li><a href="./blogs.html" class="">بلاگ</a></li>
+            <li>
+              <a href="./login.html" class="btn-contained"> ورود | ثبت نام</a>
+            </li>
+
+
             <div class="mobile-search">
               <input type="text" placeholder="جست و جو" />
               <svg class="search-icon">
@@ -92,16 +112,11 @@
       </div>
     </nav>
 
-    <a href="./supportpage.html">
-      <button class="support-btn">
-        <img src="./assets/Images/home/icons/support.svg" alt="پشتیبانی" />
-        پشتیبانی
-      </button></a
-    >
+    <div id="chatSupportComponent"></div>
     <header>
       <div class="header-content">
         <h1>
-          با <span class="neon-text">بیالرن</span> از مسیر یادگیریت لذت ببر!
+          با <span class="neon-text">بیالـرن</span> از مسیر یادگیریت لذت ببر!
         </h1>
         <p>
           بیالــرن، مطمئن‌ترین و سریع‌ترین راه برای تبدیل شدن به نسخه‌ای بهتر از
@@ -109,7 +124,9 @@
         </p>
         <div class="header-btn">
           <button class="btn-outline">بیشتر بدون !</button>
-          <button class="glow-on-hover">ورود/ثبت نام</button>
+          <a href="./login.html">
+            <button class="glow-on-hover">ورود/ثبت نام</button></a
+          >
         </div>
       </div>
       <div class="header-image">
@@ -168,13 +185,16 @@
           دوره‌هایی که به تازگی در مدرسۀ بیالــرن شروع شدن:
         </p>
         <div class="courses-list">
-          <div class="courses-item gradient-border">
-            <img src="./assets/Images/home/tailwind-course.png" alt="" />
-            <h4>دوره آموزش پروژه‌محور Tailwind CSS</h4>
+          <a href="./course-details1.html" class="courses-item gradient-border">
+            <img
+              src="./assets/Images/home/python-course.png"
+              alt="دوره پایتون"
+            />
+            <h4>آموزش برنامه نویسی پایتون پروژه محور</h4>
             <p>
-              هیچ کس نمی‌تونه قدرت و محبوبیت امروزۀ فریمورک تیلویند سی‌اس‌اس رو
-              انکار کنه و به یکی از مهم‌ترین مهارت‌های هر توسعه‌دهنده تبدیل
-              شدـرن یاد بگیری!
+              پایتون جزو محبوب ترین زبان های برنامه نویسی دنیاست. این زبان
+              برنامه‌نویسی قدرتمند و همه‌کاره، در هوش مصنوعی، توسعه وب، تحلیل
+              داده و بسیاری از حوزه‌های دیگر استفاده می‌شود. در این دوره...
             </p>
             <div class="courses-item-bottom">
               <div class="skills">
@@ -187,7 +207,7 @@
                   <img src="./assets/Images/home/tailwind.svg" alt="" />
                 </div>
               </div>
-              <span class="courses-teacher"> امیرطاها افخمی </span>
+              <span class="courses-teacher"> صمد سینا زاد  </span>
               <div class="del"><del>1,000,000</del></div>
             </div>
             <div class="courses-action">
@@ -195,15 +215,15 @@
 
               <button>شرکت در دوره</button>
             </div>
-          </div>
-          <div class="courses-item gradient-border">
-            <img src="./assets/Images/home/tailwind-course.png" alt="" />
-            <h4>دوره آموزش پروژه‌محور Tailwind CSS</h4>
+          </a>
+          <a href="./course-details2.html" class="courses-item gradient-border">
+            <img src="./assets/Images/home/figma-course.png" alt="" />
+            <h4>دوره آموزش مقدماتی فیگما، آشنایی با مبانی UI</h4>
             <p>
-              هیچ کس نمی‌تونه قدرت و محبوبیت امروزۀ فریمورک تیلویند سی‌اس‌اس رو
-              انکار کنه و به یکی از مهم‌ترین مهارت‌های هر توسعه‌دهنده تبدیل شده!
-              حالا، فرصت اینو داری تا این فریمورک قدرتمند رو با بیالــرن یاد
-              بگیری!
+              این دوره برای افرادی طراحی شده است که می‌خواهند از صفر با فیگما
+              (Figma)، یکی از محبوب‌ترین ابزارهای طراحی رابط کاربری (UI) و تجربه
+              
+              
             </p>
             <div class="courses-item-bottom">
               <div class="skills">
@@ -216,7 +236,7 @@
                   <img src="./assets/Images/home/tailwind.svg" alt="" />
                 </div>
               </div>
-              <span class="courses-teacher"> امیرطاها افخمی </span>
+              <span class="courses-teacher"> ماهان نیماپور </span>
             </div>
             <div class="courses-action">
               <p class="price">750,000 تومان</p>
@@ -224,15 +244,14 @@
 
               <button>شرکت در دوره</button>
             </div>
-          </div>
-          <div class="courses-item gradient-border">
-            <img src="./assets/Images/home/tailwind-course.png" alt="" />
-            <h4>دوره آموزش پروژه‌محور Tailwind CSS</h4>
+          </a>
+          <a href="./course-detail3.html" class="courses-item gradient-border">
+            <img src="./assets/Images/home/html-course.png" alt="" />
+            <h4>آموزش مقدماتی HTML، پروژه طراحی صفحه وب</h4>
             <p>
-              هیچ کس نمی‌تونه قدرت و محبوبیت امروزۀ فریمورک تیلویند سی‌اس‌اس رو
-              انکار کنه و به یکی از مهم‌ترین مهارت‌های هر توسعه‌دهنده تبدیل شده!
-              حالا، فرصت اینو داری تا این فریمورک قدرتمند رو با بیالــرن یاد
-              بگیری!
+              این دوره برای افرادی طراحی شده است که می‌خواهند یادگیری طراحی وب
+              را از پایه شروع کنند. در این دوره با HTML، زبان اصلی ساخت صفحات
+              وب، آشنا می‌شوید و یاد می‌گیرید که چگونه ساختار یک وب‌سای...
             </p>
             <div class="courses-item-bottom">
               <div class="skills">
@@ -245,7 +264,7 @@
                   <img src="./assets/Images/home/tailwind.svg" alt="" />
                 </div>
               </div>
-              <span class="courses-teacher"> امیرطاها افخمی </span>
+              <span class="courses-teacher">روح الله سعید بخش</span>
             </div>
             <div class="courses-action">
               <p class="price">750,000 تومان</p>
@@ -253,7 +272,7 @@
 
               <button>شرکت در دوره</button>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="comments">
@@ -295,8 +314,11 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>حمید محمدی</p>
+                    <span>Talent Acquisition Specialist </span>
+                  </div>
+                  <img src="./assets/Images/home/snapp_logo.png" alt="" />
                 </div>
                 <img src="./assets/Images/home/Profile.svg" alt="" />
               </div>
@@ -329,10 +351,12 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>ارشیا ستوده</p>
+                    <span style="text-align: end"> Frontend Developer </span>
+                  </div>
                 </div>
-                <img src="./assets/Images/home/Profile.svg" alt="" />
+                <img src="./assets/Images/home/sotoode.png" alt="" />
               </div>
             </div>
             <div class="comments-item">
@@ -363,10 +387,12 @@
               </div>
               <div class="comment-author">
                 <div class="">
-                  <p>سعید فیروزی‌پور</p>
-                  <span>نظر برای دوره آموزش NodeJS</span>
+                  <div>
+                    <p>مهشید مغانلو</p>
+                    <span>دانشجوی ارشد بیوتکنولوژی </span>
+                  </div>
                 </div>
-                <img src="./assets/Images/home/Profile.svg" alt="" />
+                <img src="./assets/Images/home/master-student.avif" alt="" />
               </div>
             </div>
           </div>
@@ -384,30 +410,39 @@
         <div class="questions-body">
           <div class="questions-list">
             <div class="questions-item">
-              <div class="dot"></div>
-              <p class="active">نحوۀ پرداخت به چه صورته؟</p>
+              <p
+                class="active"
+                data-answer="پرداخت از طریق درگاه‌های بانکی معتبر انجام می‌شود."
+              >
+                نحوۀ پرداخت به چه صورته؟
+              </p>
             </div>
             <div class="questions-item">
-              <div class="dot"></div>
-              <p>نحوۀ پرداخت به چه صورته؟</p>
+              <p data-answer="تمامی دوره‌ها دارای پشتیبانی 24/7 هستند.">
+                آیا دوره‌ها پشتیبانی دارند؟
+              </p>
             </div>
             <div class="questions-item">
-              <div class="dot"></div>
-              <p>نحوۀ پرداخت به چه صورته؟</p>
+              <p data-answer="بله، تمامی دوره‌ها دارای گواهینامه معتبر هستند.">
+                آیا گواهینامه ارائه می‌شود؟
+              </p>
             </div>
             <div class="questions-item">
-              <div class="dot"></div>
-              <p>نحوۀ پرداخت به چه صورته؟</p>
+              <p
+                data-answer="بله، امکان بازگشت وجه تا 7 روز پس از خرید وجود دارد."
+              >
+                آیا امکان بازگشت وجه وجود دارد؟
+              </p>
             </div>
           </div>
           <div class="answer">
-            <h4>نحوۀ پرداخت</h4>
-            <p>
-              لورم ایپسوم متن ساختگی با هدف تولید سادگی نامفهوم از صنعت چاپ است.
-              شاید جالب باشه بدونین که با نظر دیجیتال مارکتر عزیز باید این متنو
-              عوض کنین و من الان اصلا حوصله ندارم درستش کنم، و اینکه لورم ایپسوم
-              اول رو هم حفظ بودم (اینو صرفا نوشتم که جا پر شه :)
-            </p>
+            <div class="answer-content">
+              <h4>نحوۀ پرداخت</h4>
+              <p>
+                لورم ایپسوم متن ساختگی با هدف تولید سادگی نامفهوم از صنعت چاپ
+                است.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -423,7 +458,9 @@
           <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت
           در ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
         </p>
-        <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+        <a href="https://www.linkedin.com/company/bialearn/">
+          <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+        </a>
       </div>
     </main>
     <footer>
@@ -436,22 +473,37 @@
             <button class="btn-contained">ارسال</button>
           </div>
           <p class="policy">
-            ارسال ایمیل توسط شما به این معناست که <a href="">قوانین</a> ما را
+            ارسال ایمیل توسط شما به این معناست که <a href="./privacy-policy.html">قوانین</a> ما را
             پذیرفته اید
           </p>
         </div>
         <div class="footer-list">
-          <ul>
+          <!-- <ul>
             <li class="header-list">عنوان</li>
             <li><a href="#">لینک</a></li>
             <li><a href="#">لینک</a></li>
             <li><a href="#">لینک</a></li>
+          </ul> -->
+          <ul>
+            <li class="header-list">بیالرن</li>
+            <li><a href="#">فرصت های شغلی</a></li>
+           <li> <a href="./privacy-policy.html">قوانین</a></li>
+            <li><a href="#">فروش سازمانی</a></li>         
+            <li><a href="#">پشتیبانی</a></li>
+            <li><a href="./faq.html">سوالات متداول</a></li>
           </ul>
           <ul>
-            <li class="header-list">عنوان</li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
-            <li><a href="#">لینک</a></li>
+            <li class="header-list">محصولات</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/biacastpod/posts/?feedVie"
+                ><img
+                  src="./assets/Images/biacast-logo.svg"
+                  width="40"
+                  height="40"
+                  alt=""
+              /></a>
+            </li>
           </ul>
         </div>
         <div class="footer-social">
@@ -459,18 +511,20 @@
             <li>
               <a href="#"
                 ><img
-                  src="./assets/Images/home/icons/youtube.svg"
-                  alt="youtube"
+                  src="./assets/Images/home/icons/instagram.svg"
+                  alt="instagram"
               /></a>
             </li>
             <li>
               <a href="#"
-                ><img src="./assets/Images/home/icons/twiter.svg" alt="twiter"
+                ><img src="./assets/Images/home/icons/x.svg" alt="X"
               /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./assets/Images/home/icons/linkedin.svg" alt=""
+              <a href="https://www.linkedin.com/company/bialearn/"
+                ><img
+                  src="./assets/Images/home/icons/Linkedin-1.svg"
+                  alt="linkedin"
               /></a>
             </li>
           </ul>
@@ -482,5 +536,6 @@
       <p>All Right Deserved; Developed by CRODEVIT team</p>
     </div>
     <script src="./JS/script.js"></script>
+    <script src="components/load-support-component.js"></script>
   </body>
 </html>

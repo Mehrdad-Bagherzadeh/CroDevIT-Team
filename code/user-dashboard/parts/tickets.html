@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiaLearn | Tickets</title>
+  <link rel="stylesheet" href="../../assets/CSS/globale.css">
+  <link rel="stylesheet" href="../../assets/CSS/fonts.css">
+  <link rel="stylesheet" href="./tickets.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>گروه پشتیبانی بیالرن</h1>
+    </div>
+    <div class="ticket">
+      <div class="question">
+        <h3 class="title">
+          مشکل در پلیر دوره‌ها
+        </h3>
+        <p class="text">
+          سلام وقتتون بخیر، متاسفانه مشکلی برام پیش اومده که نمیتونم دوره‌ها رو مشاهده کنم.
+        </p>
+      </div>
+      <div class="answer">
+        <p class="answer-text">
+          سلام. این ایراد به خاطر مشکل جزئی در سرورهای ارائه‌دهنده به وجود اومده بود، الان به راحتی میتونین از دوره‌های
+          بیالــرن استفاده کنین!
+        </p>
+      </div>
+    </div>
+    <div class="input-container">
+      <input id="input" type="text" placeholder="متن تیکت را وارد کنید...">
+      <img src="../../assets/Images/dashboard/arrow-up.svg" alt="آیکون ارسال">
+    </div>
+  </div>
+</body>
+<script>
+  let inputField = document.getElementById('input');
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      inputField.value = '';
+    }
+  });
+</script>
+
+</html>
