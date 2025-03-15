@@ -100,7 +100,6 @@ main {
   color: var(--dark-text-color);
   font-family: "danalight";
 }
-
 .see-more-btn {
   all: unset;
   padding: 12px 24px;

@@ -876,7 +876,7 @@ body {
   display: block; /* Show when the section is collapsed */
   z-index: 1200; /* Ensure it appears above other elements */
 }
-@media (max-width: 968px) {
+@media (max-width: 1250px) {
   .chat-bot-conversation-section {
     transform: translateX(-100%);
     display: none;
