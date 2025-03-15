@@ -28,7 +28,7 @@
       />
       <h2 class="dashboard-user-name">ارشیا ستوده</h2>
       <ul>
-        <li>
+        <li class="selected">
           <img
             src="../assets/Images/dashboard/dashboard.svg"
             alt=""
@@ -51,13 +51,6 @@
         </li>
         <li>
           <img
-            src="../assets/Images/dashboard/question.svg"
-            alt=""
-            class="dashboard-sections-icon"
-          /><a href="#">تیکت ها</a>
-        </li>
-        <li>
-          <img
             src="../assets/Images/dashboard/chat.svg"
             alt=""
             class="dashboard-sections-icon"
@@ -74,7 +67,7 @@
 
       <button class="log-out-btn">خروج از حساب</button>
     </nav>
-    <div class="content-container    panel-content">
+    <div class="content-container active panel-content">
       <div class="panel-section">
         <h2>دوره‌های من</h2>
         <div class="panel-list">
@@ -88,7 +81,7 @@
                 <span class="panel-status">وضعیت: به اتمام رسیده</span>
               </div>
               <div class="progress-container">
-                <div class="progress-bar" style="width: 100%;"></div>
+                <div class="progress-bar" style="width: 100%"></div>
                 <span class="progress-text">100% </span>
               </div>
             </div>
@@ -96,7 +89,7 @@
           <!-- Add more course items as needed -->
         </div>
       </div>
-    
+
       <div class="panel-section">
         <h2>پرداخت‌ها</h2>
         <div class="panel-list">
@@ -123,14 +116,16 @@
           <!-- Add more payment items as needed -->
         </div>
       </div>
-    
+
       <div class="panel-section">
         <h2>زمان صرف شده</h2>
         <div class="panel-list">
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">دوره ۱</h3>
-              <p class="panel-description">توضیحات کوتاه درباره زمان صرف شده برای دوره ۱.</p>
+              <p class="panel-description">
+                توضیحات کوتاه درباره زمان صرف شده برای دوره ۱.
+              </p>
               <div class="panel-details">
                 <span class="panel-amount">زمان: 10 ساعت</span>
                 <span class="panel-date">تاریخ: 1402/01/01</span>
@@ -140,7 +135,9 @@
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">دوره ۲</h3>
-              <p class="panel-description">توضیحات کوتاه درباره زمان صرف شده برای دوره ۲.</p>
+              <p class="panel-description">
+                توضیحات کوتاه درباره زمان صرف شده برای دوره ۲.
+              </p>
               <div class="panel-details">
                 <span class="panel-amount">زمان: 8 ساعت</span>
                 <span class="panel-date">تاریخ: 1402/02/01</span>
@@ -150,14 +147,16 @@
           <!-- Add more time spent items as needed -->
         </div>
       </div>
-    
+
       <div class="panel-section">
         <h2>امتیازات</h2>
         <div class="panel-list">
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">دوره ۱</h3>
-              <p class="panel-description">توضیحات کوتاه درباره امتیاز دوره ۱.</p>
+              <p class="panel-description">
+                توضیحات کوتاه درباره امتیاز دوره ۱.
+              </p>
               <div class="panel-details">
                 <span class="panel-amount">امتیاز: 4.5</span>
                 <span class="panel-date">تاریخ: 1402/01/01</span>
@@ -167,7 +166,9 @@
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">دوره ۲</h3>
-              <p class="panel-description">توضیحات کوتاه درباره امتیاز دوره ۲.</p>
+              <p class="panel-description">
+                توضیحات کوتاه درباره امتیاز دوره ۲.
+              </p>
               <div class="panel-details">
                 <span class="panel-amount">امتیاز: 4.0</span>
                 <span class="panel-date">تاریخ: 1402/02/01</span>
@@ -177,14 +178,16 @@
           <!-- Add more rate items as needed -->
         </div>
       </div>
-    
+
       <div class="panel-section">
         <h2>تکالیف</h2>
         <div class="panel-list">
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">تکلیف ۱: پروژه HTML و CSS</h3>
-              <p class="panel-description">ایجاد یک صفحه وب ساده با استفاده از HTML و CSS.</p>
+              <p class="panel-description">
+                ایجاد یک صفحه وب ساده با استفاده از HTML و CSS.
+              </p>
               <div class="panel-details">
                 <span class="panel-status">وضعیت: تکمیل شده</span>
                 <span class="panel-date">تاریخ تحویل: 1402/01/15</span>
@@ -194,7 +197,9 @@
           <div class="panel-item">
             <div class="panel-info">
               <h3 class="panel-title">تکلیف ۲: پروژه JavaScript</h3>
-              <p class="panel-description">نوشتن یک برنامه ساده با استفاده از JavaScript.</p>
+              <p class="panel-description">
+                نوشتن یک برنامه ساده با استفاده از JavaScript.
+              </p>
               <div class="panel-details">
                 <span class="panel-status">وضعیت: در حال انجام</span>
                 <span class="panel-date">تاریخ تحویل: 1402/02/01</span>
@@ -206,96 +211,141 @@
     </div>
     <div class="content-container courses-content">
       <div class="courses-section-conatainer">
-        <h1 class="course-section-title">دوره های من</h1>
+        <div class="courses-search">
+          <div class="search-field">
+            <input type="text" placeholder="  جست و جوی دوره های من..." />
+            <button>
+              جست و جو
+              <img src="../assets/Images/search-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="search-filter">
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>تاریخ انتشار</p>
+
+                <img src="../assets/Images/blog/date.png" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>موضوع</p>
+
+                <img src="../assets/Images/blog/bolt.svg" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>مدرس</p>
+
+                <img src="../assets/Images/blog/bolt.svg" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+          </div>
+        </div>
         <div class="course-list">
-          <a class="course-item">
-            <img src="../assets/Images/blog/blog-image.png" alt="" />
-            <div class="host">برگزارکننده: مهدیار واعظ</div>
-            <h4>تایتل</h4>
-            <p>
+          <div class="course-item">
+            <img src="../assets/Images/courses/Image.png" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
               امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
             </p>
-            <div class="skills">
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
               </div>
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-            </div>
-
-            <div class="progress-container">
-              <div class="progress-bar" style="width: 70%"></div>
-              <span class="progress-text">30% باقی مانده</span>
-            </div>
-            <div>
-              <button> وضعیت دوره</button>
-              <div class="price">
-                <p>قیمت</p>
-                <span>1,200,000 T</span>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
               </div>
             </div>
-          </a>
-          <a  class="course-item">
-            <img src="../assets/Images/blog/blog-image.png" alt="" />
-
-            <h4>تایتل</h4>
-            <p>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/Image.png" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
               امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
             </p>
-            <div class="skills">
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
               </div>
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar" style="width: 70%"></div>
-              <span class="progress-text">30% باقی مانده</span>
-            </div>
-            <div>
-              <button>وضعیت دوره</button>
-              <div class="release-date">
-                <p>قیمت</p>
-                <span>1,200,000</span>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
               </div>
             </div>
-          </a>
-          <a  class="course-item">
-            <img src="../assets/Images/blog/blog-image.png" alt="" />
-
-            <h4>تایتل</h4>
-            <p>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/Image.png" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
               امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
             </p>
-            <div class="skills">
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
               </div>
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="../assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar" style="width: 70%"></div>
-              <span class="progress-text">30% باقی مانده</span>
-            </div>
-            <div>
-              <button>وضعیت دوره</button>
-              <div class="release-date">
-                <p>قیمت</p>
-                <span>1,200,000</span>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
               </div>
             </div>
-          </a>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/Image.png" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
+              امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+            </p>
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
+              </div>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
+              </div>
+            </div>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -435,44 +485,7 @@
       </div>
     </div>
 
-    <div class="content-container tickets-content">
-      <div class="ticket-container">
-        <div class="heading">
-          <h1 class="ticket-title">گروه پشتیبانی بیالرن</h1>
-        </div>
-        <div class="ticket">
-          <div class="question">
-            <h3 class="title">مشکل در پلیر دوره‌ها</h3>
-            <p class="text">
-              سلام وقتتون بخیر، متاسفانه مشکلی برام پیش اومده که نمیتونم دوره‌ها
-              رو مشاهده کنم.
-            </p>
-          </div>
-          <div class="answer">
-            <p class="answer-text">
-              سلام. این ایراد به خاطر مشکل جزئی در سرورهای ارائه‌دهنده به وجود
-              اومده بود، الان به راحتی میتونین از دوره‌های بیالــرن استفاده
-              کنین!
-            </p>
-          </div>
-        </div>
-        <div class="ticket-input-container">
-          <input
-            class="ticket-input"
-            id="input"
-            type="text"
-            placeholder="متن تیکت را وارد کنید..."
-          />
-          <img
-            class="ticket-send-icon"
-            src="../assets/Images/dashboard/arrow-up.svg"
-            alt="آیکون ارسال"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="content-container active chat-bot-content">
+    <div class="content-container chat-bot-content">
       <button class="conversation-sidebar-btn">
         <img src="../assets/Images/dashboard/conversation-sidebar.svg" alt="" />
       </button>
@@ -503,6 +516,9 @@
         </div>
 
         <div class="chat-bot-conversation-section">
+          <button class="chat-bot-close-btn">
+            <img src="../assets/Images/dashboard/close.svg" alt="" />
+          </button>
           <div class="chat-bot-title">
             <img src="../assets/Images/dashboard/chat-gpt.svg" alt="" />
             چت بات مشاوره بیالرن
