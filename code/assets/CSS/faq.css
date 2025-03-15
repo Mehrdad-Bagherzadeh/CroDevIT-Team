@@ -183,8 +183,8 @@ h2 {
   height: 20px;
   position: absolute;
   left: 15px;
-  top: 25px;
-
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
   transition: transform 0.3s ease;
 }
 
