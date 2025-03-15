@@ -64,22 +64,24 @@ body{
 
 }
 /* Custom scrollbar styles */
-*::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px !important; /* Width of the scrollbar */
 }
 
-*::-webkit-scrollbar-track {
-  background: var(--dark-background); /* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: var(--dark-background)
+   !important; /* Background of the scrollbar track */
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: black; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
-  border: 2px solid var(--dark-background); /* Optional: adds a border around the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: black !important; /* Color of the scrollbar thumb */
+  border-radius: 10px
+  !important; /* Rounded corners of the scrollbar thumb */
+  border: 2px solid var(--dark-background) !important; /* Optional: adds a border around the thumb */
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important; /* Color of the scrollbar thumb when hovered */
 }
 /* # Light theme:
   1- Background (Light-Zinc Varient): #
