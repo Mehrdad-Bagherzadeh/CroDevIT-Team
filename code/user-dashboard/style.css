@@ -109,7 +109,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 10000;
+  z-index: 999;
 }
 
 /* Add close button styles */
@@ -169,7 +169,6 @@ body {
 }
 
 /*PANEL SECTION*/
-
 .panel-section {
   padding: 20px;
   background-color: var(--lighter-dark-background);
@@ -283,7 +282,6 @@ body {
   }
 }
 /*COURSES STYLES*/
-
 .courses-search {
   display: flex;
   width: 100%;
