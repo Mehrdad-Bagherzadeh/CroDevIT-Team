@@ -170,7 +170,9 @@ main {
   border: 2px solid var(--Grey-15, #262626);
   padding: 30px;
 }
-
+.course-item > img{
+  border-radius: 12px;
+}
 .teacher {
   border-radius: 28px;
   border: 1px solid var(--Grey-15, #262626);
