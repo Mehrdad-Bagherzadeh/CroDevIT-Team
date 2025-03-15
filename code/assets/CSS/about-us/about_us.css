@@ -193,7 +193,7 @@ align-items: flex-start;
 gap: 30px;
 flex: 1 0 0;
 border:1px solid var(--lighter-dark-background);
-max-width: 350px;
+min-width: 350px;
 border-radius: 10px;
 }
 .achivments-item h5{
