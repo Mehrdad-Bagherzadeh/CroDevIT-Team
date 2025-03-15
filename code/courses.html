@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./assets/CSS/home.css" />
     <link rel="stylesheet" href="./assets//CSS/animation.css" />
     <link rel="stylesheet" href="./assets/CSS/fonts.css" />
-    <link rel="stylesheet" href="./assets/CSS/courses/courses.css">
+    <link rel="stylesheet" href="./assets/CSS/courses.css" />
   </head>
-
   <body>
+    <div id="chatSupportComponent"></div>
     <div class="ad">
       <p>
         تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
@@ -101,162 +101,443 @@
         </div>
       </div>
     </nav>
+    <header>
+      <div class="content">
+        <h1>یادگیریت رو سریع‌تر و مطمئن‌تر کن!</h1>
+        <p>متن این با سعید</p>
+      </div>
 
-    <div id="chatSupportComponent"></div>
-    <div class="hero">
-        <div class="content">
-          <h1 >  یادگیریت رو سریع‌تر و مطمئن‌تر کن!</h1>
-          <p>سعید زحمت متنشو بکش :)</p>
-        </div>
-      </div>
-      <div class="course-search">
-        <div class="search-field">
-          <input type="text" placeholder="  جست و جوی دوره" />
-          <button>
-            جست و جو
-            <img src="./assets/Images/search-icon.svg" alt="" />
-          </button>
-        </div>
- 
-      </div>
+    </header>
+
     <main>
-      <div class="box-icons">
-        <div class="box-icons-item">
-          <img src="./assets/Images/home/icons/learn.svg" alt="" />
-          <h3>آموزش مناسبت رو پیدا کن!</h3>
+      <div class="courses-category-container">
+        <div class="category-icon">
+          <img src=".\assets\Images\courses\managment.svg" alt="" />
+          <h3>مدیریت و بازگانی</h3>
         </div>
-        <div class="box-icons-item">
-            <img src="./assets/Images/home/icons/learn.svg" alt="" />
-            <h3> آموزش زبان</h3>
+        <div class="category-icon">
+          <img src=".\assets\Images\courses\english.svg" alt="" />
+          <h3>آموزش زبان</h3>
+        </div>
+        <div class="category-icon">
+          <img src=".\assets\Images\courses\programing.svg" alt="" />
+          <h3>برنامه نویسی</h3>
+        </div>
+        <div class="category-icon">
+          <img src=".\assets\Images\courses\soft-skills.svg" alt="" />
+          <h3>مهارت های نرم</h3>
+        </div>
+      </div>
+      <section class="courses-section">
+        <div class="course-list-item">
+            <div class="course-item-header">
+              <img
+                src="./assets/Images/courses/presentation-chart-line.svg"
+                class="course-category-icon"
+              />
+              <h2 class="course-category-title">دوره های مدیریت و بازرگانی</h2>
+            </div>
+            <p class="course-category-subtitle">سعید متنشو بزن</p>
+            <button class="see-more-btn">مشاهده بیشتر</button>
+
+            <div class="swipe-btns-container">
+              <button class="swipe-btn next">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+              <button class="swipe-btn previous">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+            </div>
+            <div class="course-list">
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
           </div>
-        <div class="box-icons-item">
-     
-          <img src="./assets/Images/home/icons/social.svg" alt="" />
-          <h3> برنامه نویسی </h3>
         </div>
-        <div class="box-icons-item">
-          <span>
         
-          </span>
-          <img src="./assets/Images/home/icons/puzzle.svg" alt="" />
-          <h3> مهارت های نرم</h3>
+
+
+        
+      </section>
+      <section class="courses-section">
+        <div class="course-list-item">
+            <div class="course-item-header">
+              <img
+                src="./assets/Images/courses/language.svg"
+                class="course-category-icon"
+              />
+              <h2 class="course-category-title">دوره های آموزش زبان</h2>
+            </div>
+            <p class="course-category-subtitle">سعید متنشو بزن</p>
+            <button class="see-more-btn">مشاهده بیشتر</button>
+
+            <div class="swipe-btns-container">
+              <button class="swipe-btn next">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+              <button class="swipe-btn previous">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+            </div>
+            <div class="course-list">
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+          </div>
         </div>
-      </div>
-        <div class="course-items">
-      <div class="section-head">
-        <h3> متن تایتل</h3>
-      </div>
-      <p class="subtitle">طبق معمول، با دیجیتال مارکتر دوست‌داشتنی.</p>
-      <div class="course-list">
-     
-       <a href="./course-detail.html" class="course-item">
-          <img src="./assets/Images/blog/blog-image.png" alt="" />
-         <div class="host">
-            برگزارکننده: مهدیار واعظ
-         </div>
-          <h4>تایتل</h4>
-          <p>امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.</p>
-          <div class="skills">
-            <div class="skills-item">
-              <span>tailwindCSS</span>
-              <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
+        
+
+
+        
+      </section>
+      <section class="courses-section">
+        <div class="course-list-item">
+            <div class="course-item-header">
+              <img
+                src="./assets/Images/courses/code-bracket.svg"
+                class="course-category-icon"
+              />
+              <h2 class="course-category-title">دوره های برنامه نویسی</h2>
             </div>
-            <div class="skills-item">
-              <span>tailwindCSS</span>
-              <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
+            <p class="course-category-subtitle">سعید متنشو بزن</p>
+            <button class="see-more-btn">مشاهده بیشتر</button>
+
+            <div class="swipe-btns-container">
+              <button class="swipe-btn next">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+              <button class="swipe-btn previous">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
             </div>
+            <div class="course-list">
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
           </div>
-      
-              <div class="progress-container">
-            <div class="progress-bar" style="width: 70%;"></div>
-            <span class="progress-text">30% باقی مانده</span>
-          </div>
-          <div>
-            <button>ثبت نام</button>
-            <div class="price">
-              <p> قیمت</p>
-              <span>1,200,000 T</span>
-            </div>
-            
-          </div>
-      
-        </a>
-        <a href="./blog-detail.html" class="course-item">
-            <img src="./assets/Images/blog/blog-image.png" alt="" />
-           
-            <h4>تایتل</h4>
-            <p>امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.</p>
-            <div class="skills">
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 70%;"></div>
-                <span class="progress-text">30% باقی مانده</span>
-              </div>
-            <div>
-              <button>ثبت نام</button>
-              <div class="release-date">
-                <p> قیمت</p>
-                <span>1,200,000</span>
-              </div>
-            </div>
-          </a>
-          <a href="./blog-detail.html" class="course-item">
-            <img src="./assets/Images/blog/blog-image.png" alt="" />
-           
-            <h4>تایتل</h4>
-            <p>امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.</p>
-            <div class="skills">
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-              <div class="skills-item">
-                <span>tailwindCSS</span>
-                <img src="./assets/Images/home/tailwind.svg" alt="tailwind" />
-              </div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 70%;"></div>
-                <span class="progress-text">30% باقی مانده</span>
-              </div>
-            <div>
-              <button>ثبت نام</button>
-              <div class="release-date">
-                <p> قیمت</p>
-                <span>1,200,000</span>
-              </div>
-            </div>
-          </a>
-   
-      </div>
-    </div>
-   
-      
-      <div class="social">
-        <div class="section-head">
-          <h4 class="section-head-text">
-            خیلی حواستو جمع کن! همیشه باید بروز و آپدیت باشی!
-          </h4>
         </div>
-        <p>
-          تو دنیای امروز که تکنولوژی خیلی سریع پیش می‌ره، آپدیت موندن، اونم تو
-          چند حوزۀ مختلف، خیلی سخت و زمان‌بر شده؛ اما هیچ کاری نشد نداره! با
-          <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت
-          در ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
-        </p>
-        <a href="https://www.linkedin.com/company/bialearn/">
-          <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
-        </a>
-      </div>
+        
+
+
+        
+      </section>
+      <section class="courses-section">
+        <div class="course-list-item">
+            <div class="course-item-header">
+              <img
+                src="./assets/Images/courses/light-bulb.svg"
+                class="course-category-icon"
+              />
+              <h2 class="course-category-title">دوره های مهارت نرم</h2>
+            </div>
+            <p class="course-category-subtitle">سعید متنشو بزن</p>
+            <button class="see-more-btn">مشاهده بیشتر</button>
+
+            <div class="swipe-btns-container">
+              <button class="swipe-btn next">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+              <button class="swipe-btn previous">
+                <img src="./assets/Images/courses/arrow-down.svg" alt="" />
+              </button>
+            </div>
+            <div class="course-list">
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="./assets/Images/courses/Image.png" alt="" />
+              <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+              <h3 class="course-title">تایتل</h3>
+              <p class="course-description">
+                امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+              </p>
+              <div class="course-skills-container">
+                <div class="course-skill">
+                  <span>Tailwind css</span>
+                  <img src="./assets/Images/courses/tailwind.svg" alt="" />
+                </div>
+                <div class="course-skill">
+                  <span>HTML</span>
+                  <img src="./assets/Images/courses/html.svg" alt="" />
+                </div>
+              </div>
+              <div class="price-button-container">
+                <button class="enroll-course-btn">ثبت نام در دوره</button>
+                <div class="price-container">
+                  <span class="price-text">قیمت</span>
+                  <p class="course-price">تومان 15000000</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+
+
+        
+      </section>
     </main>
+
     <footer>
       <div class="footer">
         <div class="subscription">
@@ -318,5 +599,6 @@
     </div>
     <script src="./JS/script.js"></script>
     <script src="components/load-support-component.js"></script>
+    <script src="./JS/courses/courses.js"></script>
   </body>
 </html>
