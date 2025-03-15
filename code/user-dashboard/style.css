@@ -532,6 +532,18 @@ body {
   -o-border-radius: 12px;
   padding: 20px;
 }
+
+/* Fix for employers-container on small screens */
+@media (max-width: 500px) {
+  .employers-container {
+    padding: 10px; /* Reduce padding */
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .card {
+    padding: 15px; /* Adjust padding for cards */
+  }
+}
 .employers-container h2 {
   font-size: 32px;
 }
