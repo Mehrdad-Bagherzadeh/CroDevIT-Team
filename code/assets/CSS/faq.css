@@ -134,6 +134,9 @@ h2 {
 .category-container {
   display: flex;
   flex-shrink: 0; /* Prevent flex items from shrinking */
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .category-title {
@@ -143,7 +146,7 @@ h2 {
 }
 
 .category-icon {
-  width: 24px;
+  width: 32px;
 }
 
 /* Fade-in transition for FAQ container */
@@ -180,7 +183,7 @@ h2 {
   height: 20px;
   position: absolute;
   left: 15px;
-  top: auto;
+  top: 25px;
 
   transition: transform 0.3s ease;
 }
