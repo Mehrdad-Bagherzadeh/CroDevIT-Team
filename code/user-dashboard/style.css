@@ -165,8 +165,95 @@ body {
   }
 }
 
-/*EMPLOYERS STYLES*/
+/*PANEL SECTION*/
 
+/*COURSES STYLES*/
+
+/*EMPLOYERS STYLES*/
+.employers-container h1 {
+  font-weight: 800;
+  font-size: 42px;
+  padding: 20px;
+}
+.employers-container {
+  color: var(--dark-text-color);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 2px solid #262626;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 20px;
+}
+.employers-container h2 {
+  font-size: 32px;
+}
+.employers-container h3 {
+  font-weight: 350;
+  margin-bottom: 10px;
+  line-height: 1.7;
+  border-bottom: 2px solid #262626;
+}
+.description {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.skills-container {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.skills-container > p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skills {
+  display: flex;
+  gap: 20px;
+}
+.skills div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border: 2px solid #262626;
+  cursor: pointer;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.skills div:hover {
+  background-color: #262626;
+}
+.skills div img {
+  height: 24px;
+}
+.employers-container a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #2ec4ff;
+}
 /*TICKETS STYLES*/
 .ticket-container {
   background-color: #1a1a1a;
