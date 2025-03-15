@@ -260,6 +260,8 @@ footer {
 }
 .footer {
   flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   padding: var(--section-padding);
   margin-top: 36px;
   display: flex;
@@ -318,6 +320,7 @@ footer {
   display: flex;
   gap: 24px;
   color: var(--dark-text-color);
+  align-items: start;
 }
 .left-side-nav{
   display: flex ;
@@ -343,6 +346,10 @@ footer {
   justify-content: center;
 
   gap: 12px;
+}
+.footer-list ul:last-child{
+  justify-content: center;
+  align-items: center;
 }
 .footer-social {
   color: var(--dark-text-color);
@@ -817,5 +824,23 @@ footer {
   }
   .subscription input{
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-list{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer-social{
+    width: 100%;
+  }
+  .footer-social ul {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important; 
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
   }
 }

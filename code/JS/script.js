@@ -119,8 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const answerTitle = answerSection.querySelector("h4");
   const answerText = answerSection.querySelector("p");
 
+  let isAnimating = false;
+
   questions.forEach((question) => {
     question.addEventListener("click", () => {
+      if (isAnimating) return;
+
       // Remove active class from all questions
       questions.forEach((q) => q.classList.remove("active"));
 
@@ -133,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Slide out the current answer section
       answerSection.classList.add("slide-out-right");
+      isAnimating = true;
 
       // Wait for the slide-out animation to finish
       answerSection.addEventListener(
@@ -151,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "animationend",
             () => {
               answerSection.classList.remove("slide-in-left");
+              isAnimating = false;
             },
             { once: true }
           );

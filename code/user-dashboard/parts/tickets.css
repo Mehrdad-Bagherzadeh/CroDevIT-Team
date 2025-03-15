@@ -6,7 +6,7 @@ html {
   background-color: #141414;
   overflow: hidden;
   color: #e4e4e7;
-  font-family: Dana;
+  font-family: 'danalight';
 }
 body {
   height: 100vh;
@@ -31,6 +31,7 @@ body {
   justify-content: space-between;
 }
 .heading {
+  color: white !important;
   background-color: #262626;
   width: calc(100% + 40px);
   position: relative;
@@ -52,6 +53,7 @@ h1 {
   font-size: 22px;
 }
 .question {
+  color:white ;
   padding: 20px;
   background-color: #262626;
   border-radius: 12px;
@@ -82,7 +84,7 @@ input {
   width: 90%;
   position: relative;
   padding: 15px;
-  font-family: Dana;
+  font-family: 'danalight' !important;
   font-weight: 600;
   border-radius: 500px;
   -webkit-border-radius: 500px;
