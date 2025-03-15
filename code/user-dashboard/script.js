@@ -29,14 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     ".chat-bot-conversation-section"
   );
   const sidebarBtn = document.querySelector(".conversation-sidebar-btn");
+  const chatBotCloseBtn = document.querySelector(".chat-bot-close-btn");
 
   // Toggle sidebar visibility
   sidebarBtn.addEventListener("click", () => {
     conversationSection.classList.add("active");
   });
 
-  closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("active");
+  chatBotCloseBtn.addEventListener("click", () => {
+    conversationSection.classList.remove("active");
   });
 
   const sidebarLinks = document.querySelectorAll(".sidebar ul li");

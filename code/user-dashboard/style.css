@@ -761,6 +761,20 @@ body {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
+.chat-bot-close-btn {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+
+.chat-bot-close-btn img {
+  width: 40px;
+}
+
 .chat-bot-title {
   font-family: "danabold";
   font-size: 24px;
@@ -869,6 +883,14 @@ body {
   .chat-bot-conversation-section.active {
     transform: translateX(0%);
     display: flex;
+  }
+
+  .chat-bot-close-btn {
+    display: block;
+  }
+
+  .chat-bot-conversation-section.active ~ .chat-bot-close-btn {
+    display: none; /* Hide the button when the sidebar is active */
   }
 
   .conversation-sidebar-btn {
