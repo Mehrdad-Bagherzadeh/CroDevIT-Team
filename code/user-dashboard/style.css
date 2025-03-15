@@ -283,26 +283,7 @@ body {
   }
 }
 /*COURSES STYLES*/
-.course-section-container {
-  color: var(--dark-text-color);
-}
-.course-section-title {
-  font-family: "danabold";
-  font-size: 32px;
-  color: white;
-}
-.course-items {
-  padding: var(--section-padding);
-  margin-top: 36px;
-  margin-bottom: 48px;
-}
-.course-items h3 {
-  font-size: 36px;
-}
-.course-items p {
-  font-size: var(--font-size-text-extra);
-}
-.course-list {
+.courses-search {
   display: flex;
   width: 100%;
   justify-content: start;
@@ -360,21 +341,8 @@ body {
   gap: 12px;
   background: var(--Grey-10, #1a1a1a);
 }
-.release-date p {
-  color: rgba(228, 228, 231, 0.5);
-  text-align: right;
-  font-family: "danalight";
-  font-size: 14px;
-
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-}
-.release-date span {
-  color: var(--dark-text-color);
-}
-
-.progress-container {
+.search-filter > div {
+  width: 33%;
   position: relative;
 }
 .search-filter input {
@@ -434,38 +402,11 @@ body {
 
 .course-list {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: auto;
+  gap: 12px;
   justify-content: center;
-  align-items: center;
-}
-.skills div {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-content: center;
-  gap: 15px;
-  padding: 10px 20px;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  -ms-border-radius: 500px;
-  -o-border-radius: 500px;
-  border: 2px solid #262626;
-  cursor: pointer;
-  transition: all 200ms linear;
-  -webkit-transition: all 200ms linear;
-  -moz-transition: all 200ms linear;
-  -ms-transition: all 200ms linear;
-  -o-transition: all 200ms linear;
-}
-.skills div:hover {
-  background-color: #262626;
-}
-.skills div img {
-  height: 16px;
-}
-.employers-container a {
-  display: inline-block;
   width: 100%;
   overflow-x: hidden;
 }
