@@ -283,6 +283,7 @@ body {
   }
 }
 /*COURSES STYLES*/
+
 .courses-search {
   display: flex;
   width: 100%;
@@ -418,7 +419,13 @@ body {
   border-radius: 12px;
   border: 2px solid var(--Grey-15, #262626);
   padding: 30px;
+  min-width: 200px;
   max-width: 450px;
+}
+
+.course-item:hover {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 10px 0px var(--primary-color);
 }
 
 .teacher {
@@ -468,14 +475,14 @@ body {
   color: var(--dark-text-color);
 }
 
-.progress-container {
+.course-progress-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.progress-text {
+.course-progress-text {
   font-family: "danamedium";
   font-size: 16px;
   color: var(--dark-text-color);
