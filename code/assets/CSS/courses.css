@@ -134,6 +134,7 @@ main {
   transition: transform 0.3s ease-in-out;
 }
 
+
 .swipe-btns-container {
   display: flex;
   gap: 26px;
@@ -279,6 +280,9 @@ main {
 }
 
 @media (max-width: 560px) {
+  .course-item{
+    width:300px !important; 
+  }
   h1 {
     font-size: 28px;
   }
