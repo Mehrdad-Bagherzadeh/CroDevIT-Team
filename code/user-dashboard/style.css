@@ -542,11 +542,13 @@ body {
 @media (max-width: 500px) {
   .employers-container {
     padding: 10px; /* Reduce padding */
-    grid-template-columns: 1fr; /* Single column layout */
+    display: flex;
+    flex-direction: column;
   }
 
   .card {
     padding: 15px; /* Adjust padding for cards */
+    padding-right: 25px;
   }
 }
 .employers-container h2 {
