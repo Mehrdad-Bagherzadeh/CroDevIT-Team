@@ -344,3 +344,17 @@ main {
     font-size: var(--font-size-text-large);
   }
 }
+/* .course-item > img {
+  height: 20vw;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .course-item > img {
+  max-height: 197px;
+}
+} */
