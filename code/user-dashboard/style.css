@@ -154,6 +154,7 @@ body {
 
   .hamburger {
     display: block;
+    position: fixed;
   }
 
   .sidebar.active {
@@ -162,7 +163,9 @@ body {
   .content-container {
     margin-top: 20px;
     margin-right: 0;
+    padding: 20px 15px;
   }
+  
 }
 
 /*PANEL SECTION*/
@@ -247,6 +250,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+
 
 .progress-bar {
   height: 100%;
@@ -1121,7 +1125,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-
+  .card {
+    width: 100% !important;
+  }
   .user-img-container {
     justify-self: center; /* Center the container */
     display: flex; /* Ensure proper alignment */
