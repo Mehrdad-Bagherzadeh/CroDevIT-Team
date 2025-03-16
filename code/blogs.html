@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/Images/logo-light.svg"
+    />
+
+    <title>بیالرن | بلاگ</title>
+    <meta
+      name="description"
+      content="در وبلاگ بیالـرن، جدیدترین مقالات آموزش مهارت‌های جدید، برنامه‌نویسی، طراحی UI/UX و شغل‌یابی را بخوانید. از راهکارهای یادگیری سریع تا مهارت‌های نرم مورد نیاز بازار کار، همه چیز برای رشد و پیشرفت شما اینجاست..."
+    />
+
+    <link rel="stylesheet" href="./assets/CSS/home.css" />
+
+    <link rel="stylesheet" href="./assets/CSS/initialComponents.css" />
+    <link rel="stylesheet" href="./assets/CSS/globale.css" />
+    <link rel="stylesheet" href="./assets//CSS/animation.css" />
+    <link rel="stylesheet" href="./assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="./assets/CSS/blog/blog.css" />
+    <link rel="stylesheet" href="./assets/CSS/home.css" />
+  </head>
+  <body>
+    <div class="ad">
+      <p>
+        تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
+        دیگر باقیست!
+      </p>
+      <div></div>
+    </div>
+    <nav>
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="./assets/Images/home/logo-dark.png" alt="بیالرن"
+        /></a>
+      </div>
+      <div class="links-container">
+        <ul class="link-list">
+          <li><a href="./index.html">خانه </a></li>
+          <li><a href="./courses.html" class="">دوره ها </a></li>
+          <li><a href="./about-us.html" class=""> درباره ما </a></li>
+          <li><a href="./blogs.html" class="active-link" class=""> بلاگ</a></li>
+        </ul>
+      </div>
+      <div class="left-side-nav">
+        <div class="search-container">
+          <a href="./login.html">
+            <button class="btn-outline">ورود | ثبت نام</button></a
+          >
+
+          <svg class="search-icon">
+            <use
+              xlink:href="./assets/Images/home/icons/sprite.svg#search"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- search over lay -->
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <div class="search-header">
+            <h2>جستجو</h2>
+            <button class="close-search">
+              <img src="./assets/Images/home/icons/close.png" alt="close" />
+            </button>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+            <svg class="search-icon">
+              <use
+                xlink:href="./assets/Images/home/icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </div>
+          <div class="search-results">
+            <!-- Results will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- mobile version -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-links">
+            <li class=""><a href="./index.html" class="">خانه </a></li>
+            <li><a href="./courses.html" class="">دوره ها </a></li>
+            <li><a href="./about-us.html" class="">درباره ما </a></li>
+            <li class="active"><a href="./blogs.html" class="">بلاگ</a></li>
+            <li>
+              <a href="./login.html" class="btn-contained"> ورود | ثبت نام</a>
+            </li>
+
+            <div class="mobile-search">
+              <input type="text" placeholder="جست و جو" />
+              <svg class="search-icon">
+                <use
+                  xlink:href="./assets/Images/home/icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="chatSupportComponent"></div>
+
+    <div class="hero">
+      <div class="content">
+        <h1> جدیدترین های بیالـرن مگ</h1>
+      </div>
+    </div>
+    <div class="blog-search">
+      <div class="search-field">
+        <input type="text" placeholder="  جست و جوی مقاله" />
+        <button>
+          جست و جو
+          <img src="./assets/Images/search-icon.svg" alt="" />
+        </button>
+      </div>
+      <div class="search-filter">
+        <div class="filter-item">
+          <input type="text" disabled />
+          <div class="subject">
+            <p>تاریخ انتشار</p>
+            |
+            <img src="./assets/Images/blog/date.png" alt="" />
+          </div>
+          <img class="icon" src="./assets/Images/arrow-down.svg" />
+        </div>
+        <div class="filter-item">
+          <input type="text" disabled />
+          <div class="subject">
+            <p>موضوع</p>
+            |
+            <img src="./assets/Images/blog/bolt.svg" alt="" />
+          </div>
+          <img class="icon" src="./assets/Images/arrow-down.svg" />
+        </div>
+        <div class="filter-item">
+          <input type="text" disabled />
+          <div class="subject">
+            <p>نویسنده</p>
+            |
+            <img src="./assets/Images/blog/bolt.svg" alt="" />
+          </div>
+          <img class="icon" src="./assets/Images/arrow-down.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="blog-items">
+      <div class="section-head">
+        <h3>مقالات منتخب</h3>
+      </div>
+      <div class="blog-list">
+        <a href="./blog-detail1.html" class="blog-item">
+          <img src="./assets/Images/blog/deepseek.png" alt="" />
+          <span class="blog-author"> نویسنده: امیرطاها افخمی </span>
+          <h4>Deepseek چیست؟</h4>
+          <p>
+            کمتر از سه ماه پیش، شرکت کمتر شناخته شده‌ی چینی دیپ سیک (ِDeepSeek)
+   ...
+          </p>
+          <div>
+            <button>مطالعه بیشتر</button>
+            <div class="release-date">
+              <p>تاریخ انتشار</p>
+              <span>6/3/2025</span>
+            </div>
+          </div>
+        </a>
+    
+        <a href="./blog-detail2.html" class="blog-item">
+          <img src="./assets/Images/blog/blog-2.png" alt="" />
+          <span class="blog-author"> نویسنده: امیرطاها افخمی </span>
+          <h4>	بهترین زمان برای درس خواندن؟</h4>
+          <p> مطالعه و یادگیری یک فرآیند مداوم و بخش جدایی‌ناپذیر از زندگی انسان است. ..</p>
+          <div>
+            <button>مطالعه بیشتر</button>
+            <div class="release-date">
+              <p>تاریخ انتشار</p>
+              <span>6/3/2025</span>
+            </div>
+          </div>
+        </a>
+        <a href="./blog-detail3.html" class="blog-item">
+          <img src="./assets/Images/blog/blog-image.png" alt="" />
+          <span class="blog-author"> نویسنده: امیرطاها افخمی </span>
+          <h4>تایتل</h4>
+          <p>امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.</p>
+          <div>
+            <button>مطالعه بیشتر</button>
+            <div class="release-date">
+              <p>تاریخ انتشار</p>
+              <span>6/3/2025</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="social">
+      <div class="section-head">
+        <h4 class="section-head-text">
+          خیلی حواستو جمع کن! همیشه باید بروز و آپدیت باشی!
+        </h4>
+      </div>
+      <p>
+        تو دنیای امروز که تکنولوژی خیلی سریع پیش می‌ره، آپدیت موندن، اونم تو چند
+        حوزۀ مختلف، خیلی سخت و زمان‌بر شده؛ اما هیچ کاری نشد نداره! با
+        <b>کامیونیتی فعال بیالــرن</b>، می‌تونی خیلی راحت با افرادی مثل خودت در
+        ارتباط باشی و مهم‌تر از اون، به چیزی که از اول دنبالش بودی برسی!
+      </p>
+      <a href="https://www.linkedin.com/company/bialearn/">
+        <button class="btn-contained">شبکۀ اجتماعی بیالــرن</button>
+      </a>
+    </div>
+    <div class="footer">
+      <div class="subscription">
+        <img src="./assets/Images/home/logo-dark 1.png" alt="" />
+        <p>از جدیدترین رویداد ها بهره مند شوید</p>
+        <div class="sub-form">
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button class="btn-contained">ارسال</button>
+        </div>
+        <p class="policy">
+          ارسال ایمیل توسط شما به این معناست که <a href="./privacy-policy.html">قوانین</a> ما را
+          پذیرفته اید
+        </p>
+      </div>
+      <div class="footer-list">
+        <!-- <ul>
+          <li class="header-list">عنوان</li>
+          <li><a href="#">لینک</a></li>
+          <li><a href="#">لینک</a></li>
+          <li><a href="#">لینک</a></li>
+        </ul> -->
+        <ul>
+          <li class="header-list">بیالرن</li>
+          <li><a href="#">فرصت های شغلی</a></li>
+         <li> <a href="./privacy-policy.html">قوانین</a></li>
+          <li><a href="#">فروش سازمانی</a></li>         
+          <li><a href="#">پشتیبانی</a></li>
+          <li><a href="./faq.html">سوالات متداول</a></li>
+        </ul>
+        <ul>
+          <li class="header-list">محصولات</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/biacastpod/posts/?feedVie"
+              ><img
+                src="./assets/Images/biacast-logo.svg"
+                width="40"
+                height="40"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/Images/home/icons/instagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/Images/home/icons/x.svg" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/bialearn/"
+              ><img
+                src="./assets/Images/home/icons/Linkedin-1.svg"
+                alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>️کپی‌رایت 2025، تمامی حقوق برای <a href="">CroDevIT</a> محفوظ است.</p>
+      <p>All Right Deserved; Developed by CRODEVIT team</p>
+    </div>
+    <script src="./JS/script.js"></script>
+    <script src="./components/load-support-component.js"></script>
+  </body>
+</html>

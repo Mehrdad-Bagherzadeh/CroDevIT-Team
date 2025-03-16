@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="../assets/CSS/globale.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>داشبورد کاربری بیالـرن</title>
+  </head>
+  <body>
+    <!-- Hamburger Button -->
+    <button id="toggleBtn" class="hamburger">&#9776;</button>
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <button class="close-btn">
+        <img src="../assets/Images/dashboard/close.svg" alt="" />
+      </button>
+      <img
+        src="../assets/Images/dashboard/arshia.jpg"
+        alt=""
+        class="dashboard-user-image"
+      />
+      <h2 class="dashboard-user-name">ارشیا ستوده</h2>
+      <ul>
+        <li class="selected">
+          <img
+            src="../assets/Images/dashboard/dashboard.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">داشبورد</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/hat.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">دوره ها</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/briefcase.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">کارفرماها</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/chat.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">چت بات</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/dashboard/user-info.svg"
+            alt=""
+            class="dashboard-sections-icon"
+          /><a href="#">اطلاعات کاربری</a>
+        </li>
+      </ul>
+      <a href="../index.html">      <button class="log-out-btn"> خروج</button></a>
+
+    </nav>
+    <div class="content-container active panel-content">
+      <div class="panel-section">
+        <h2>دوره‌های من</h2>
+        <div class="panel-list">
+          <div class="panel-item">
+            <img src="../assets/Images/courses/banners/tailwind-course.webp" alt="Course Image" />
+            <div class="panel-info">
+              <h3 class="panel-title">تایتل دوره</h3>
+              <p class="panel-description">توضیحات کوتاه درباره دوره.</p>
+              <div class="panel-details">
+                <span class="panel-rate">امتیاز: 4.5</span>
+                <span class="panel-status">وضعیت: به اتمام رسیده</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar" style="width: 100%"></div>
+                <span class="progress-text">100% </span>
+              </div>
+            </div>
+          </div>
+          <!-- Add more course items as needed -->
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <h2>پرداخت‌ها</h2>
+        <div class="panel-list">
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">پرداخت ۱</h3>
+              <p class="panel-description">توضیحات کوتاه درباره پرداخت ۱.</p>
+              <div class="panel-details">
+                <span class="panel-amount">مبلغ: 1,200,000 تومان</span>
+                <span class="panel-date">تاریخ: 1402/01/01</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">پرداخت ۲</h3>
+              <p class="panel-description">توضیحات کوتاه درباره پرداخت ۲.</p>
+              <div class="panel-details">
+                <span class="panel-amount">مبلغ: 800,000 تومان</span>
+                <span class="panel-date">تاریخ: 1402/02/01</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add more payment items as needed -->
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <h2>زمان صرف شده</h2>
+        <div class="panel-list">
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">دوره ۱</h3>
+              <p class="panel-description">
+                توضیحات کوتاه درباره زمان صرف شده برای دوره ۱.
+              </p>
+              <div class="panel-details">
+                <span class="panel-amount">زمان: 10 ساعت</span>
+                <span class="panel-date">تاریخ: 1402/01/01</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">دوره ۲</h3>
+              <p class="panel-description">
+                توضیحات کوتاه درباره زمان صرف شده برای دوره ۲.
+              </p>
+              <div class="panel-details">
+                <span class="panel-amount">زمان: 8 ساعت</span>
+                <span class="panel-date">تاریخ: 1402/02/01</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add more time spent items as needed -->
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <h2>امتیازات</h2>
+        <div class="panel-list">
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">دوره ۱</h3>
+              <p class="panel-description">
+                توضیحات کوتاه درباره امتیاز دوره ۱.
+              </p>
+              <div class="panel-details">
+                <span class="panel-amount">امتیاز: 4.5</span>
+                <span class="panel-date">تاریخ: 1402/01/01</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">دوره ۲</h3>
+              <p class="panel-description">
+                توضیحات کوتاه درباره امتیاز دوره ۲.
+              </p>
+              <div class="panel-details">
+                <span class="panel-amount">امتیاز: 4.0</span>
+                <span class="panel-date">تاریخ: 1402/02/01</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add more rate items as needed -->
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <h2>تکالیف</h2>
+        <div class="panel-list">
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">تکلیف ۱: پروژه HTML و CSS</h3>
+              <p class="panel-description">
+                ایجاد یک صفحه وب ساده با استفاده از HTML و CSS.
+              </p>
+              <div class="panel-details">
+                <span class="panel-status">وضعیت: تکمیل شده</span>
+                <span class="panel-date">تاریخ تحویل: 1402/01/15</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-item">
+            <div class="panel-info">
+              <h3 class="panel-title">تکلیف ۲: پروژه JavaScript</h3>
+              <p class="panel-description">
+                نوشتن یک برنامه ساده با استفاده از JavaScript.
+              </p>
+              <div class="panel-details">
+                <span class="panel-status">وضعیت: در حال انجام</span>
+                <span class="panel-date">تاریخ تحویل: 1402/02/01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-container courses-content">
+      <div class="courses-section-conatainer">
+        <div class="courses-search">
+          <div class="search-field">
+            <input type="text" placeholder="  جست و جوی دوره های من..." />
+            <button>
+              جست و جو
+              <img src="../assets/Images/search-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="search-filter">
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>تاریخ انتشار</p>
+
+                <img src="../assets/Images/blog/date.png" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>موضوع</p>
+
+                <img src="../assets/Images/blog/bolt.svg" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+            <div class="filter-item">
+              <input type="text" disabled />
+              <div class="subject">
+                <p>مدرس</p>
+
+                <img src="../assets/Images/blog/bolt.svg" alt="" />
+              </div>
+              <img class="icon" src="../assets/Images/arrow-down.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="course-list">
+          <div class="course-item">
+            <img src="../assets/Images/courses/banners/tailwind-course.webp" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
+              امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+            </p>
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
+              </div>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
+              </div>
+            </div>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/banners/tailwind-course.webp" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
+              امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+            </p>
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
+              </div>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
+              </div>
+            </div>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/banners/tailwind-course.webp" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
+              امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+            </p>
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
+              </div>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
+              </div>
+            </div>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="course-item">
+            <img src="../assets/Images/courses/banners/tailwind-course.webp" alt="" />
+            <div class="teacher">برگزارکننده: امیرطاها افخمی</div>
+            <h3 class="course-title">تایتل</h3>
+            <p class="course-description">
+              امروزه، دسکریپشن زدن خیلی مهم شده و باید به این کار اهمیت داد.
+            </p>
+            <div class="course-skills-container">
+              <div class="course-skill">
+                <span>Tailwind css</span>
+                <img src="../assets/Images/courses/tailwind.svg" alt="" />
+              </div>
+              <div class="course-skill">
+                <span>HTML</span>
+                <img src="../assets/Images/courses/html.svg" alt="" />
+              </div>
+            </div>
+            <div class="course-progress-container">
+              <p class="course-progress-text">2% مشاهده دوره</p>
+              <div class="progress">
+                <div class="progress-value"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container employers-content">
+      <div class="employers-container">
+        <!-- Existing job listings -->
+        <div class="card">
+          <div class="card-head">
+            
+          
+            <h2>  شرکت اسنپ </h2>
+            <img src="../assets/Images/home/snapp_logo.png" width="50" height="50" alt="">
+          </div>
+         
+          <h3>برنامه‌نویس اندروید</h3>
+          <p class="description">
+            به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد.
+          </p>
+          <div class="skills-container">
+            <p>مهارت‌های مورد نیاز:</p>
+            <div class="skills">
+              <div class="tailwind">
+                <img src="../assets/Images/dashboard/tailwind.svg" alt="" />
+                <p>Tailwind</p>
+              </div>
+              <div class="html">
+                <img src="../assets/Images/dashboard/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <a href="#">استخدام شو!</a>
+        </div>
+        <!-- New job listings -->
+        <div class="card">
+          <div class="card-head">
+            
+          
+            <h2>  شرکت اسنپ </h2>
+            <img src="../assets/Images/home/snapp_logo.png" width="50" height="50" alt="">
+          </div>
+         
+          <h3>برنامه‌نویس اندروید</h3>
+          <p class="description">
+            به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد.
+          </p>
+          <div class="skills-container">
+            <p>مهارت‌های مورد نیاز:</p>
+            <div class="skills">
+              <div class="tailwind">
+                <img src="../assets/Images/dashboard/tailwind.svg" alt="" />
+                <p>Tailwind</p>
+              </div>
+              <div class="html">
+                <img src="../assets/Images/dashboard/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <a href="#">استخدام شو!</a>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            
+          
+            <h2>  شرکت اسنپ </h2>
+            <img src="../assets/Images/home/snapp_logo.png" width="50" height="50" alt="">
+          </div>
+         
+          <h3>برنامه‌نویس اندروید</h3>
+          <p class="description">
+            به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد.
+          </p>
+          <div class="skills-container">
+            <p>مهارت‌های مورد نیاز:</p>
+            <div class="skills">
+              <div class="tailwind">
+                <img src="../assets/Images/dashboard/tailwind.svg" alt="" />
+                <p>Tailwind</p>
+              </div>
+              <div class="html">
+                <img src="../assets/Images/dashboard/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <a href="#">استخدام شو!</a>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            
+          
+            <h2>  شرکت اسنپ </h2>
+            <img src="../assets/Images/home/snapp_logo.png" width="50" height="50" alt="">
+          </div>
+         
+          <h3>برنامه‌نویس اندروید</h3>
+          <p class="description">
+            به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد.
+          </p>
+          <div class="skills-container">
+            <p>مهارت‌های مورد نیاز:</p>
+            <div class="skills">
+              <div class="tailwind">
+                <img src="../assets/Images/dashboard/tailwind.svg" alt="" />
+                <p>Tailwind</p>
+              </div>
+              <div class="html">
+                <img src="../assets/Images/dashboard/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <a href="#">استخدام شو!</a>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            
+          
+            <h2>  شرکت اسنپ </h2>
+            <img src="../assets/Images/home/snapp_logo.png" width="50" height="50" alt="">
+          </div>
+         
+          <h3>برنامه‌نویس اندروید</h3>
+          <p class="description">
+            به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد. به فردی متعهد، با توانمندی بسیار بالا در حوزۀ ارتباطات و مهارت‌های نرم نیازمندیم که مهارت‌های فنی زیر را نیز داشته باشد.
+          </p>
+          <div class="skills-container">
+            <p>مهارت‌های مورد نیاز:</p>
+            <div class="skills">
+              <div class="tailwind">
+                <img src="../assets/Images/dashboard/tailwind.svg" alt="" />
+                <p>Tailwind</p>
+              </div>
+              <div class="html">
+                <img src="../assets/Images/dashboard/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <a href="#">استخدام شو!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container chat-bot-content">
+      <button class="conversation-sidebar-btn">
+      </button>
+      <div class="chat-bot-section">
+        <div class="chat-section">
+          <div class="messages">
+            <!-- Messages will be dynamically added here -->
+            <p class="support-message">درود بر شما, سوالتو بپرس😊</p>
+          </div>
+
+          <div class="chat-input">
+            <button class="mic-btn">
+              <img src="../assets/Images/support/mic.svg" alt="" />
+            </button>
+            <button class="paper-clip-btn">
+              <img src="../assets/Images/support/paper-clip.svg" alt="" />
+            </button>
+            <input
+              type="text"
+              id="chatMessage"
+              placeholder="اینجا بنویسید.... "
+            />
+
+            <button class="send-btn" onclick="sendMessage()">
+              <img src="../assets/Images/support/send-paper-plane.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="chat-bot-conversation-section">
+          <button class="chat-bot-close-btn">
+            <img src="../assets/Images/dashboard/close.svg" alt="" />
+          </button>
+          <div class="chat-bot-title">
+            <img src="../assets/Images/dashboard/chat-gpt.svg" alt="" />
+            چت بات مشاوره بیالرن
+          </div>
+          <div class="conversations-section">
+            <input
+              type="text"
+              placeholder="جست و جو..."
+              class="search-conversation"
+            />
+            <div class="conversations-header">
+              <p>گفت و گو ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+            </div>
+            <div class="conversations-header">
+              <p>بایگانی و پوشه ها</p>
+              <p>مشاهده همه</p>
+            </div>
+            <div class="conversations-container">
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+              <div class="conversation archived">
+                <p>برنامه نویسی پایتون</p>
+                <img src="../assets/Images/dashboard/three-dots.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container user-info-content">
+      <div class="user-info-container">
+        <h1 class="user-info-title">جزئیات حساب کاربری</h1>
+        <div class="user-img-container">
+          <img
+            src="../assets/Images/dashboard/arshia.jpg"
+            alt=""
+            class="user-img"
+          />
+
+          <img
+            src="../assets/Images/dashboard/pen.svg"
+            alt=""
+            class="pen-img"
+          />
+        </div>
+        <div class="input-container">
+          <label for="name">نام و نام خانوادگی</label>
+          <input id="name" type="text" />
+          <img src="../assets/Images/dashboard/user.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="user-name">نام کاربری</label>
+          <input id="user-name" type="text" />
+          <img src="../assets/Images/dashboard/user.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="email">ایمیل</label>
+          <input id="email" type="text" />
+          <img src="../assets/Images/dashboard/mail.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="phone">شماره تلفن</label>
+          <input id="phone" type="text" />
+          <img src="../assets/Images/dashboard/phone.svg" alt="" />
+        </div>
+        <button class="edit-info-btn">ویرایش اطلاعات کاربری</button>
+        <div class="line"></div>
+        <h2 class="change-password-title">تعویض رمز عبور:</h2>
+        <div class="input-container">
+          <label for="password">رمز عبور فعلی</label>
+          <input id="password" type="password" />
+          <img src="../assets/Images/dashboard/lock.svg" alt="" />
+        </div>
+        <div class="input-container">
+          <label for="confirm-password">رمز عبور جدید</label>
+          <input id="confirm-password" type="password" />
+          <img src="../assets/Images/dashboard/lock.svg" alt="" />
+        </div>
+        <button class="change-password-btn">تغییر رمز عبور</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

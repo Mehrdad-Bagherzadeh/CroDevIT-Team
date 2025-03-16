@@ -1,0 +1,231 @@
+main {
+  padding: var(--section-padding);
+  margin-top: 80px; /*to avoid the content going under the nav bar/ad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Add this line to stack children vertically */
+}
+
+.question-search-container {
+  border-bottom: 1px solid var(--lighter-dark-background);
+  width: 100%;
+  display: flex; /* Add this line */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Add this line to stack children vertically */
+  height: 40vh;
+}
+
+h2 {
+  font-family: "danamedium";
+  line-height: 2;
+  text-align: center; /* Center text inside the h2 element */
+  color: var(--dark-text-color);
+  font-size: 36px;
+}
+
+.question-search-container p {
+  color: var(--dark-text-color);
+  text-align: center; /* Center text inside the p element */
+}
+
+.question-search-bar {
+  position: relative;
+  width: 100%;
+  display: flex; /* Use flexbox to center the content */
+  align-items: center;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.question-search-bar input {
+  width: 100%;
+  padding: 20px;
+  padding-left: 40px; /* Add padding to the left to make space for the icon */
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "danamedium";
+  background-color: #414141;
+  border: 0;
+  outline: none; /* Remove the border around the input when it's in focus */
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  color: var(--dark-text-color);
+}
+
+.question-search-bar input:hover,
+.question-search-bar input:focus {
+  background-color: #333333; /* Change background color on hover */
+}
+
+/*add the search icon and place it*/
+.question-search-bar::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* Position for the icon */
+  width: 30px; /* Size of the icon */
+  height: 30px;
+  background-image: url("../Images/faq/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*to add the bar next to the icon*/
+.question-search-bar::after {
+  content: "";
+  position: absolute;
+  left: 45px; /* Position it to the right of the icon */
+  height: 60%; /* Adjust height as needed */
+  width: 2px; /* Width of the vertical bar */
+  background-color: var(--dark-text-color); /* Color of the vertical bar */
+}
+
+.faq-section {
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrolling on the faq-section */
+  border-bottom: 1px solid var(--lighter-dark-background);
+}
+
+.categories-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Prevent scrolling on the wrapper */
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+  border-bottom: 1px solid var(--lighter-dark-background);
+  width: auto; /* Allow the categories to take their natural width */
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on WebKit browsers */
+}
+
+.categories {
+  -ms-overflow-style: none; /* Hide the scrollbar on Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide the scrollbar on Firefox */
+}
+
+.category-btn {
+  all: unset; /* Remove all default styles */
+  display: inline-block; /* Ensure the button behaves like an inline-block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  border: 0; /* Remove border */
+  background-color: transparent; /* Set background color to transparent */
+  padding: 20px 10px;
+}
+
+.category-btn.active {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.category-container {
+  display: flex;
+  flex-shrink: 0; /* Prevent flex items from shrinking */
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.category-title {
+  font-family: "danamedium";
+  color: var(--dark-text-color);
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.category-icon {
+  width: 32px;
+}
+
+/* Fade-in transition for FAQ container */
+.faq-container {
+  padding-top: 24px;
+  width: 50%;
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* FAQ question styling */
+.faq-question {
+  font-family: "danamedium";
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  color: var(--dark-text-color);
+  border: 2px solid #262626;
+  position: relative;
+  transition: border-radius 0.3s;
+}
+
+.faq-question.active {
+  border-radius: 12px 12px 0 0;
+}
+
+.arrow {
+  width: 20px; /* Adjust size */
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
+  transition: transform 0.3s ease;
+}
+
+.active .arrow {
+  transform: rotate(-180deg);
+}
+
+/* FAQ answer accordion effect */
+.faq-answer {
+  font-family: "danamedium";
+  color: var(--dark-text-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s;
+  padding: 0 10px;
+  background-color: var(--lighter-dark-background);
+}
+
+.faq-question.active + .faq-answer {
+  padding: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .faq-container {
+    width: 90%;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main,
+  footer {
+    padding: var(--section-mobile-padding);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .categories {
+    gap: 5px;
+  }
+}

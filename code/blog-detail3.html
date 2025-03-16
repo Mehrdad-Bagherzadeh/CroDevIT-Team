@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بیالـرن | بلاگ</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Images/logo-light.svg">
+
+    <link rel="stylesheet" href="./assets/CSS/initialComponents.css" />
+    <link rel="stylesheet" href="./assets//CSS/animation.css" />
+    <link rel="stylesheet" href="./assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="./assets/CSS/blog-detail/blog-detail.css" />
+    <link rel="stylesheet" href="./assets/CSS/home.css" />
+    <link rel="stylesheet" href="./assets/CSS/globale.css" />
+  </head>
+  <body>
+  
+    <div class="ad">
+      <p>
+        تخفیفات ویژه بیالـرن، تنها تا<span class="animated-pulse"> 3 روز</span>
+        دیگر باقیست!
+      </p>
+      <div></div>
+    </div>
+    <nav>
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="./assets/Images/home/logo-dark.png" alt="بیالرن" />
+        </a>
+      </div>
+      <div class="links-container">
+        <ul class="link-list">
+          <li><a href="./index.html">خانه </a></li>
+          <li><a href="./courses.html">دوره ها </a></li>
+          <li><a href="./about-us.html"> درباره ما </a></li>
+          <li><a href="./blogs.html" class="active-link"> بلاگ</a></li>
+        </ul>
+      </div>
+      <div class="left-side-nav">
+        <div class="search-container">
+          <a href="./login.html">
+            <button class="btn-outline">ورود | ثبت نام</button>
+          </a>
+          <svg class="search-icon">
+            <use
+              xlink:href="./assets/Images/home/icons/sprite.svg#search"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- search over lay -->
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <div class="search-header">
+            <h2>جستجو</h2>
+            <button class="close-search">
+              <img src="./assets/Images/home/icons/close.png" alt="close" />
+            </button>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="جستجوی دوره ها..." autofocus />
+            <svg class="search-icon">
+              <use
+                xlink:href="./assets/Images/home/icons/sprite.svg#search"
+              ></use>
+            </svg>
+          </div>
+          <div class="search-results">
+            <!-- Results will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- mobile version -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-links">
+            <li class=""><a href="./index.html" class="">خانه </a></li>
+            <li><a href="./courses.html" class="">دوره ها </a></li>
+            <li><a href="./about-us.html" class="">درباره ما </a></li>
+            <li class="active"><a href="./blogs.html" class="">بلاگ</a></li>
+            <li>
+              <a href="./login.html" class="btn-contained"> ورود | ثبت نام</a>
+            </li>
+
+            <div class="mobile-search">
+              <input type="text" placeholder="جست و جو" />
+              <svg class="search-icon">
+                <use
+                  xlink:href="./assets/Images/home/icons/sprite.svg#search"
+                ></use>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator">
+        <div class="scroll-indicator-text"></div>
+      </div>
+    </div>
+      <div class="blog-container">
+        <button class="scroll-top   ">
+          <img src="./assets/Images/home/arrow-down.svg" alt="فلش بالا">
+        </button> 
+        <div class="right-section">
+          <div class="breadcrumbs">
+            <img
+              class="logo"
+              src="./assets/Images/home/logo-dark.png"
+              alt="لوگو"
+            />
+            <img
+              class="arrow-icon"
+              src="./assets/Images/blog/arrow-left.svg"
+              alt="فلش"
+            />
+            <a href="./blogs.html">بلاگ</a>
+            <img
+              class="arrow-icon"
+              src="./assets/Images/blog/arrow-left.svg"
+              alt="فلش"
+            />
+            <a href="">بلاگ دیتیل</a>
+          </div>
+          <div class="blog-content">
+            <h1 class="blog-title"> 	چگونه دوره آنلاین مناسب برای اهداف شغلی خود را انتخاب کنیم؟</h1>
+            <p> در دنیای دیجیتال امروز، دوره‌های آنلاین نحوه یادگیری ما را انقلاب کرده‌اند و فرصت‌های قابل دسترس و انعطاف‌پذیری برای کسب مهارت‌های جدید یا تغییر شغل فراهم می‌کنند. اما با وجود تعداد زیاد گزینه‌ها، انتخاب دوره‌ای که با اهداف شغلی خاص شما هم‌راستا باشد ضروری است. در اینجا یک راهنمای گام به گام برای کمک به شما در انتخاب آگاهانه آورده شده است.  </p>
+            <h4 class="head-text" id="section1">
+              <img src="./assets/Images/blog/Ellipse.svg" alt="" />
+              اهداف شغلی خود را تعریف کنید
+            </h4>
+            <p>قبل از جستجو در فهرست دوره‌ها، لحظه‌ای وقت بگذارید و روشن کنید که چه چیزی می‌خواهید به دست آورید. آیا به دنبال پیشرفت در زمینه فعلی خود هستید، می‌خواهید شغل خود را تغییر دهید یا فقط یک مهارت جدید یاد بگیرید؟ شناسایی هدف نهایی به شما کمک می‌کند تا گزینه‌ها را محدود کرده و بر دوره‌هایی که شما را به نزدیک‌تر شدن به اهداف‌تان هدایت می‌کنند تمرکز کنید.
+                برای مثال، اگر هدف شما تبدیل شدن به یک توسعه‌دهنده فول‌استک است، دوره‌ای را انتخاب کنید که شامل توسعه فرانت‌اند و بک‌اند باشد. اگر می‌خواهید مهارت‌های مدیریت پروژه خود را ارتقا دهید، به دنبال گواهینامه‌های تخصصی مانند PMP یا Scrum باشید.
+                  </p>
+            <h4 class="head-text" id="section2">
+              <img src="./assets/Images/blog/Ellipse.svg" alt="" /> 
+              محتوای دوره را بررسی کنید
+
+            </h4>
+            <p>وقتی هدف خود را به وضوح شفاف کردید، برنامه درسی و محتویات  هر دوره‌ای که به آن علاقه‌مند هستید را بررسی کنید. آیا مهارت‌ها و ابزارهای لازم برای صنعت شما را پوشش می‌دهد؟ برای زمینه‌های فنی، به دنبال پروژه‌های عملی، آزمایشگاه‌های کدنویسی یا تمرین‌های تعاملی باشید که تضمین کنند شما پس از پایان دوره برای بازار کار آماده خواهید بود. بررسی کنید که آیا دوره از لحاظ فنی و تکنیکی به روز هست یا خیر. یادگیری اطلاعات قدیمی  و کار کردن با سخت افزار یا نرم افزاری که از رده خارج شده عملا تلف کردن وقت است.
+                بسیاری از پلتفرم‌ها پیش‌نمایش یا سرفصل‌های دوره‌ها را ارائه می‌دهند—از این منابع استفاده کنید تا ببینید آیا مواد دوره با نیازهای یادگیری و مسیر شغلی شما هم‌خوانی دارد یا خیر.
+                   </p>
+            <img src="./assets/Images/blog/blog-3.png" alt="" />
+            <h4 class="head-text" id="section3">
+              <img src="./assets/Images/blog/Ellipse.svg" alt="" /> 
+              محتوای دوره را بررسی کنید            </h4>
+            <p>وقتی هدف خود را به وضوح شفاف کردید، برنامه درسی و محتویات  هر دوره‌ای که به آن علاقه‌مند هستید را بررسی کنید. آیا مهارت‌ها و ابزارهای لازم برای صنعت شما را پوشش می‌دهد؟ برای زمینه‌های فنی، به دنبال پروژه‌های عملی، آزمایشگاه‌های کدنویسی یا تمرین‌های تعاملی باشید که تضمین کنند شما پس از پایان دوره برای بازار کار آماده خواهید بود. بررسی کنید که آیا دوره از لحاظ فنی و تکنیکی به روز هست یا خیر. یادگیری اطلاعات قدیمی  و کار کردن با سخت افزار یا نرم افزاری که از رده خارج شده عملا تلف کردن وقت است.
+                بسیاری از پلتفرم‌ها پیش‌نمایش یا سرفصل‌های دوره‌ها را ارائه می‌دهند—از این منابع استفاده کنید تا ببینید آیا مواد دوره با نیازهای یادگیری و مسیر شغلی شما هم‌خوانی دارد یا خیر.
+                 </p>
+
+            <div class="comment-section">
+              <h3>نظرات</h3>
+              <div class="comment-form">
+                <textarea placeholder="نظر خود را بنویسید..."></textarea>
+                <button type="submit">ارسال نظر</button>
+              </div>
+              <div class="blog-comment-list">
+                <div class="blog-comment">
+                  <div class="blog-comment-author">
+                    <img src="./assets/Images/home/vaez.png" alt="User" />
+                    <span>مهدیار واعظ</span>
+                  </div>
+                  <p>این یک نظر نمونه است. اینجا می‌توانید نظرات کاربران را مشاهده کنید.</p>
+                </div>
+                <div class="blog-comment">
+                  <div class="blog-comment-author">
+                    <img src="./assets/Images/home/sotoode.png" alt="User" />
+                    <span> ارشیا ستوده</span>
+                  </div>
+                  <p>این یک نظر دیگر است. اینجا می‌توانید نظرات کاربران را مشاهده کنید.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-section">
+          <div class="breadcrumbs-left-section">
+            <img
+              class="logo"
+              src="./assets/Images/home/logo-dark.png"
+              alt="لوگو"
+            />
+            <img
+              class="arrow-icon"
+              src="./assets/Images/blog/arrow-left.svg"
+              alt="فلش"
+            />
+            <a href="./blogs.html">بلاگ</a>
+            <img
+              class="arrow-icon"
+              src="./assets/Images/blog/arrow-left.svg"
+              alt="فلش"
+            />
+            <a href="">عنوان بلاگ</a>
+          </div>
+          <div class="left-section-item">
+            <h3>آنچه در این پست می‌خوانید:</h3>
+            <ul>
+              <li>
+                <a class="scroll-link"
+                  ><img src="./assets/Images/blog/Ellipse.svg" alt="" />
+                نحوه انتخاب دوره صحیح
+                  </a
+                >
+              </li>
+           
+             
+            </ul>
+          </div>
+          <div class="left-section-item">
+            <img src="./assets/Images/about-us/mehrdad.png" alt="نویسنده">
+            <p>
+              نوشته‌شده توسط:
+              <a href="#" style="border-bottom: 1px solid; cursor: pointer">
+                مهرداد باقرزاد</a
+              >
+            </p>
+            <p>دسته‌بندی: مهارت‌های نرم</p>
+            <p>تاریخ انتشار: 17/12/1403</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <div class="subscription">
+          <img src="./assets/Images/home/logo-dark 1.png" alt="" />
+          <p>از جدیدترین رویداد ها بهره مند شوید</p>
+          <div class="sub-form">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <button class="btn-contained">ارسال</button>
+          </div>
+          <p class="policy">
+            ارسال ایمیل توسط شما به این معناست که <a href="./privacy-policy.html">قوانین</a> ما را
+            پذیرفته اید
+          </p>
+        </div>
+        <div class="footer-list">
+            <!-- <ul>
+              <li class="header-list">عنوان</li>
+              <li><a href="#">لینک</a></li>
+              <li><a href="#">لینک</a></li>
+              <li><a href="#">لینک</a></li>
+            </ul> -->
+            <ul>
+              <li class="header-list">بیالرن</li>
+              <li><a href="#">فرصت های شغلی</a></li>
+             <li> <a href="./privacy-policy.html">قوانین</a></li>
+              <li><a href="#">فروش سازمانی</a></li>         
+              <li><a href="#">پشتیبانی</a></li>
+              <li><a href="./faq.html">سوالات متداول</a></li>
+            </ul>
+            <ul>
+              <li class="header-list">محصولات</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/biacastpod/posts/?feedVie"
+                  ><img
+                    src="./assets/Images/biacast-logo.svg"
+                    width="40"
+                    height="40"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/Images/home/icons/instagram.svg"
+                  alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Images/home/icons/x.svg" alt="X"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/bialearn/"
+                ><img
+                  src="./assets/Images/home/icons/Linkedin-1.svg"
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="copy-right">
+      <p>️کپی‌رایت 2025، تمامی حقوق برای <a href="">CroDevIT</a> محفوظ است.</p>
+      <p>All Right Deserved; Developed by CRODEVIT team</p>
+    </div>
+    <script src="./JS/script.js"></script>
+    <script>
+      window.addEventListener('scroll', () => {
+        const leftSection = document.querySelector('.left-section');
+        const blogContainer = document.querySelector('.blog-container');
+        const scrollToTopBtn=document.querySelector('.scroll-top')
+        const footer = document.querySelector('.footer');
+        const footerRect = footer.getBoundingClientRect();
+        const leftSectionRect = leftSection.getBoundingClientRect();
+    
+        if (footerRect.top <= leftSectionRect.bottom) {
+          leftSection.style.position = 'absolute';
+          leftSection.style.bottom = '100px';
+          
+        } 
+        scrollToTopBtn.addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior:'smooth'
+          });
+        
+         
+        })
+
+
+        
+      });
+    </script>
+  </body>
+</html>
