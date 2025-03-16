@@ -278,6 +278,20 @@ main {
     align-items: center;
     text-align: center;
   }
+  .see-more-btn {
+    all: unset;
+    padding: 12px 24px;
+    color: var(--dark-text-color);
+    font-family: "danabold";
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 10px !important;
+    border: 2px solid var(--lighter-dark-background);
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  }
 }
 
 @media (max-width: 560px) {
